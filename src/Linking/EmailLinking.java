@@ -1,0 +1,100 @@
+package Linking;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+
+import com.sun.rowset.internal.Row;
+
+import PageObjects.Homepage;
+import PageObjects.LoggedIn;
+import PageObjects.Mailinator;
+import Utils.*;
+
+public class EmailLinking extends Browser  {
+	
+
+ 
+	
+  @Test(dataProvider = "Emaillinking")
+  public void TestEmailLinking(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String järjekord) throws Exception {
+	
+
+	  
+		if(Email.matches("(.*)[0-9]+(.*)")){
+			
+			String Uus = Email;
+				String [] before = Uus.split("@");			 
+			   String[] splitString = before[0].split("(?<=\\D)(?=\\d)");
+			   String piece1= splitString[0];
+			   String piece2= splitString[1];
+			 
+			 int Number = Integer.parseInt(piece2);
+			   int UusNumber = Number +1;
+			   String Final = piece1+UusNumber;
+			   Email = Final+"@mailinator.com";
+			
+			
+			
+				
+			}
+			   else
+			   {
+				   String [] before = Email.split("@");
+					 String uus1 = before[0];
+				   String Uus2 = uus1+1;
+				
+				   Email = Uus2+"@mailinator.com";	   
+				   
+				  
+			   
+			
+			}
+		Integer numbriks = Integer.valueOf(järjekord);
+		WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet5");
+		 WriteToExcel.setCellData(Email, numbriks ,8);
+	  
+	  
+		 driver.get(baseUrl);
+			
+	  Homepage.Login(driver).click();	
+	  Homepage.LoginUrl(driver).sendKeys(Url1);
+	  Homepage.LoginPW(driver).sendKeys(Parool);
+	  Homepage.LoginButton(driver).click();
+	  LoggedIn.Epost(driver).sendKeys(Email);
+	  LoggedIn.Epostkinnitus(driver).click();
+	  Thread.sleep(10000);
+	  driver.get("http://mailinator.com");
+	  Mailinator.MailinatorTextBox(driver).sendKeys(Email);
+	  Mailinator.MailinatorButton(driver).click();
+	  Thread.sleep(5000);
+	  Mailinator.MailinatorEmail(driver).click();
+	  Thread.sleep(2000);
+	  driver.switchTo().frame("rendermail");
+	  String Emailconfirmationlink = driver.findElement(By.partialLinkText("sayat.me/claim")).getText();
+	   String uuslink = baseUrl+Emailconfirmationlink.substring(16);
+	
+	   driver.get(uuslink);
+	Assert.assertTrue(Mailinator.Emailkinnitusõnnestus(driver).isDisplayed());
+	
+	LoggedIn.DropdownMenu(driver).click();
+	LoggedIn.Logout(driver).click();
+	  
+  }
+@DataProvider
+  
+  public Object[][] Emaillinking() throws Exception{
+
+       Object[][] testObjArray = ExcelUtils.getTableArray(Constant.ExceliAsukoht,"Sheet5");
+
+       return (testObjArray);
+
+      }
+  
+  
+}

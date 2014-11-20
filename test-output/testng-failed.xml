@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="IELive"/>
+  <test name="chrome kask6intundubkorras(failed)" parallel="none">
+    <parameter name="browser" value="chromekorras"/>
+    <classes>
+      <class name="GeneralFunctions.ChangeProfilePic2">
+        <methods>
+          <include name="AvalikultProfiililtpildivahetus"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfilePic2 -->
+    </classes>
+  </test> <!-- chrome kask6intundubkorras(failed) -->
+</suite> <!-- Failed suite [Suite] -->

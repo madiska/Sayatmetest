@@ -1,0 +1,117 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+ 
+  <test name="chrome kask6intundubkorras">
+ 
+ 	<parameter name="browser" value="chromekorras" />
+ 
+		<classes>
+
+
+ 	
+
+
+ 		</classes>
+ 	</test>
+ 
+ <test name="chrome Beta">
+ 
+ 	<parameter name="browser" value="chromebeta" />
+ 
+		<classes>
+
+
+
+
+
+ 		</classes>
+ </test>
+ 
+ <test name="chrome Live">
+ 
+ 	<parameter name="browser" value="chromelive" />
+ 
+		<classes>
+
+
+
+
+ 		</classes>
+ </test>
+ 
+ 
+ <test name="Firefox kask6intundubkorras">
+ 
+ 	<parameter name="browser" value="firefoxkorras" />
+ 
+		<classes>
+	 <class name = "Friends.UnfollowFriends" />
+		 </classes>
+ 
+ </test>
+ 
+ 
+
+ <test name="Firefox betastaging">
+ 
+ 	<parameter name="browser" value="firefoxbeta" />
+ 
+		<classes>
+
+ 		</classes>
+ 
+ </test>
+ 
+ 
+ <test name="Firefox Live">
+ 
+ 	<parameter name="browser" value="firefoxlive" />
+ 
+		<classes>
+
+ 		</classes>
+ 
+ </test>
+ 
+ 
+  <test name="IE kask6intundubkorras">
+ 
+ 	<parameter name="browser" value="IEkorras" />
+ 
+		<classes>
+
+
+
+
+
+
+
+		 </classes>
+ 
+ </test>
+ 
+ 
+
+ <test name="IE betastaging">
+ 
+ 	<parameter name="browser" value="IEBeta" />
+ 
+		<classes>
+
+ 		</classes>
+ 
+ </test>
+ 
+ 
+ <test name="IE Live">
+ 
+ 	<parameter name="browser" value="IELive" />
+ 
+		<classes>
+
+ 		</classes>
+ 
+ </test>
+ 
+ 
+</suite>

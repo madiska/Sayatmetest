@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="IELive"/>
+  <test name="IE kask6intundubkorras(failed)" parallel="none">
+    <parameter name="browser" value="IEkorras"/>
+    <classes>
+      <class name="Feedback.AnswerPrivateFeedback">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.AnswerPrivateFeedback -->
+      <class name="Feedback.feedbackinv">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.feedbackinv -->
+      <class name="Feedback.CommentPrivateFeedback">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="Test" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.CommentPrivateFeedback -->
+      <class name="Friends.FriendsFeedback">
+        <methods>
+          <include name="TestFriendsFeedback"/>
+        </methods>
+      </class> <!-- Friends.FriendsFeedback -->
+      <class name="Feedback.CommentPublicFeedback">
+        <methods>
+          <include name="TestCommentPublicFeedback"/>
+        </methods>
+      </class> <!-- Feedback.CommentPublicFeedback -->
+      <class name="Screenshot.EmailInboxScreenshot">
+        <methods>
+          <include name="TakeScreenshot"/>
+        </methods>
+      </class> <!-- Screenshot.EmailInboxScreenshot -->
+      <class name="Survey.SurveyWithValidData">
+        <methods>
+          <include name="TestSurveywithvalidData"/>
+        </methods>
+      </class> <!-- Survey.SurveyWithValidData -->
+      <class name="Survey.SurveywithInvalidData">
+        <methods>
+          <include name="TestSurveywithInvalid"/>
+        </methods>
+      </class> <!-- Survey.SurveywithInvalidData -->
+      <class name="Friends.UnfollowFriends">
+        <methods>
+          <include name="StopFollowing"/>
+        </methods>
+      </class> <!-- Friends.UnfollowFriends -->
+      <class name="Survey.SurveyDownload">
+        <methods>
+          <include name="TestSurveyDownload"/>
+        </methods>
+      </class> <!-- Survey.SurveyDownload -->
+      <class name="Feedback.CommentPublicFeedbackNotLoggedin">
+        <methods>
+          <include name="TestCommentPublicFeedbackNotLoggedin"/>
+        </methods>
+      </class> <!-- Feedback.CommentPublicFeedbackNotLoggedin -->
+      <class name="Feedback.AnswerFeedback">
+        <methods>
+          <include name="TestAnswerFeedback"/>
+        </methods>
+      </class> <!-- Feedback.AnswerFeedback -->
+      <class name="Feedback.MakeFeedbackPublic">
+        <methods>
+          <include name="TestFeedbackPublic"/>
+        </methods>
+      </class> <!-- Feedback.MakeFeedbackPublic -->
+      <class name="Feedback.FeedbackVal">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.FeedbackVal -->
+      <class name="GeneralFunctions.ChangePw">
+        <methods>
+          <include name="TestChangePw"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangePw -->
+      <class name="Survey.AnswerSurvey">
+        <methods>
+          <include name="TestSurveyAnswer"/>
+        </methods>
+      </class> <!-- Survey.AnswerSurvey -->
+      <class name="Friends.FollowFriends">
+        <methods>
+          <include name="SõpradeJälgimine"/>
+        </methods>
+      </class> <!-- Friends.FollowFriends -->
+    </classes>
+  </test> <!-- IE kask6intundubkorras(failed) -->
+</suite> <!-- Failed suite [Suite] -->
