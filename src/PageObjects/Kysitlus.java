@@ -68,7 +68,7 @@ public class Kysitlus {
 		    }
 	 
 	 
-	 public static WebElement KysitlusNõutud(WebDriver driver){
+	 public static WebElement KysitlusNoutud(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("html body.modal-open div.container div#container_new_survey.modal.fade.in div.modal-dialog div.modal-content div.modal-body button#button_save_new_survey.btn.btn-primary.btn-margin.pull-right"));
 		 

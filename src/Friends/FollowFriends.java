@@ -27,7 +27,7 @@ public class FollowFriends extends Browser {
 	
 	
   @Test(dataProvider = "FollowFriendsValues")
-  public void SõpradeJalgimine(String Url1, String Nimi1, String Url2, String Nimi2, String Url3, String Nimi3,String Parool, String Feedback) throws InterruptedException {
+  public void SopradeJalgimine(String Url1, String Nimi1, String Url2, String Nimi2, String Url3, String Nimi3,String Parool, String Feedback) throws InterruptedException {
 	  
 	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
