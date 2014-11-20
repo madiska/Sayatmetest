@@ -107,7 +107,7 @@ public class ErrorMessages {
 			 
 			    }
 		
-		 public static WebElement Uuendaküsimust(WebDriver driver){
+		 public static WebElement Uuendakysimust(WebDriver driver){
 			 
 			    element = driver.findElement(By.cssSelector("p.alert.alert-danger.post_alert"));
 			 
@@ -123,7 +123,7 @@ public class ErrorMessages {
 			 
 			    }
 		 
-		 public static WebElement KüsitlusPealkiriError(WebDriver driver){
+		 public static WebElement KysitlusPealkiriError(WebDriver driver){
 			 
 			    element = driver.findElement(By.cssSelector("html body.modal-open div.container div#container_new_survey.modal.fade.in div.modal-dialog div.modal-content div.modal-body form#form_new_survey.form-horizontal div.form-group.has-error div.controls.col-lg-6 span.help-block.survey_error_message"));
 			 
@@ -132,7 +132,7 @@ public class ErrorMessages {
 			    }
 		 
 		 
-		 public static WebElement KüsitlusKüsimusError(WebDriver driver){
+		 public static WebElement KysitlusKysimusError(WebDriver driver){
 			 
 			    element = driver.findElement(By.cssSelector("html body.modal-open div.container div#container_edit_question.modal.fade.in div.modal-dialog div.modal-content div.modal-body.form-horizontal div.form-group.has-error div.col-sm-6.controls span.help-block.survey_error_message"));
 			 
@@ -140,7 +140,7 @@ public class ErrorMessages {
 			 
 			    }
 		 
-		 public static WebElement KüsitlusValikError(WebDriver driver){
+		 public static WebElement KysitlusValikError(WebDriver driver){
 			 
 			    element = driver.findElement(By.cssSelector("html body.modal-open div.container div#container_edit_question.modal.fade.in div.modal-dialog div.modal-content div.modal-body.form-horizontal div#container_edit_question_options_group.form-group.has-error div.col-sm-6.controls span.help-block.survey_error_message.margin-top-5"));
 			 

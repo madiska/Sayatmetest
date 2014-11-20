@@ -50,7 +50,7 @@ public class testingstuff {
 		   String uuslink = baseUrl+Emailconfirmationlink.substring(16);
 		
 		   driver.get(uuslink);
-		Assert.assertTrue(Mailinator.Emailkinnitusõnnestus(driver).isDisplayed());
+		Assert.assertTrue(Mailinator.Emailkinnitusonnestus(driver).isDisplayed());
 		
 		LoggedIn.DropdownMenu(driver).click();
 		LoggedIn.Logout(driver).click();

@@ -33,25 +33,25 @@ public class SurveywithInvalidData extends Browser{
 	  LoggedIn.TagasiKysitlus(driver).click();
 	  LoggedIn.UusKysitlus(driver).click();
 	  Thread.sleep(2000);
-	  Küsitlus.KüsitlusPealkiri(driver).sendKeys();
-	  Küsitlus.KüsitlusSalvesta(driver).click();
+	  Kysitlus.KysitlusPealkiri(driver).sendKeys();
+	  Kysitlus.KysitlusSalvesta(driver).click();
 	  Thread.sleep(2000);
-	  Assert.assertTrue(ErrorMessages.KüsitlusPealkiriError(driver).isDisplayed());
-	  Küsitlus.KüsitlusTühista(driver).click();
+	  Assert.assertTrue(ErrorMessages.KysitlusPealkiriError(driver).isDisplayed());
+	  Kysitlus.KysitlusTyhista(driver).click();
 	  Thread.sleep(2000);
 	  LoggedIn.UusKysitlusFollowuppage(driver).click();
 	  Thread.sleep(2000);
-	  Küsitlus.KüsitlusPealkiri(driver).sendKeys("Pealkiri");
-	  Küsitlus.KüsitlusSalvesta(driver).click();
-	  Küsitlus.KüsitlusÜksvariant(driver).click();
+	  Kysitlus.KysitlusPealkiri(driver).sendKeys("Pealkiri");
+	  Kysitlus.KysitlusSalvesta(driver).click();
+	  Kysitlus.Kysitlusyksvariant(driver).click();
 	
-	  Küsitlus.KüsitlusÜksVariantEsimeneBox(driver).sendKeys();
+	  Kysitlus.KysitlusyksVariantEsimeneBox(driver).sendKeys();
 	  
-	  Küsitlus.KüsitlusKüsimusSalvesta(driver).click();
+	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
 	  Thread.sleep(2000);
-	  Assert.assertTrue(ErrorMessages.KüsitlusKüsimusError(driver).isDisplayed());
-	  Assert.assertTrue(ErrorMessages.KüsitlusValikError(driver).isDisplayed());
-	  Küsitlus.KüsitlusKüsimusTühista(driver).click();
+	  Assert.assertTrue(ErrorMessages.KysitlusKysimusError(driver).isDisplayed());
+	  Assert.assertTrue(ErrorMessages.KysitlusValikError(driver).isDisplayed());
+	  Kysitlus.KysitlusKysimusTyhista(driver).click();
 	  Thread.sleep(2000);
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();

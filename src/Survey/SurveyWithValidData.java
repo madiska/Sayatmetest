@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.ErrorMessages;
 import PageObjects.Homepage;
-import PageObjects.Küsitlus;
+import PageObjects.Kysitlus;
 import PageObjects.LoggedIn;
 import Utils.Browser;
 import Utils.Constant;
@@ -23,7 +23,7 @@ public class SurveyWithValidData extends Browser {
 	
 	
   @Test(dataProvider = "SurveywithValid")
-  public void TestSurveywithvalidData(String Url, String Parool, String Pealkiri, String Küsimus1,String KüsimusVastus, String Küsimus2, String Küsimus2Valik1,String Küsimus2Valik2, String Küsimus2Valik3,String Küsimus3,  String Küsimus3Valik1, String Küsimus3Valik2, String Küsimus3Valik3) throws InterruptedException {
+  public void TestSurveywithvalidData(String Url, String Parool, String Pealkiri, String Kysimus1,String KysimusVastus, String Kysimus2, String Kysimus2Valik1,String Kysimus2Valik2, String Kysimus2Valik3,String Kysimus3,  String Kysimus3Valik1, String Kysimus3Valik2, String Kysimus3Valik3) throws InterruptedException {
 	  
 	  
 	  
@@ -36,49 +36,49 @@ public class SurveyWithValidData extends Browser {
 	  LoggedIn.KysitlusHalda(driver).click();
 	  LoggedIn.UusKysitlusWhenExisting(driver).click();
 	  Thread.sleep(2000);
-	  Küsitlus.KüsitlusPealkiri(driver).sendKeys(Pealkiri);
-	  Küsitlus.KüsitlusSalvesta(driver).click();
+	  Kysitlus.KysitlusPealkiri(driver).sendKeys(Pealkiri);
+	  Kysitlus.KysitlusSalvesta(driver).click();
 	  Thread.sleep(2000);
-	  Küsitlus.KüsitlusKüsimusPealkiri(driver).sendKeys(Küsimus1);
-	  Küsitlus.KüsitlusKüsimusSalvesta(driver).click();
+	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus1);
+	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
 	  
 	  Thread.sleep(2000);
-	  Küsitlus.KüsitlusLisaUusKüsimus(driver).click();
+	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
 	  
 	  Thread.sleep(2000);
-	  Küsitlus.KüsitlusKüsimusPealkiri(driver).sendKeys(Küsimus2);
-	  Küsitlus.KüsitlusÜksvariant(driver).click();
-	  Küsitlus.KüsitlusÜksVariantEsimeneBox(driver).sendKeys(Küsimus2Valik1);
-	  Küsitlus.KüsitlusÜksVariantTeineBox(driver).click();
-	  Küsitlus.KüsitlusÜksVariantTeineBox(driver).sendKeys(Küsimus2Valik2);
+	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus2);
+	  Kysitlus.Kysitlusyksvariant(driver).click();
+	  Kysitlus.KysitlusyksVariantEsimeneBox(driver).sendKeys(Kysimus2Valik1);
+	  Kysitlus.KysitlusyksVariantTeineBox(driver).click();
+	  Kysitlus.KysitlusyksVariantTeineBox(driver).sendKeys(Kysimus2Valik2);
 	
-	  Küsitlus.KüsitlusLisaValik(driver).click();
+	  Kysitlus.KysitlusLisaValik(driver).click();
 	  Thread.sleep(1000);
-	  Küsitlus.KüsitlusÜksVariantiKolmasBox(driver).click();
-	  Küsitlus.KüsitlusÜksVariantiKolmasBox(driver).sendKeys(Küsimus2Valik3);
-	  Küsitlus.KüsitlusKüsimusSalvesta(driver).click();
+	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).click();
+	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).sendKeys(Kysimus2Valik3);
+	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
 	  
 	  Thread.sleep(2000);
- Küsitlus.KüsitlusLisaUusKüsimus(driver).click();
+ Kysitlus.KysitlusLisaUusKysimus(driver).click();
  Thread.sleep(2000);
 	  
-	  Küsitlus.KüsitlusKüsimusPealkiri(driver).sendKeys(Küsimus3);
-	  Küsitlus.KüsitlusMituVarianti(driver).click();
-	  Küsitlus.KüsitlusMituVariantiEsimeneBox(driver).sendKeys(Küsimus3Valik1);
-	  Küsitlus.KüsitlusMituVariantiTeineBox(driver).click();
-	  Küsitlus.KüsitlusMituVariantiTeineBox(driver).sendKeys(Küsimus3Valik2);
-	  Küsitlus.KüsitlusLisaValik(driver).click();
+	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus3);
+	  Kysitlus.KysitlusMituVarianti(driver).click();
+	  Kysitlus.KysitlusMituVariantiEsimeneBox(driver).sendKeys(Kysimus3Valik1);
+	  Kysitlus.KysitlusMituVariantiTeineBox(driver).click();
+	  Kysitlus.KysitlusMituVariantiTeineBox(driver).sendKeys(Kysimus3Valik2);
+	  Kysitlus.KysitlusLisaValik(driver).click();
 	  Thread.sleep(1000);
-	  Küsitlus.KüsitlusMituVariantiKolmasBox(driver).click();
-	  Küsitlus.KüsitlusMituVariantiKolmasBox(driver).sendKeys(Küsimus3Valik3);
-	  Küsitlus.KüsitlusKüsimusSalvesta(driver).click();
+	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).click();
+	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).sendKeys(Kysimus3Valik3);
+	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
 	  Thread.sleep(2000);
-	 Küsitlus.KüsitlusAvalda(driver).click();
+	 Kysitlus.KysitlusAvalda(driver).click();
 	 
 	 Alert alert = driver.switchTo().alert();
 	 alert.accept();
 	 Thread.sleep(2000);
-	 Assert.assertTrue(Küsitlus.Avaldatud(driver).isDisplayed());
+	 Assert.assertTrue(Kysitlus.Avaldatud(driver).isDisplayed());
 	 LoggedIn.DropdownMenu(driver).click();
 	 LoggedIn.Logout(driver).click();
   }

@@ -22,7 +22,7 @@ public class EmailLinking extends Browser  {
  
 	
   @Test(dataProvider = "Emaillinking")
-  public void TestEmailLinking(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String järjekord) throws Exception {
+  public void TestEmailLinking(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String jarjekord) throws Exception {
 	
 
 	  
@@ -55,7 +55,7 @@ public class EmailLinking extends Browser  {
 			   
 			
 			}
-		Integer numbriks = Integer.valueOf(järjekord);
+		Integer numbriks = Integer.valueOf(jarjekord);
 		WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet5");
 		 WriteToExcel.setCellData(Email, numbriks ,8);
 	  
@@ -80,7 +80,7 @@ public class EmailLinking extends Browser  {
 	   String uuslink = baseUrl+Emailconfirmationlink.substring(16);
 	
 	   driver.get(uuslink);
-	Assert.assertTrue(Mailinator.Emailkinnitusõnnestus(driver).isDisplayed());
+	Assert.assertTrue(Mailinator.Emailkinnitusonnestus(driver).isDisplayed());
 	
 	LoggedIn.DropdownMenu(driver).click();
 	LoggedIn.Logout(driver).click();

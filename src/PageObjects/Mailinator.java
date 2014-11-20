@@ -40,7 +40,7 @@ public class Mailinator {
 		 
 		    }
 	 
-	 public static WebElement Emailkinnitusõnnestus(WebDriver driver){
+	 public static WebElement Emailkinnitusonnestus(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("html body div.container p.alert.alert-info"));
 		 

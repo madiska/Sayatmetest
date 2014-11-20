@@ -142,7 +142,7 @@ public class Profile {
 		    }
 	 
 	 
-	 public static WebElement ProfileKüsitlused(WebDriver driver){
+	 public static WebElement ProfileKysitlused(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("html body div.container div.col-sm-8 table#user-tabs.feed-published-navs.no-outline.feed-settings-navs.feed-navs tbody tr td.settings-tab.settings-tab-surveys a.survey-tab"));
 		 

@@ -27,7 +27,7 @@ public class FollowFriends extends Browser {
 	
 	
   @Test(dataProvider = "FollowFriendsValues")
-  public void SõpradeJälgimine(String Url1, String Nimi1, String Url2, String Nimi2, String Url3, String Nimi3,String Parool, String Feedback) throws InterruptedException {
+  public void SõpradeJalgimine(String Url1, String Nimi1, String Url2, String Nimi2, String Url3, String Nimi3,String Parool, String Feedback) throws InterruptedException {
 	  
 	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
@@ -37,14 +37,14 @@ public class FollowFriends extends Browser {
 	LoggedIn.Friends(driver).click();
 	  Homepage.Search(driver).sendKeys(Url2);
 	   Homepage.SearchButton(driver).click();
-	   SearchResult.Jälgi(driver).click();
+	   SearchResult.Jalgi(driver).click();
 	   Thread.sleep(3000);
 	   driver.get(baseUrl+Url1);
 	   Homepage.Search(driver).clear();
 	  Homepage.Search(driver).sendKeys(Url3);
 	  Homepage.SearchButton(driver).click();
 	  
-	  SearchResult.Jälgi(driver).click();
+	  SearchResult.Jalgi(driver).click();
 	  Thread.sleep(3000);
 	  LoggedIn.Friends(driver).click();
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
@@ -68,14 +68,14 @@ public class FollowFriends extends Browser {
 	  Homepage.Search(driver).sendKeys(Url1);
 	   Homepage.SearchButton(driver).click();
 	   Thread.sleep(3000);
-	   SearchResult.Jälgi(driver).click();
+	   SearchResult.Jalgi(driver).click();
 	   Thread.sleep(3000);
 	   driver.get(baseUrl+Url1);
 	   Homepage.Search(driver).clear();
 	  Homepage.Search(driver).sendKeys(Url3);
 	  Homepage.SearchButton(driver).click();
 	   Thread.sleep(3000);
-	  SearchResult.Jälgi(driver).click();
+	  SearchResult.Jalgi(driver).click();
 	  Thread.sleep(3000);
 	  LoggedIn.Friends(driver).click();
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
@@ -98,7 +98,7 @@ public class FollowFriends extends Browser {
 	  Homepage.Search(driver).sendKeys(Url2);
 	   Homepage.SearchButton(driver).click();
 	   Thread.sleep(3000);
-	   SearchResult.Jälgi(driver).click();
+	   SearchResult.Jalgi(driver).click();
 	   Thread.sleep(3000);
 	   driver.get(baseUrl+Url1);
 	   Homepage.Search(driver).clear();
@@ -106,7 +106,7 @@ public class FollowFriends extends Browser {
 	  Homepage.SearchButton(driver).click();
 	  
 	  Thread.sleep(3000);
-	  SearchResult.Jälgi(driver).click();
+	  SearchResult.Jalgi(driver).click();
 	  Thread.sleep(3000);
 	  LoggedIn.Friends(driver).click();
 	  LoggedIn.FriendsSeeallOfthem(driver).click();

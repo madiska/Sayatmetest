@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
-import PageObjects.Küsitlus;
+import PageObjects.Kysitlus;
 import PageObjects.LoggedIn;
 import Utils.Constant;
 import Utils.ExcelUtils;
@@ -29,7 +29,7 @@ public class ShareSurvey {
 	
 	
   @Test(dataProvider = "Share")
-  public void TestShareSurvey(String Url, String Parool, String Pealkiri, String Küsimus1,String KüsimusVastus, String Küsimus2, String Küsimus2Valik1,String Küsimus2Valik2, String Küsimus2Valik3,String Küsimus3,  String Küsimus3Valik1, String Küsimus3Valik2, String Küsimus3Valik3) {
+  public void TestShareSurvey(String Url, String Parool, String Pealkiri, String Kysimus1,String KysimusVastus, String Kysimus2, String Kysimus2Valik1,String Kysimus2Valik2, String Kysimus2Valik3,String Kysimus3,  String Kysimus3Valik1, String Kysimus3Valik2, String Kysimus3Valik3) {
 	  
 	  
 	  
@@ -43,7 +43,7 @@ public class ShareSurvey {
 	  
 	  
 	  //window handling siia panna
-	  Küsitlus.KüsitlusJagaFacebook(driver).click();
+	  Kysitlus.KysitlusJagaFacebook(driver).click();
 	  
 	  
   }
