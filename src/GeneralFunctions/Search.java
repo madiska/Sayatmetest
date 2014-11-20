@@ -21,10 +21,7 @@ public class Search extends Browser {
 	  Assert.assertTrue(isElementPresent(By.linkText(Url1)));
 	  
 	  
-	  Homepage.Search(driver).sendKeys("@1£1@$@@");
-	  Homepage.SearchButton(driver).click();
-	  Assert.assertTrue(isElementNotPresent(By.linkText("@1£1@$@@")));
-	  
+
 	  
 	  
 	  

@@ -7,7 +7,7 @@ import PageObjects.*;
 public class RegisterFacebook extends Browser  {
   @Test
   public void TestRegisterwithFacebook() {
-	  // Seda korraga ainult ühes brauseris lasta. Kuna preagu hakkavad testid paraleelselt tööle ning 
+	  // Seda korraga ainult yhes brauseris lasta. Kuna preagu hakkavad testid paraleelselt toole ning 
 	  driver.get(baseUrl);
 	  Homepage.RegFacebookButton(driver).click();
 	  SocialMedia.FacebookLoginEmail(driver).click();

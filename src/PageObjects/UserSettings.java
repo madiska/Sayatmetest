@@ -57,7 +57,7 @@ public class UserSettings {
 
 	 
 	 
-	 public static WebElement EmailTeavitusedVäljas(WebDriver driver){
+	 public static WebElement EmailTeavitusedValjas(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("a[href='/disable_email']"));
 		 

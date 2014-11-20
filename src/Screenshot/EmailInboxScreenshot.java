@@ -27,7 +27,7 @@ public class EmailInboxScreenshot extends Browser{
 	
 	
   @Test(dataProvider = "Emaillinking")
-  public void TakeScreenshot(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String järjekord) throws IOException, InterruptedException {
+  public void TakeScreenshot(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String jarjekord) throws IOException, InterruptedException {
 	  
 	  
 	 

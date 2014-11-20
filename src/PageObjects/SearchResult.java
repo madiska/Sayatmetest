@@ -18,7 +18,7 @@ public class SearchResult {
 		    return element;
 		 
 		    }
-	 public static WebElement LõpetaJalgimine(WebDriver driver){
+	 public static WebElement LopetaJalgimine(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("html body div.container div.row div.col-sm-8.search-results div.row div.col-xs-9.pull-right div.col-xs-5.row.pull-right div.search-follow.pull-right span.visible-lg.visible-md button.btn.btn-default"));
 		 
