@@ -45,7 +45,7 @@
  	<parameter name="browser" value="firefoxkorras" />
  
 		<classes>
-	 <class name = "Friends.UnfollowFriends" />
+	 <class name = "Login.LoginInval" />
 		 </classes>
  
  </test>
