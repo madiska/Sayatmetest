@@ -23,7 +23,7 @@ public class Kysimused extends Browser {
 	 
 	  
   @Test
-  public void TestKüsimused() throws InterruptedException {
+  public void TestKysimused() throws InterruptedException {
 	  
 	  String küssa = "Vaatame, et ta lõikaks selle korralikult muidu probleem";
 	  driver.get(baseUrl);
