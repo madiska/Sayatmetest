@@ -25,7 +25,7 @@ public class Kysimused extends Browser {
   @Test
   public void TestKysimused() throws InterruptedException {
 	  
-	  String küssa = "Vaatame, et ta lõikaks selle korralikult muidu probleem";
+	  String kyssa = "Vaatame, et ta loikaks selle korralikult muidu probleem";
 	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();
 	  Homepage.LoginUrl(driver).sendKeys("testime13");
@@ -54,25 +54,25 @@ int iListSize = oSize.size();
 System.out.print(iListSize);
 
 for (int i = 0; i <iListSize; i++) {
-	String UusKüsimus = null;
+	String UusKysimus = null;
 	String Olemasolev = null;
 	String OlemasolevMuudetud = null;
 	driver.get(baseUrl);
 
 	if(i==0){
-			if (küssa.length() <= 34){
+			if (kyssa.length() <= 34){
 		
-				LoggedIn.KüsimusBox(driver).click();
-				LoggedIn.KüsimusBox(driver).sendKeys(küssa);
+				LoggedIn.KysimusBox(driver).click();
+				LoggedIn.KysimusBox(driver).sendKeys(kyssa);
 			
 				Thread.sleep(5000);
 			}
 			else {
-				String Uus = küssa.substring(0, 31)+"...";
-				UusKüsimus = Uus;
-				LoggedIn.KüsimusBox(driver).click();
-				LoggedIn.KüsimusBox(driver).sendKeys(küssa);
-				System.out.print(UusKüsimus);
+				String Uus = kyssa.substring(0, 31)+"...";
+				UusKysimus = Uus;
+				LoggedIn.KysimusBox(driver).click();
+				LoggedIn.KysimusBox(driver).sendKeys(kyssa);
+				System.out.print(UusKysimus);
 			}
 			}
 	else{
@@ -82,20 +82,20 @@ for (int i = 0; i <iListSize; i++) {
  
 		List<WebElement> UusSize = UusSelection.getOptions();
 		UusSelection.selectByIndex(i);
-		String Küssa = UusSize.get(i).getText();
-			if(Küssa.length() > 34) {
-			String Uus = Küssa.substring(0, 31)+"...";
+		String Kyssa = UusSize.get(i).getText();
+			if(Kyssa.length() > 34) {
+			String Uus = Kyssa.substring(0, 31)+"...";
 			OlemasolevMuudetud = Uus;
 			System.out.print(Uus);
 			
 		}
 			else {
-				System.out.print(Küssa);
+				System.out.print(Kyssa);
 	
-				Olemasolev = Küssa;
+				Olemasolev = Kyssa;
 		}
 	}
-	LoggedIn.Küsimusbutton(driver).click();
+	LoggedIn.Kysimusbutton(driver).click();
 	Thread.sleep(1000);
 String parenthandle =	driver.getWindowHandle();
 driver.get(baseUrl);
@@ -107,7 +107,7 @@ LoggedIn.JagaUrlFacebook(driver).click();
 				}
 					if(i==0){
 						Thread.sleep(1500);
-						Assert.assertTrue(driver.getPageSource().contains(UusKüsimus));
+						Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 		
 		
 					}
@@ -140,7 +140,7 @@ LoggedIn.JagaUrlTwitter(driver).click();
 
 			if(i==0){
 	
-				Assert.assertTrue(driver.getPageSource().contains(UusKüsimus));
+				Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 	
 	
 					}
@@ -170,7 +170,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					 SocialMedia.TumblrLoginPW(driver).sendKeys("testime11");
 					 SocialMedia.TumblrLoginButton(driver).click();
 					 Thread.sleep(1000);
-					Assert.assertTrue(driver.getPageSource().contains(UusKüsimus));
+					Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 	
 	
 				}
@@ -206,14 +206,14 @@ for (String winHandle2 : driver.getWindowHandles()) {
 	
 
 	  
-	 // 	if(küssa.length() <= 34) {
+	 // 	if(kyssa.length() <= 34) {
 	  		
-	  	//	Assert.assertTrue(driver.getPageSource().contains(küssa));
+	  	//	Assert.assertTrue(driver.getPageSource().contains(kyssa));
 	  		
 	  	//}
 	  //	else {
 	  		
-	  	//	String Uus = küssa.substring(0, 30)+"...";
+	  	//	String Uus = kyssa.substring(0, 30)+"...";
 	  	//	Assert.assertTrue(driver.getPageSource().contains(Uus));
 	  		
 	  		

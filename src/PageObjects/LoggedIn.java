@@ -9,7 +9,7 @@ public class LoggedIn {
 	
 	public static WebElement element = null;
 	
-	//Saadud feedback ja küsitlused
+	//Saadud feedback ja kysitlused
 	 public static WebElement Saadud(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("a[href='/']"));
@@ -34,7 +34,7 @@ public class LoggedIn {
 		 
 		    }
 	 
-	 public static WebElement KüsimusBox (WebDriver driver){
+	 public static WebElement KysimusBox (WebDriver driver){
 		 
 		    element = driver.findElement(By.id("new_post_question"));
 		 
@@ -42,7 +42,7 @@ public class LoggedIn {
 		 
 		    }
 	 
-	 public static WebElement Küsimusbutton(WebDriver driver){
+	 public static WebElement Kysimusbutton(WebDriver driver){
 		 
 		    element = driver.findElement(By.cssSelector("button.btn.btn-primary.pull-right.post-button"));
 		 
@@ -359,27 +359,27 @@ public class LoggedIn {
 		 
 		 return element;
 	 }
-		public static WebElement KüsimusLisaPilt(WebDriver driver){
+		public static WebElement KysimusLisaPilt(WebDriver driver){
 			 
 			 element = driver.findElement(By.cssSelector("div.fileupload.fileupload-new a.picture-modal span.fileupload-new.upload-thumbnail.tooltips i.fa.fa-4x.fa-picture-o"));
 			 
 			 return element;
 		 }
-		public static WebElement KüsimusPreagune(WebDriver driver){
+		public static WebElement KysimusPreagune(WebDriver driver){
 			 
 			 element = driver.findElement(By.cssSelector("div.question-update.picture-upload table.col-xs-12 tbody tr td.current-question table tbody tr td.wrap-words strong"));
 			 
 			 return element;
 		 }
 		
-		public static WebElement KüsimusValiPilt(WebDriver driver){
+		public static WebElement KysimusValiPilt(WebDriver driver){
 			 
 			 element = driver.findElement(By.cssSelector("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-new div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-body div.form-group span.btn.btn-file.btn-default.btn-block"));
 			 
 			 return element;
 		 }
 		
-		public static WebElement KüsimusValiPiltFF(WebDriver driver){
+		public static WebElement KysimusValiPiltFF(WebDriver driver){
 			 
 			 element = driver.findElement(By.id("new_post_image"));
 			 
