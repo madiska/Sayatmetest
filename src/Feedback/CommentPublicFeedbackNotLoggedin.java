@@ -23,7 +23,7 @@ public class CommentPublicFeedbackNotLoggedin extends Browser {
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url1);
 	  Profile.CommentFeedback(driver).click();
-	  Thread.sleep(1000);
+	  Thread.sleep(2000);
 	  Assert.assertTrue(Profile.CommentSignup(driver).isDisplayed());
 
 	  

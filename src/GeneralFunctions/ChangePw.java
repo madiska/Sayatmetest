@@ -31,10 +31,10 @@ public class ChangePw extends Browser{
 	  Thread.sleep(4000);
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Seaded(driver).click();
-	  Thread.sleep(1000);
+	  Thread.sleep(2000);
 	  UserSettings.Seaded(driver).click();
 	  UserSettings.KontoVahetaPw(driver).click();
-	  Thread.sleep(1000);
+	  Thread.sleep(2000);
 	  UserSettings.KontoVahetaPwUusPW(driver).sendKeys("UusParool");
 	  UserSettings.KontoVahetaPwUusPWConfirm(driver).sendKeys("UusParool");
 	  Thread.sleep(1000);
