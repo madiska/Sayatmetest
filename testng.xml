@@ -7,7 +7,7 @@
  
 		<classes>
 
-	 <class name = "Login.LoginInval" />
+
  	
 
 
@@ -45,7 +45,7 @@
  	<parameter name="browser" value="firefoxkorras" />
  
 		<classes>
-
+	 <class name = "Login.LoginInval" />
 		 </classes>
  
  </test>
