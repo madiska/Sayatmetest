@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
+
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
@@ -21,10 +23,12 @@ import org.testng.annotations.BeforeMethod;
 
 public class Browser {
 
-protected WebDriver driver;
+protected  WebDriver driver;
 protected String baseUrl;
 protected String  brauser;
-protected 	  Wait<WebDriver> wait = new WebDriverWait(driver, 20);
+protected WebDriverWait wait;
+	
+
 
 @BeforeMethod   
 
@@ -38,6 +42,7 @@ public void beforeTest(String browser) {
            
                  driver.manage().window().setPosition(new Point(0,0));
               driver.manage().window().setSize(new Dimension(1600,1000));
+              wait = new WebDriverWait(driver, 15);
                 brauser = "firefox";
        
 
@@ -50,6 +55,7 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
  
        driver.manage().window().setPosition(new Point(0,0));
     driver.manage().window().setSize(new Dimension(1600,1000));
+    wait = new WebDriverWait(driver, 15);
       brauser = "firefox";
       
 }
@@ -61,6 +67,7 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
        
              driver.manage().window().setPosition(new Point(0,0));
           driver.manage().window().setSize(new Dimension(1600,1000));
+          wait = new WebDriverWait(driver, 15);
             brauser = "firefox";
    
 
@@ -76,6 +83,7 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().window().setPosition(new Point(0,0));
 	driver.manage().window().setSize(new Dimension(1600,1000));
+	wait = new WebDriverWait(driver, 15);
 	brauser = "chrome";
 	 
 }
@@ -89,6 +97,7 @@ baseUrl = "http://betastaging.sayat.me/";
 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 driver.manage().window().setPosition(new Point(0,0));
 driver.manage().window().setSize(new Dimension(1600,1000));
+wait = new WebDriverWait(driver, 15);
 brauser = "chrome";
 
 }
@@ -101,6 +110,7 @@ brauser = "chrome";
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().window().setPosition(new Point(0,0));
 	driver.manage().window().setSize(new Dimension(1600,1000));
+	wait = new WebDriverWait(driver, 15);
 	brauser = "chrome";
 
 	}
@@ -115,7 +125,8 @@ brauser = "chrome";
 		 caps.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 	driver = new InternetExplorerDriver(caps);
 	baseUrl ="http://kask6iktundubkorras.sayat.me/";
-	driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	wait = new WebDriverWait(driver, 15);
 
 	brauser = "IE";
 
@@ -123,16 +134,14 @@ brauser = "chrome";
        
  else if (browser.equalsIgnoreCase("IEBeta")) {
 	 
-	 
 	    System.setProperty("webdriver.ie.driver",
 	            Constant.IEDriver);
 		 DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-	
-	
-		 caps.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+		 caps.setCapability("ignoreZoomSetting", true);
 	driver = new InternetExplorerDriver(caps);
-	baseUrl ="http://kask6iktundubkorras.sayat.me/";
-	driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+	baseUrl ="http://betastaging.sayat.me/";
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	wait = new WebDriverWait(driver, 15);
 
 	brauser = "IE";
 
@@ -140,16 +149,14 @@ brauser = "chrome";
        
  else if (browser.equalsIgnoreCase("IELive")) {
 
-	 
 	    System.setProperty("webdriver.ie.driver",
 	            Constant.IEDriver);
 		 DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-	
-	
-		 caps.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+		 caps.setCapability("ignoreZoomSetting", true);
 	driver = new InternetExplorerDriver(caps);
-	baseUrl ="http://kask6iktundubkorras.sayat.me/";
-	driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+	baseUrl = "http://sayat.me/";
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	wait = new WebDriverWait(driver, 15);
 
 	brauser = "IE";
 
