@@ -1,11 +1,10 @@
 package Feedback;
 
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -28,6 +27,9 @@ public class CommentPublicFeedback extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
 	  Profile.CommentFeedback(driver).click();
@@ -35,12 +37,13 @@ public class CommentPublicFeedback extends Browser{
 	  Profile.CommentFeedbackTextBox(driver).sendKeys(publiccomment);
 	  Profile.CommentFeedbackTextBoxButton(driver).click();
 	  
-	  Thread.sleep(3000);
+	
 	  
 	  Assert.assertTrue(driver.getPageSource().contains(publiccomment));
 	  
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.RegButton(driver)));
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
 	  Assert.assertFalse(driver.getPageSource().contains(PrivateComment));

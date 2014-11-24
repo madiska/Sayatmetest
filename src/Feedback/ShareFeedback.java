@@ -1,16 +1,10 @@
 package Feedback;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
 import PageObjects.LoggedIn;
-import PageObjects.SearchResult;
 import PageObjects.SocialMedia;
 import Utils.*;
 

@@ -1,12 +1,8 @@
 package GeneralFunctions;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,19 +13,8 @@ import Utils.Constant;
 import Utils.ExcelUtils;
 import Utils.Browser;
 
-public class DeleteUser {
-	  private WebDriver driver;
-	  private String baseUrl;
+public class DeleteUser extends Browser {
 
-
-	
-	 @BeforeMethod public void setUp() throws Exception {
-	    driver = new FirefoxDriver();
-	    baseUrl = "http://kask6iktundubkorras.sayat.me/";
-	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	 
-	  }
-	
 	
   @Test(dataProvider = "Delete")
   public void TestDeleteUser(String Url,String  Parool, String Nimi, String valePw) throws InterruptedException {
@@ -41,9 +26,10 @@ public class DeleteUser {
 	 Homepage.LoginUrl(driver).sendKeys(Url);
 	 Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
-	  Thread.sleep(5000);
 	  LoggedIn.Seaded(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	 UserSettings.Seaded(driver).click();
 	 UserSettings.KustutaKonto(driver).click();
 	 UserSettings.KustutaKontoKinnita(driver).click();

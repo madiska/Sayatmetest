@@ -6,22 +6,16 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import PageObjects.ErrorMessages;
 import PageObjects.Homepage;
 import PageObjects.LoggedIn;
 import PageObjects.UserSettings;
 import Utils.Constant;
-import Utils.WriteToExcel;
 import Utils.Browser;
 
 public class ChangeProfilePic2 extends Browser{
@@ -40,15 +34,13 @@ public class ChangeProfilePic2 extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys("testime13");
 	  Homepage.LoginPW(driver).sendKeys("testime11");
 	  Homepage.LoginButton(driver).click();
-	  
-	  Thread.sleep(1500);
-
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  driver.get(baseUrl+"testime13");
 		
-	  Thread.sleep(3000);
+
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Seaded(driver).click();
-	  Thread.sleep(3000);
+	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	
 	  if (brauser == "firefox" ) {
 			
@@ -64,7 +56,7 @@ public class ChangeProfilePic2 extends Browser{
 		  WebElement Fileinput = driver.findElement(By.name("account_image"));
 			 Fileinput.click();
 			
-			 Fileinput.sendKeys("C:\\Users\\Madis\\Downloads\\test1.png");
+			 Fileinput.sendKeys(Constant.Pilt1);
 			
 			 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 			  Robot r = new Robot();
@@ -99,7 +91,7 @@ public class ChangeProfilePic2 extends Browser{
 
 			 
 			 
-			 String myString = "C:\\Users\\Madis\\Downloads\\test1.png";
+			 String myString = Constant.Pilt1;
 			 StringSelection stringSelection = new StringSelection (myString);
 			 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 			 clpbrd.setContents (stringSelection, null);
@@ -142,7 +134,7 @@ public class ChangeProfilePic2 extends Browser{
 
 			 
 			 
-			 String myString = "C:\\Users\\Madis\\Downloads\\test1.png";
+			 String myString = Constant.Pilt1;
 			 StringSelection stringSelection = new StringSelection (myString);
 			 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 			 clpbrd.setContents (stringSelection, null);
@@ -177,20 +169,22 @@ public class ChangeProfilePic2 extends Browser{
   if 	(brauser == "firefox" ) {
 		
 		
-	  		Thread.sleep(2000);
+	  	
 	  			
 	
 		System.out.println(brauser);
 		UserSettings.SettingsCloseInformation(driver).click();
+		 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		driver.get(baseUrl+"testime13");
-		Thread.sleep(2000);
+		 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
 		LoggedIn.DropdownMenu(driver).click();
 		 LoggedIn.Seaded(driver).click();
-		  Thread.sleep(2000);
+		 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	  WebElement Fileinput = driver.findElement(By.name("account_image"));
 		 Fileinput.click();
 		
-		 Fileinput.sendKeys("C:\\Users\\Madis\\Downloads\\2mb.jpg");
+		 Fileinput.sendKeys(Constant.Pilt3);
 		
 		 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 		  Robot r = new Robot();
@@ -213,18 +207,19 @@ public class ChangeProfilePic2 extends Browser{
 	System.out.println(brauser);
 	
 		UserSettings.SettingsCloseInformation(driver).click();
+		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		driver.get(baseUrl+"testime13");
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		
 		LoggedIn.DropdownMenu(driver).click();
 		 LoggedIn.Seaded(driver).click();
-		  Thread.sleep(3000);
+		 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 		
 		UserSettings.Valipilt(driver).click(); 
 		Thread.sleep(1000);
 		 
 		 
-		 String myString = "C:\\Users\\Madis\\Downloads\\2mb.jpg";
+		 String myString =  Constant.Pilt3;
 		 StringSelection stringSelection = new StringSelection (myString);
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
@@ -253,20 +248,24 @@ public class ChangeProfilePic2 extends Browser{
 else {
 
 
-	  Thread.sleep(2000);
+	UserSettings.SettingsCloseInformation(driver).click();
+	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	driver.get(baseUrl+"testime13");
+	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	
-		System.out.println(brauser);
-		UserSettings.SettingsCloseInformation(driver).click();
-		driver.get(baseUrl+"testime13");
-		Thread.sleep(2000);
-		LoggedIn.DropdownMenu(driver).click();
-		 LoggedIn.Seaded(driver).click();
-		  Thread.sleep(2000);
-		UserSettings.Valipilt(driver).click();
+	LoggedIn.DropdownMenu(driver).click();
+	 LoggedIn.Seaded(driver).click();
+	 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
+	
+	UserSettings.Valipilt(driver).click(); 
+	Thread.sleep(1000);
+	 
+	 
+	 String myString =  Constant.Pilt3;
 
 		 
 		 
-		 String myString = "C:\\Users\\Madis\\Downloads\\2mb.jpg";
+		
 		 StringSelection stringSelection = new StringSelection (myString);
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
@@ -300,13 +299,15 @@ else {
 		
 	
 		
-	System.out.println(brauser);
-	UserSettings.SettingsCloseInformation(driver).click();
-	driver.get(baseUrl+"testime13");
-	Thread.sleep(2000);
-	LoggedIn.DropdownMenu(driver).click();
-	 LoggedIn.Seaded(driver).click();
-	  Thread.sleep(2000);
+		System.out.println(brauser);
+		UserSettings.SettingsCloseInformation(driver).click();
+		 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+		driver.get(baseUrl+"testime13");
+		 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
+		LoggedIn.DropdownMenu(driver).click();
+		 LoggedIn.Seaded(driver).click();
+		 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
   
 	  WebElement Fileinput = driver.findElement(By.name("account_image"));
 		 Fileinput.click();
@@ -329,23 +330,23 @@ else if (brauser == "chrome"){
 	
 	  
 
-	  Thread.sleep(2000);
-	
-	System.out.println(brauser);
-
-	
 	UserSettings.SettingsCloseInformation(driver).click();
+	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	driver.get(baseUrl+"testime13");
-	Thread.sleep(2000);
-		LoggedIn.DropdownMenu(driver).click();
-		 LoggedIn.Seaded(driver).click();
-		 Thread.sleep(2000);
-		UserSettings.Valipilt(driver).click(); 
-		Thread.sleep(1000);
-
+	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
+	LoggedIn.DropdownMenu(driver).click();
+	 LoggedIn.Seaded(driver).click();
+	 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
+	
+	UserSettings.Valipilt(driver).click(); 
+	Thread.sleep(1000);
+	 
+	 
+	 String myString =  Constant.Pilt4;
 		 
 		 
-		 String myString = "C:\\Users\\Madis\\Downloads\\2,7mb.jpg";
+		
 		 StringSelection stringSelection = new StringSelection (myString);
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
@@ -375,22 +376,20 @@ else if (brauser == "chrome"){
   	else {
 
 
-	  Thread.sleep(2000);
+  		UserSettings.SettingsCloseInformation(driver).click();
+		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+		driver.get(baseUrl+"testime13");
+		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		
-	System.out.println(brauser);
-	UserSettings.SettingsCloseInformation(driver).click();
-	driver.get(baseUrl+"testime13");
-	Thread.sleep(2000);
-	LoggedIn.DropdownMenu(driver).click();
-	 LoggedIn.Seaded(driver).click();
-	  Thread.sleep(2000);
-	
+		LoggedIn.DropdownMenu(driver).click();
+		 LoggedIn.Seaded(driver).click();
+		 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 		
 		UserSettings.Valipilt(driver).click(); 
-
+		Thread.sleep(1000);
 		 
 		 
-		 String myString = "C:\\Users\\Madis\\Downloads\\2,7mb.jpg";
+		 String myString =  Constant.Pilt4;
 		 StringSelection stringSelection = new StringSelection (myString);
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);

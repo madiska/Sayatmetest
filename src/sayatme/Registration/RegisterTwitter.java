@@ -6,7 +6,6 @@ import PageObjects.SocialMedia;
 import PageObjects.Homepage;
 
 import Utils.Browser;
-import Utils.ExcelUtils;
 
 public class RegisterTwitter extends Browser{
   @Test

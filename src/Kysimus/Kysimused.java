@@ -1,15 +1,14 @@
 package Kysimus;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
@@ -23,7 +22,7 @@ public class Kysimused extends Browser {
 	 
 	  
   @Test
-  public void TestKysimused() throws InterruptedException {
+  public void TestKysimused() throws InterruptedException, AWTException {
 	  
 	  String kyssa = "Vaatame, et ta loikaks selle korralikult muidu probleem";
 	  driver.get(baseUrl);
@@ -31,6 +30,7 @@ public class Kysimused extends Browser {
 	  Homepage.LoginUrl(driver).sendKeys("testime13");
 	  Homepage.LoginPW(driver).sendKeys("testime11");
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  driver.get("http://Facebook.com");
 	  SocialMedia.FacebookLoginEmail(driver).sendKeys("lqxelkw_chaisen_1415285502@tfbnw.net");
 	  SocialMedia.FacebookLoginPW(driver).sendKeys("madis");
@@ -82,6 +82,17 @@ for (int i = 0; i <iListSize; i++) {
  
 		List<WebElement> UusSize = UusSelection.getOptions();
 		UusSelection.selectByIndex(i);
+		if (brauser == "firefox"){
+			 Robot robot = new Robot();
+			  robot.keyPress(KeyEvent.VK_ENTER);
+			
+			
+			
+		}
+		else {
+			
+		}
+		
 		String Kyssa = UusSize.get(i).getText();
 			if(Kyssa.length() > 34) {
 			String Uus = Kyssa.substring(0, 31)+"...";
@@ -95,8 +106,9 @@ for (int i = 0; i <iListSize; i++) {
 				Olemasolev = Kyssa;
 		}
 	}
+	Thread.sleep(2000);
 	LoggedIn.Kysimusbutton(driver).click();
-	Thread.sleep(1000);
+	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.SuccessKyssauuendus(driver)));
 String parenthandle =	driver.getWindowHandle();
 driver.get(baseUrl);
 LoggedIn.JagaUrlFacebook(driver).click();
@@ -106,7 +118,7 @@ LoggedIn.JagaUrlFacebook(driver).click();
 					driver.switchTo().frame(driver.findElement(By.className("FB_UI_Dialog")));
 				}
 					if(i==0){
-						Thread.sleep(1500);
+						Thread.sleep(1000);
 						Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 		
 		
@@ -160,8 +172,9 @@ LoggedIn.JagaUrlTwitter(driver).click();
 			driver.get(baseUrl);
 Thread.sleep(1000);		
 LoggedIn.JagaUrlTumblr(driver).click();
-Thread.sleep(1000);
+Thread.sleep(2000);
 for (String winHandle2 : driver.getWindowHandles()) {
+	Thread.sleep(2000);
     driver.switchTo().window(winHandle2); // Vahetame Fookust uuele avanud aknale
 }
 
@@ -169,7 +182,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					SocialMedia.TumblrLoginEmail(driver).sendKeys("selentest@hotmail.com");
 					 SocialMedia.TumblrLoginPW(driver).sendKeys("testime11");
 					 SocialMedia.TumblrLoginButton(driver).click();
-					 Thread.sleep(1000);
+					 Thread.sleep(3000);
 					Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 	
 	
@@ -186,7 +199,11 @@ for (String winHandle2 : driver.getWindowHandles()) {
 				}
 			}
 				
-				Thread.sleep(1500);
+				Thread.sleep(1000);
+				if(brauser == "IE") {
+					driver.findElement(By.id("link_post_one")).clear();
+				}
+				else {}
 				driver.close();
 				
 				driver.switchTo().window(parenthandle);

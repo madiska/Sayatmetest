@@ -1,11 +1,8 @@
 package Feedback;
 
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -23,7 +20,7 @@ public class CommentPublicFeedbackNotLoggedin extends Browser {
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url1);
 	  Profile.CommentFeedback(driver).click();
-	  Thread.sleep(2000);
+
 	  Assert.assertTrue(Profile.CommentSignup(driver).isDisplayed());
 
 	  

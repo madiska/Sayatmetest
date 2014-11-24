@@ -37,7 +37,7 @@ public class feedbackinv extends Browser {
 
   @Test(dataProvider ="FeedbackInv")
   public void testfeedbackinv(String Url, String Parool, String tagasiside) throws Exception {
-    driver.get("http://kask6iktundubkorras.sayat.me/");
+    driver.get(baseUrl);
  
     Homepage.Search(driver).sendKeys(Url);
  Homepage.SearchButton(driver).click();
@@ -56,7 +56,7 @@ Profile.TagasisideButton(driver).click();
     }
 
 
-driver.get("http://kask6iktundubkorras.sayat.me/");
+driver.get(baseUrl);
 Homepage.Search(driver).sendKeys(Url);
 Homepage.SearchButton(driver).click();
 driver.findElement(By.linkText(Url)).click();
@@ -77,7 +77,7 @@ for (int second = 0;; second++) {
 }
 
 
-driver.get("http://kask6iktundubkorras.sayat.me");
+driver.get(baseUrl);
 Homepage.Login(driver).click();
 
 Homepage.LoginUrl(driver).sendKeys(Url);

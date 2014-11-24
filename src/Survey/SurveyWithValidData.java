@@ -1,16 +1,11 @@
 package Survey;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import PageObjects.ErrorMessages;
 import PageObjects.Homepage;
 import PageObjects.Kysitlus;
 import PageObjects.LoggedIn;
@@ -32,20 +27,21 @@ public class SurveyWithValidData extends Browser {
 	  Homepage.LoginUrl(driver).sendKeys(Url);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.TagasiKysitlus(driver).click();
 	  LoggedIn.KysitlusHalda(driver).click();
 	  LoggedIn.UusKysitlusWhenExisting(driver).click();
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
 	  Kysitlus.KysitlusPealkiri(driver).sendKeys(Pealkiri);
 	  Kysitlus.KysitlusSalvesta(driver).click();
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus1);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
 	  
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
 	  
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus2);
 	  Kysitlus.Kysitlusyksvariant(driver).click();
 	  Kysitlus.KysitlusyksVariantEsimeneBox(driver).sendKeys(Kysimus2Valik1);
@@ -53,14 +49,14 @@ public class SurveyWithValidData extends Browser {
 	  Kysitlus.KysitlusyksVariantTeineBox(driver).sendKeys(Kysimus2Valik2);
 	
 	  Kysitlus.KysitlusLisaValik(driver).click();
-	  Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusyksVariantiKolmasBox(driver)));
 	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).click();
 	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).sendKeys(Kysimus2Valik3);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
 	  
-	  Thread.sleep(2000);
- Kysitlus.KysitlusLisaUusKysimus(driver).click();
- Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
 	  
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus3);
 	  Kysitlus.KysitlusMituVarianti(driver).click();
@@ -68,16 +64,16 @@ public class SurveyWithValidData extends Browser {
 	  Kysitlus.KysitlusMituVariantiTeineBox(driver).click();
 	  Kysitlus.KysitlusMituVariantiTeineBox(driver).sendKeys(Kysimus3Valik2);
 	  Kysitlus.KysitlusLisaValik(driver).click();
-	  Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusMituVariantiKolmasBox(driver)));
 	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).click();
 	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).sendKeys(Kysimus3Valik3);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	 Kysitlus.KysitlusAvalda(driver).click();
 	 
 	 Alert alert = driver.switchTo().alert();
 	 alert.accept();
-	 Thread.sleep(2000);
+	 Thread.sleep(3000);
 	 Assert.assertTrue(Kysitlus.Avaldatud(driver).isDisplayed());
 	 LoggedIn.DropdownMenu(driver).click();
 	 LoggedIn.Logout(driver).click();

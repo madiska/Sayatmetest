@@ -1,11 +1,10 @@
 package Feedback;
 
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -26,10 +25,11 @@ public class AnswerFeedback extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.TagasiVasta(driver).click();
 	  LoggedIn.TagasiVastaBox(driver).sendKeys(Vastus);
 	  LoggedIn.TagasiVastaButton(driver).click();
-	  Thread.sleep(3000);
+
 	  
 	  Assert.assertTrue(driver.getPageSource().contains(Vastus));
 	  

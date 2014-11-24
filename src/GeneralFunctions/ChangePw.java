@@ -1,6 +1,7 @@
 package GeneralFunctions;
 
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -28,26 +29,26 @@ public class ChangePw extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  Thread.sleep(4000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Seaded(driver).click();
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	  UserSettings.Seaded(driver).click();
 	  UserSettings.KontoVahetaPw(driver).click();
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.KontoVahetaPwUusPW(driver)));
 	  UserSettings.KontoVahetaPwUusPW(driver).sendKeys("UusParool");
 	  UserSettings.KontoVahetaPwUusPWConfirm(driver).sendKeys("UusParool");
 	  Thread.sleep(1000);
 	  UserSettings.SettingsSaveSeaded(driver).click();
-	  Thread.sleep(1000);
+	
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	  UserSettings.SettingsCloseInformation(driver).click();
-	  Thread.sleep(3000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 
 	  LoggedIn.DropdownMenu(driver).click();
-	  Thread.sleep(1000);
+	
 	  LoggedIn.Logout(driver).click();
-	  
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  //Vahetan Tagasi
 	  
@@ -57,24 +58,24 @@ public class ChangePw extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys("UusParool");
 	  Homepage.LoginButton(driver).click();
-	  Thread.sleep(5000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Seaded(driver).click();
-	   Thread.sleep(3000);
+	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	  UserSettings.Seaded(driver).click();
 	  UserSettings.KontoVahetaPw(driver).click();
-	  Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.KontoVahetaPwUusPW(driver)));
 	  UserSettings.KontoVahetaPwUusPW(driver).sendKeys(Parool);
 	  UserSettings.KontoVahetaPwUusPWConfirm(driver).sendKeys(Parool);
 	  Thread.sleep(1000);
 	  UserSettings.SettingsSaveSeaded(driver).click();
-	  Thread.sleep(2000);
+	
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	  UserSettings.SettingsCloseInformation(driver).click();
-	  Thread.sleep(3000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	
 	  LoggedIn.DropdownMenu(driver).click();
-	  Thread.sleep(1000);
+	
 	  LoggedIn.Logout(driver).click();
 	  
 	  

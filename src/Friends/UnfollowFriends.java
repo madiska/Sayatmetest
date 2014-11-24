@@ -1,14 +1,8 @@
 package Friends;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -34,18 +28,21 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	 LoggedIn.FriendsWhoYouFollowStop(driver).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	
 	  LoggedIn.FriendsClose(driver).click();
-	  Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.Friends(driver).click();
 
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  
 	  
@@ -56,19 +53,21 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	 LoggedIn.FriendsWhoYouFollowStop(driver).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	
 	  LoggedIn.FriendsClose(driver).click();
-	  Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.Friends(driver).click();
 
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
-	  
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  
 	  
@@ -77,14 +76,16 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url3);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	 LoggedIn.FriendsWhoYouFollowStop(driver).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 
 	  LoggedIn.FriendsClose(driver).click();
-		 Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		  LoggedIn.Friends(driver).click();
 	
 	  LoggedIn.DropdownMenu(driver).click();

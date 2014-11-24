@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
+
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +14,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
@@ -24,6 +24,7 @@ public class Browser {
 protected WebDriver driver;
 protected String baseUrl;
 protected String  brauser;
+protected 	  Wait<WebDriver> wait = new WebDriverWait(driver, 20);
 
 @BeforeMethod   
 

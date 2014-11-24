@@ -1,9 +1,6 @@
 package Feedback;
 
 
-import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
@@ -13,7 +10,7 @@ import org.testng.Assert;
 
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 
 import PageObjects.Homepage;
@@ -42,29 +39,30 @@ public class FeedbackVal extends Browser{
    Profile.TagasisideButton(driver).click();
  
 
- 
-driver.get("http://kask6iktundubkorras.sayat.me");
-Homepage.Login(driver).click();
+   driver.get("http://kask6iktundubkorras.sayat.me");
+   Homepage.Login(driver).click();
 
-Homepage.LoginUrl(driver).sendKeys(Url1);
+   Homepage.LoginUrl(driver).sendKeys(Url1);
 
-Homepage.LoginPW(driver).sendKeys(Parool);
-Homepage.LoginButton(driver).click();
-driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
-
-
-Profile.TagasisideTextBox(driver).sendKeys(Feedback2);
-Profile.TagasisideCheckBox(driver).click();
-Profile.TagasisideButton(driver).click();
-driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+   Homepage.LoginPW(driver).sendKeys(Parool);
+   Homepage.LoginButton(driver).click();
+   wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+   driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
 
 
+   	Profile.TagasisideTextBox(driver).sendKeys(Feedback2);
+   	Profile.TagasisideCheckBox(driver).click();
+   	Profile.TagasisideButton(driver).click();
+    Assert.assertTrue(driver.getPageSource().contains(Feedback2));
+   	driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
 
 
 
-Profile.TagasisideTextBox(driver).sendKeys(Feedback3);
-Profile.TagasisideButton(driver).click();
 
+
+   		Profile.TagasisideTextBox(driver).sendKeys(Feedback3);
+   		Profile.TagasisideButton(driver).click();
+   	  Assert.assertTrue(driver.getPageSource().contains(Feedback3));
 
 
 

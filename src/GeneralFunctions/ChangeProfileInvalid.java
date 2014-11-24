@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,34 +30,35 @@ public class ChangeProfileInvalid extends Browser {
 	  Homepage.LoginUrl(driver).sendKeys("testime13");
 	  Homepage.LoginPW(driver).sendKeys("testime11");
 	  Homepage.LoginButton(driver).click();
-	  Thread.sleep(2000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	  
 	  driver.findElement(By.linkText("Toivo Tavaline")).click();
 	  LoggedIn.Seaded(driver).click();
-	  Thread.sleep(3000);
+	 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	  
 	  if (brauser == "firefox" ) {
 			
 			
-		  Thread.sleep(2000);
+		  
 			
 		
 	 
 		  WebElement Fileinput = driver.findElement(By.name("account_image"));
 			 Fileinput.click();
 			
-			 Fileinput.sendKeys("C:\\Users\\Madis\\Downloads\\test2.jpg");
+			 Fileinput.sendKeys(Constant.Pilt5);
 			
 			 
 			  Robot r = new Robot();
 			  r.keyPress(KeyEvent.VK_ESCAPE);
 			  Assert.assertTrue(ErrorMessages.ProfilePicLiigaSuur(driver).isDisplayed());
-			  Thread.sleep(1000);
+			  
 			
 			
 	
 	  	
 			  UserSettings.SettingsClose(driver).click();
-			 
+			  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		
 	
 		
@@ -71,7 +73,7 @@ public class ChangeProfileInvalid extends Browser {
 
 			 
 			 
-			 String myString = "C:\\Users\\Madis\\Downloads\\test2.jpg";
+			 String myString = Constant.Pilt5;
 			 StringSelection stringSelection = new StringSelection (myString);
 			 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 			 clpbrd.setContents (stringSelection, null);
@@ -93,7 +95,8 @@ public class ChangeProfileInvalid extends Browser {
 			 
 			  UserSettings.SettingsCloseInformation(driver).click();
 		
-			
+			  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+				
 	
 		
 		
@@ -101,7 +104,7 @@ public class ChangeProfileInvalid extends Browser {
 	else {
 	
 	
-		  Thread.sleep(2000);
+		 
 	
 		
 		System.out.println(brauser);
@@ -112,7 +115,7 @@ public class ChangeProfileInvalid extends Browser {
 
 			 
 			 
-			 String myString = "C:\\Users\\Madis\\Downloads\\test2.jpg";
+			 String myString = Constant.Pilt5;
 			 StringSelection stringSelection = new StringSelection (myString);
 			 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 			 clpbrd.setContents (stringSelection, null);
@@ -125,7 +128,7 @@ public class ChangeProfileInvalid extends Browser {
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
-			Thread.sleep(2000);
+			
 			 
 			 
 			  
@@ -134,6 +137,7 @@ public class ChangeProfileInvalid extends Browser {
 			
 			
 			  UserSettings.SettingsCloseInformation(driver).click();
+			  
 		
 			
 	

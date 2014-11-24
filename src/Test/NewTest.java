@@ -1,15 +1,9 @@
 
 package Test;
 
-import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-import java.util.List;
-import java.util.regex.Pattern;
-
 import Utils.*;
 
 import java.util.concurrent.TimeUnit;
@@ -19,7 +13,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import PageObjects.*;
-import Basetest.*;
 
 public class NewTest  {
 

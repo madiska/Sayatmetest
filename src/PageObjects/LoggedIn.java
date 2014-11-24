@@ -449,4 +449,16 @@ public class LoggedIn {
 			 
 			 return element;
 		 }
+		public static WebElement SuccessFeedback(WebDriver driver){
+			 
+			 element = driver.findElement(By.cssSelector("body > div.container > div.well"));
+			 
+			 return element;
+		 }
+		public static WebElement SuccessKyssauuendus(WebDriver driver){
+			 
+			 element = driver.findElement(By.cssSelector("body > div.container > div.col-sm-8 > div.question-update.picture-upload > p.alert.alert-success.post_alert"));
+			 
+			 return element;
+		 }
 }

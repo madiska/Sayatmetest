@@ -1,11 +1,13 @@
 package Feedback;
 
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -29,20 +31,23 @@ public class CommentPrivateFeedback extends Browser{
 	  Homepage.LoginButton(driver).click();
 	  LoggedIn.Saadetud(driver).click();
 	  LoggedIn.TagasiVasta(driver).click();
-	  Thread.sleep(5600);
+	  Wait<WebDriver> wait = new WebDriverWait(driver, 20);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TagasiVastaBox(driver)));
+
 	  LoggedIn.TagasiVastaBox(driver).sendKeys(PrivateComment);
-	  Thread.sleep(2000);
+
 	  LoggedIn.TagasiVastaButton(driver).click();
-	  Thread.sleep(4000);
+
 	  Assert.assertTrue(driver.getPageSource().contains(PrivateComment));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  Thread.sleep(1000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  Assert.assertTrue(driver.getPageSource().contains(PrivateComment));
 	  
 	  LoggedIn.DropdownMenu(driver).click();

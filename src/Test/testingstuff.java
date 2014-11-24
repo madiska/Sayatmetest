@@ -11,8 +11,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Basetest.LoginBase;
-import Login.LoginVal;
-import PageObjects.Homepage;
 import PageObjects.LoggedIn;
 import PageObjects.Mailinator;
 import Utils.*;

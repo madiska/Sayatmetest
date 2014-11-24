@@ -1,10 +1,7 @@
 package Basetest;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
-
 import PageObjects.Homepage;
-import Utils.*;
 
 
 public class LoginBase {
