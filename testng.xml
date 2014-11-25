@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none">
+<suite name="Suite" >
  
   <test name="chrome kask6intundubkorras">
  
@@ -9,7 +9,7 @@
 
 
  	
-	 <class name = "sayatme.Registraion.registrationsuccess"
+	 <class name = "sayatme.Registraion.registrationsuccess" />
 	 <class name = "Login.LoginVal" />
 	
 	 <class name = "Feedback.FeedbackVal" />
