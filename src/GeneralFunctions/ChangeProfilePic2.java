@@ -39,6 +39,7 @@ public class ChangeProfilePic2 extends Browser{
 		
 
 	  LoggedIn.DropdownMenu(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Seaded(driver)));
 	  LoggedIn.Seaded(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	
@@ -53,26 +54,14 @@ public class ChangeProfilePic2 extends Browser{
 		System.out.println(brauser);
 	
 	 
-		UserSettings.Valipilt(driver).click(); 
-
-		 
-		 
-		 String myString = Constant.Pilt1;
-		 StringSelection stringSelection = new StringSelection (myString);
-		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
-		 clpbrd.setContents (stringSelection, null);
-		 Thread.sleep(2000);
-		 Robot robot = new Robot();
-		  robot.keyPress(KeyEvent.VK_CONTROL);
-		    robot.keyPress(KeyEvent.VK_V);
-		    robot.keyRelease(KeyEvent.VK_V);
-		    robot.keyRelease(KeyEvent.VK_CONTROL);
-		    robot.keyPress(KeyEvent.VK_ENTER);
-		    robot.keyRelease(KeyEvent.VK_ENTER);
-
+		  WebElement Fileinput = driver.findElement(By.name("account_image"));
+			 Fileinput.click();
+			
+			 Fileinput.sendKeys(Constant.Pilt1);
 			
 			 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 			  Robot r = new Robot();
+			  Thread.sleep(1000);
 			  r.keyPress(KeyEvent.VK_ESCAPE);
 			  Thread.sleep(1000);
 			
@@ -117,9 +106,10 @@ public class ChangeProfilePic2 extends Browser{
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
-			
+			Thread.sleep(2000);
 			 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 			  Robot r = new Robot();
+			  Thread.sleep(1000);
 			  r.keyPress(KeyEvent.VK_ESCAPE);
 			
 			
@@ -163,6 +153,7 @@ public class ChangeProfilePic2 extends Browser{
 			Thread.sleep(2000);
 			 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 			  Robot r = new Robot();
+			  Thread.sleep(1000);
 			  r.keyPress(KeyEvent.VK_ESCAPE);
 			
 			
@@ -187,7 +178,6 @@ public class ChangeProfilePic2 extends Browser{
 	
 		System.out.println(brauser);
 		UserSettings.SettingsCloseInformation(driver).click();
-		
 		 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		driver.get(baseUrl+"testime13");
 		 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -202,6 +192,7 @@ public class ChangeProfilePic2 extends Browser{
 		
 		 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 		  Robot r = new Robot();
+		  Thread.sleep(1000);
 		  r.keyPress(KeyEvent.VK_ESCAPE);
 		 	
 			  UserSettings.SettingsSaveInformation(driver).click();
@@ -221,7 +212,6 @@ public class ChangeProfilePic2 extends Browser{
 	System.out.println(brauser);
 	
 		UserSettings.SettingsCloseInformation(driver).click();
-		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		driver.get(baseUrl+"testime13");
 		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -249,8 +239,7 @@ public class ChangeProfilePic2 extends Browser{
 
 		Thread.sleep(2000);
 		 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
-		  Robot r = new Robot();
-		  r.keyPress(KeyEvent.VK_ESCAPE);
+	
 		
 		
 		  UserSettings.SettingsSaveInformation(driver).click();
@@ -346,7 +335,6 @@ else if (brauser == "chrome"){
 	  
 
 	UserSettings.SettingsCloseInformation(driver).click();
-	Thread.sleep(3000);
 	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	driver.get(baseUrl+"testime13");
 	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));

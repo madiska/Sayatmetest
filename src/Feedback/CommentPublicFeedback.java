@@ -1,10 +1,7 @@
 package Feedback;
 
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import org.testng.Assert;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,7 +17,7 @@ public class CommentPublicFeedback extends Browser{
 	 
 	  
   @Test(dataProvider = "CommentData")
-  public void TestCommentPublicFeedback(String Url1, String Url2, String Parool, String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
+  public void CommentPublicFeedbackTest (String Url1, String Url2, String Parool, String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me");
 	  Homepage.Login(driver).click();	

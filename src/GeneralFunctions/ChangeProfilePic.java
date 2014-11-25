@@ -24,7 +24,7 @@ public class ChangeProfilePic extends Browser{
 	
 	
   @Test(dataProvider ="Upload")
-  public void TestProfilePic(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus) throws Exception {
+  public void ProfilePictureChange(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus) throws Exception {
 	  
 	  
 	  
@@ -48,44 +48,26 @@ public class ChangeProfilePic extends Browser{
 						
 						System.out.println(brauser);
 					  	if (numbriks == 1){
-					 
-					  		UserSettings.Valipilt(driver).click(); 
-
-							 
-							 
-							 String myString = Constant.Pilt1;
-							 StringSelection stringSelection = new StringSelection (myString);
-							 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
-							 clpbrd.setContents (stringSelection, null);
-							 Thread.sleep(2000);
-							 Robot robot = new Robot();
-							  robot.keyPress(KeyEvent.VK_CONTROL);
-							    robot.keyPress(KeyEvent.VK_V);
-							    robot.keyRelease(KeyEvent.VK_V);
-							    robot.keyRelease(KeyEvent.VK_CONTROL);
-							    robot.keyPress(KeyEvent.VK_ENTER);
-							    robot.keyRelease(KeyEvent.VK_ENTER);
-					
+					  	  WebElement Fileinput = driver.findElement(By.name("account_image"));
+							 Fileinput.click();
+							
+							 Fileinput.sendKeys(Constant.Pilt3);
 							
 							 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 							  Robot r = new Robot();
 							  r.keyPress(KeyEvent.VK_ESCAPE);
-							  Thread.sleep(1000);
-							
-							
-					
-					  	
-							 long start = System.currentTimeMillis();
-							  UserSettings.SettingsSaveInformation(driver).click();
-							 
-							Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
-							 long finish = System.currentTimeMillis();
-							 long totalTime = finish - start; 
-							 Esimenetulemus = Long.toString(totalTime);
-							 System.out.println("Total Time for page load - "+totalTime); 
-								
-								WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-								 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
+							 	
+								 long start = System.currentTimeMillis();
+								  UserSettings.SettingsSaveInformation(driver).click();
+								 
+								Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
+								 long finish = System.currentTimeMillis();
+								 long totalTime = finish - start; 
+								 Esimenetulemus = Long.toString(totalTime);
+								 System.out.println("Total Time for page load - "+totalTime); 
+									
+									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
 					  	}
 					  	else
 					  	{

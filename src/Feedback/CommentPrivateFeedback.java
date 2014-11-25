@@ -1,13 +1,11 @@
 package Feedback;
 
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -22,7 +20,7 @@ public class CommentPrivateFeedback extends Browser{
 	
 	
   @Test(dataProvider = "CommentData")
-  public void Test(String Url1, String Url2, String Parool,  String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
+  public void CommentAPrivateFeedback(String Url1, String Url2, String Parool,  String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
  
 	  driver.get("http://kask6iktundubkorras.sayat.me");
 	  Homepage.Login(driver).click();	
@@ -31,14 +29,13 @@ public class CommentPrivateFeedback extends Browser{
 	  Homepage.LoginButton(driver).click();
 	  LoggedIn.Saadetud(driver).click();
 	  LoggedIn.TagasiVasta(driver).click();
-	  Wait<WebDriver> wait = new WebDriverWait(driver, 20);
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TagasiVastaBox(driver)));
+
+	
 
 	  LoggedIn.TagasiVastaBox(driver).sendKeys(PrivateComment);
 
 	  LoggedIn.TagasiVastaButton(driver).click();
-
-	  Assert.assertTrue(driver.getPageSource().contains(PrivateComment));
+	  driver.findElement(By.cssSelector("div.comment:nth-child(3) > div:nth-child(1)"));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
@@ -47,7 +44,7 @@ public class CommentPrivateFeedback extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
 	  Assert.assertTrue(driver.getPageSource().contains(PrivateComment));
 	  
 	  LoggedIn.DropdownMenu(driver).click();

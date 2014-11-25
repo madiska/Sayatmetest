@@ -21,7 +21,7 @@ import PageObjects.ErrorMessages;
 
 public class ChangeProfileInvalid extends Browser {
   @Test
-  public void f() throws InterruptedException, AWTException {
+  public void ChangeProfileInvalidSize() throws InterruptedException, AWTException {
 	  
 	  
 	  driver.get(baseUrl);		
@@ -92,7 +92,7 @@ public class ChangeProfileInvalid extends Browser {
 			  
 			
 			
-			 
+			  Assert.assertTrue(ErrorMessages.ProfilePicLiigaSuur(driver).isDisplayed());
 			  UserSettings.SettingsCloseInformation(driver).click();
 		
 			  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -125,13 +125,14 @@ public class ChangeProfileInvalid extends Browser {
 			    robot.keyPress(KeyEvent.VK_V);
 			    robot.keyRelease(KeyEvent.VK_V);
 			    robot.keyRelease(KeyEvent.VK_CONTROL);
+			    Thread.sleep(1000);
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
 			
 			 
 			 
-			  
+			  Thread.sleep(1000);
 			  Assert.assertTrue(ErrorMessages.ProfilePicLiigaSuur(driver).isDisplayed());
 			
 			

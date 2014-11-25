@@ -9,9 +9,9 @@
 
 
  	
-	
+	 <class name = "sayatme.Registraion.registrationsuccess"
 	 <class name = "Login.LoginVal" />
-
+	
 	 <class name = "Feedback.FeedbackVal" />
 	 <class name = "Feedback.AnswerPrivateFeedback" />
 	 <class name = "Feedback.CommentPrivateFeedback" />

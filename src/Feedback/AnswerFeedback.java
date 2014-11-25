@@ -1,10 +1,11 @@
 package Feedback;
 
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -14,10 +15,11 @@ import Utils.*;
 
 public class AnswerFeedback extends Browser{
 	
-	
+
+
 
   @Test(dataProvider = "FeedbackAnswer")
-  public void TestAnswerFeedback(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Vastus, String Email, String Social, String Number) throws InterruptedException {
+  public void AnswerPublicFeedback(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Vastus, String Email, String Social, String Number) throws InterruptedException {
 	  
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me");
@@ -31,7 +33,7 @@ public class AnswerFeedback extends Browser{
 	  LoggedIn.TagasiVastaButton(driver).click();
 
 	  
-	  Assert.assertTrue(driver.getPageSource().contains(Vastus));
+	  driver.findElement(By.cssSelector("div.comment:nth-child(4) > div:nth-child(1)"));
 	  
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();

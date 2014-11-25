@@ -40,10 +40,12 @@ public class ChangePw extends Browser{
 	  UserSettings.KontoVahetaPwUusPWConfirm(driver).sendKeys("UusParool");
 	  Thread.sleep(1000);
 	  UserSettings.SettingsSaveSeaded(driver).click();
-	
+	  if(brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	  UserSettings.SettingsCloseInformation(driver).click();
-	  Thread.sleep(3000);
+	  if(brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 
 	  LoggedIn.DropdownMenu(driver).click();
@@ -70,10 +72,13 @@ public class ChangePw extends Browser{
 	  UserSettings.KontoVahetaPwUusPWConfirm(driver).sendKeys(Parool);
 	  Thread.sleep(1000);
 	  UserSettings.SettingsSaveSeaded(driver).click();
-	
+	  if(brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
+	
 	  UserSettings.SettingsCloseInformation(driver).click();
-	  Thread.sleep(3000);
+	  if(brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	
 	  LoggedIn.DropdownMenu(driver).click();

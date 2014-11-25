@@ -18,7 +18,7 @@ public class SurveywithInvalidData extends Browser{
 	  
 	
   @Test(dataProvider = "Surveywithinvalid")
-  public void TestSurveywithInvalid(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2,String Answer, String Feedback3, String Email, String Social, String Number) throws InterruptedException {
+  public void SurveywithInvData(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2,String Answer, String Feedback3, String Email, String Social, String Number) throws InterruptedException {
 	  
 	  
 	  driver.get(baseUrl);
@@ -37,13 +37,16 @@ public class SurveywithInvalidData extends Browser{
 	  Kysitlus.KysitlusTyhista(driver).click();
 
 	 
-	  Thread.sleep(3000);
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.UusKysitlusFollowuppage(driver)));
 	  LoggedIn.UusKysitlusFollowuppage(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
 	  Kysitlus.KysitlusPealkiri(driver).sendKeys("Pealkiri");
 	  Kysitlus.KysitlusSalvesta(driver).click();
 	  
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.Kysitlusyksvariant(driver)));
 	  Kysitlus.Kysitlusyksvariant(driver).click();
 	

@@ -1,9 +1,8 @@
 package Feedback;
 
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -21,7 +20,7 @@ public class AnswerPrivateFeedback extends Browser{
 	
 
 		  @Test(dataProvider = "CommentData")
-		  public void Test(String Url1, String Url2,String Parool, String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
+		  public void GivePrivateFeedbackanswer(String Url1, String Url2,String Parool, String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
 		 
 		  
 			  driver.get("http://kask6iktundubkorras.sayat.me");
@@ -34,8 +33,8 @@ public class AnswerPrivateFeedback extends Browser{
 			  LoggedIn.TagasiVastaBox(driver).sendKeys(PrivateAnswer);
 			  LoggedIn.TagasiVastaButton(driver).click();
 			
-	
-			  Assert.assertTrue(driver.getPageSource().contains(PrivateAnswer));
+			  Assert.assertEquals(PrivateAnswer, driver.findElement(By.cssSelector("div.comment.col-xs-offset-1 div")).getText());
+			
 				 Assert.assertTrue(driver.getPageSource().contains(Feedback3));  
 			  LoggedIn.DropdownMenu(driver).click();
 			  LoggedIn.Logout(driver).click();

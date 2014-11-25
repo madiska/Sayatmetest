@@ -26,12 +26,13 @@ public class FeedbackVal extends Browser{
 
 
 
+	
 
 
   @Test (dataProvider ="Feedbackval")
-  public void testFeedbackVal(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String Number) throws Exception {
+  public void GiveValidFeedback(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String Number) throws Exception {
   
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 
 
  
@@ -46,15 +47,16 @@ public class FeedbackVal extends Browser{
 
    Homepage.LoginPW(driver).sendKeys(Parool);
    Homepage.LoginButton(driver).click();
-   wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-   driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+
+  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+   driver.get(baseUrl+Url2);
 
 
    	Profile.TagasisideTextBox(driver).sendKeys(Feedback2);
    	Profile.TagasisideCheckBox(driver).click();
    	Profile.TagasisideButton(driver).click();
-    Assert.assertTrue(driver.getPageSource().contains(Feedback2));
-   	driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+   	Assert.assertTrue(LoggedIn.SuccessFeedback(driver).isDisplayed());
+   	driver.get(baseUrl+Url2);
 
 
 
@@ -62,7 +64,9 @@ public class FeedbackVal extends Browser{
 
    		Profile.TagasisideTextBox(driver).sendKeys(Feedback3);
    		Profile.TagasisideButton(driver).click();
-   	  Assert.assertTrue(driver.getPageSource().contains(Feedback3));
+   		
+   		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
+   	 
 
 
 

@@ -26,7 +26,7 @@ public class DeleteUser extends Browser {
 	 Homepage.LoginUrl(driver).sendKeys(Url);
 	 Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Seaded(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
@@ -54,7 +54,7 @@ private boolean isElementPresent(By linkText) {
   
   public Object[][] Delete() throws Exception{
 
-       Object[][] testObjArray = ExcelUtils.getTableArray(Constant.ExceliAsukoht,"Sheet4");
+       Object[][] testObjArray = ExcelUtils.getTableArray(Constant.ExceliAsukoht,"Sheet2");
 
        return (testObjArray);
 

@@ -18,7 +18,7 @@ public class SurveyWithValidData extends Browser {
 	
 	
   @Test(dataProvider = "SurveywithValid")
-  public void TestSurveywithvalidData(String Url, String Parool, String Pealkiri, String Kysimus1,String KysimusVastus, String Kysimus2, String Kysimus2Valik1,String Kysimus2Valik2, String Kysimus2Valik3,String Kysimus3,  String Kysimus3Valik1, String Kysimus3Valik2, String Kysimus3Valik3) throws InterruptedException {
+  public void SurveywithValData(String Url, String Parool, String Pealkiri, String Kysimus1,String KysimusVastus, String Kysimus2, String Kysimus2Valik1,String Kysimus2Valik2, String Kysimus2Valik3,String Kysimus3,  String Kysimus3Valik1, String Kysimus3Valik2, String Kysimus3Valik3) throws InterruptedException {
 	  
 	  
 	  
@@ -39,11 +39,11 @@ public class SurveyWithValidData extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus1);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
+	 Thread.sleep(3000);
 	  
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	 
 	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
-	  
-	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
+	  Thread.sleep(3000);
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus2);
 	  Kysitlus.Kysitlusyksvariant(driver).click();
 	  Kysitlus.KysitlusyksVariantEsimeneBox(driver).sendKeys(Kysimus2Valik1);
@@ -55,11 +55,10 @@ public class SurveyWithValidData extends Browser {
 	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).click();
 	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).sendKeys(Kysimus2Valik3);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
+
 	  
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus3);
 	  Kysitlus.KysitlusMituVarianti(driver).click();
@@ -71,8 +70,7 @@ public class SurveyWithValidData extends Browser {
 	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).click();
 	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).sendKeys(Kysimus3Valik3);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	 Kysitlus.KysitlusAvalda(driver).click();
 	 
