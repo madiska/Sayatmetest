@@ -31,7 +31,7 @@ public class FollowFriends extends Browser {
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
 	  
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
 	LoggedIn.Friends(driver).click();
 	  Homepage.Search(driver).sendKeys(Url2);
 	   Homepage.SearchButton(driver).click();

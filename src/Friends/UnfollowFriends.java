@@ -28,7 +28,7 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
@@ -55,7 +55,7 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
@@ -80,7 +80,7 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url3);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();

@@ -23,7 +23,7 @@ public class FriendsFeedback extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
 	  LoggedIn.Friends(driver).click();
 	  
 	
