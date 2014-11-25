@@ -27,7 +27,7 @@ public class FriendsFeedback extends Browser{
 	  LoggedIn.Friends(driver).click();
 	  
 	
-		Thread.sleep(2000);
+		 Thread.sleep(4000);
 		 Assert.assertTrue(driver.getPageSource().contains(Feedback3));
 
 	 

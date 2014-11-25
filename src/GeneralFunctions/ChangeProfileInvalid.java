@@ -86,7 +86,7 @@ public class ChangeProfileInvalid extends Browser {
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			
 			  
 			  

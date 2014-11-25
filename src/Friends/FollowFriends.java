@@ -52,11 +52,12 @@ public class FollowFriends extends Browser {
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi3)));
 	
 	  LoggedIn.FriendsClose(driver).click();
-	  Thread.sleep(3000);
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
+	
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
+	
 	  
 	  
 	  driver.get(baseUrl);
@@ -85,11 +86,12 @@ public class FollowFriends extends Browser {
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi1)));
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi3)));
 	  LoggedIn.FriendsClose(driver).click();
-	  Thread.sleep(3000);
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
+	 
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
+	 
 
 	
 	
@@ -120,7 +122,8 @@ public class FollowFriends extends Browser {
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi1)));
 	
 	  LoggedIn.FriendsClose(driver).click();
-	  Thread.sleep(3000);
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
