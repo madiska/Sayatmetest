@@ -109,7 +109,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 	
 	}
 	// NB! WriteToExcel classis juhatab ta kindla faili juurde. Ehk REg xls. Siin ta naitab, mis lehte votta antud failist.
-	WriteToExcel.setExcelFile("C:\\Users\\Madis\\workspace\\testautomation\\src\\testdata\\reg.xlsx","Sheet4");
+	WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet4");
 	 WriteToExcel.setCellData(Url1, 1, 0);
 	 WriteToExcel.setCellData(Url2, 1, 2);
 	 WriteToExcel.setCellData(Url3, 1, 4);
