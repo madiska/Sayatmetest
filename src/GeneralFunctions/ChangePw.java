@@ -43,6 +43,7 @@ public class ChangePw extends Browser{
 	
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	  UserSettings.SettingsCloseInformation(driver).click();
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 
 	  LoggedIn.DropdownMenu(driver).click();
@@ -72,6 +73,7 @@ public class ChangePw extends Browser{
 	
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	  UserSettings.SettingsCloseInformation(driver).click();
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	
 	  LoggedIn.DropdownMenu(driver).click();

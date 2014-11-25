@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="26.143" tests="8" errors="0" skipped="6" failures="2">
+<testsuite name="TestSuite" time="419.477" tests="74" errors="0" skipped="39" failures="16">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Madis\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7280517269306518236.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Madis\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1399232155405767933.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1257"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Madis\AppData\Roaming\npm;C:\Program Files (x86)\WinAnt\bin;C:\Users\Madis\Documents\apache-maven-3.2.3\bin;.;;C:\Users\Madis\Documents\eclipse;;.;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,178 +62,530 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testLoginInval" classname="Login.LoginInval" time="12.557">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+  <testcase name="testLoginVal" classname="Login.LoginVal" time="19.741"/>
+  <testcase name="testLoginVal" classname="Login.LoginVal" time="28.219"/>
+  <testcase name="testLoginVal" classname="Login.LoginVal" time="10.401"/>
+  <testcase name="testFeedbackVal" classname="Feedback.FeedbackVal" time="11.199">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Feedback.FeedbackVal.testFeedbackVal(FeedbackVal.java:56)
+</failure>
+    <system-out><![CDATA[tavalinetont27
+puhtaloom27
+filmweird27
+testime11
+Anon kiidab sind
+Oma küla vana
+Jalgpalliäss
+Eks sa tea paremini
+selentest13@mailinator.com
+selentest@hotmail.com
+1
+puhtaloom27
+filmweird27
+tavalinetont27
+testime11
+Veits imelik
+Omamoodi
+We meet again. Weirdo
+Eks kaitsetöö ole kah tähtis
+testimeauto12@mailinator.com
+selentest@hotmail.com
+2
+filmweird27
+tavalinetont27
+puhtaloom27
+testime11
+Sa ei tea kes ma olen
+Ma tunnen vist sind
+Vaikne Vend
+Indeed
+vahekonto11@mailinator.com
+selentest@hotmail.com
+3
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 10660
+]]></system-err>
+  </testcase>
+  <testcase name="testFeedbackVal" classname="Feedback.FeedbackVal" time="36.313">
+    <failure message="no such element&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7868_26139}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: a4b36dc3ad60bb61ceb3229db41ca9ca" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
 System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: driver.version: RemoteWebDriver
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7868_26139}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a4b36dc3ad60bb61ceb3229db41ca9ca
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at Login.LoginInval.isElementPresent(LoginInval.java:63)
-	at Login.LoginInval.testLoginInval(LoginInval.java:37)
+	at PageObjects.LoggedIn.Friends(LoggedIn.java:259)
+	at Feedback.FeedbackVal.testFeedbackVal(FeedbackVal.java:49)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 24530
+]]></system-err>
+  </testcase>
+  <testcase name="testFeedbackVal" classname="Feedback.FeedbackVal" time="10.597">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Feedback.FeedbackVal.testFeedbackVal(FeedbackVal.java:56)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 15784
+]]></system-err>
+  </testcase>
+  <testcase name="Test" classname="Feedback.AnswerPrivateFeedback" time="7.196"/>
+  <testcase name="Test" classname="Feedback.AnswerPrivateFeedback" time="6.522"/>
+  <testcase name="Test" classname="Feedback.AnswerPrivateFeedback" time="8.758"/>
+  <testcase name="Test" classname="Feedback.CommentPrivateFeedback" time="8.811"/>
+  <testcase name="Test" classname="Feedback.CommentPrivateFeedback" time="9.123"/>
+  <testcase name="Test" classname="Feedback.CommentPrivateFeedback" time="9.031"/>
+  <testcase name="TestFeedbackPublic" classname="Feedback.MakeFeedbackPublic" time="4.11">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Feedback.MakeFeedbackPublic.TestFeedbackPublic(MakeFeedbackPublic.java:31)
+</failure>
+    <system-out><![CDATA[tavalinetont27
+puhtaloom27
+filmweird27
+testime11
+Anon kiidab sind
+Oma küla vana
+Jalgpalliäss
+Eks sa tea paremini
+selentest13@mailinator.com
+selentest@hotmail.com
+1
+puhtaloom27
+filmweird27
+tavalinetont27
+testime11
+Veits imelik
+Omamoodi
+We meet again. Weirdo
+Eks kaitsetöö ole kah tähtis
+testimeauto12@mailinator.com
+selentest@hotmail.com
+2
+filmweird27
+tavalinetont27
+puhtaloom27
+testime11
+Sa ei tea kes ma olen
+Ma tunnen vist sind
+Vaikne Vend
+Indeed
+vahekonto11@mailinator.com
+selentest@hotmail.com
+3
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 22479
+]]></system-err>
+  </testcase>
+  <testcase name="TestFeedbackPublic" classname="Feedback.MakeFeedbackPublic" time="4.432">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Feedback.MakeFeedbackPublic.TestFeedbackPublic(MakeFeedbackPublic.java:31)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 19984
+]]></system-err>
+  </testcase>
+  <testcase name="TestFeedbackPublic" classname="Feedback.MakeFeedbackPublic" time="5.038">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Feedback.MakeFeedbackPublic.TestFeedbackPublic(MakeFeedbackPublic.java:31)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 39991
+]]></system-err>
+  </testcase>
+  <testcase name="TestCommentPublicFeedback" classname="Feedback.CommentPublicFeedback" time="9.434"/>
+  <testcase name="TestCommentPublicFeedback" classname="Feedback.CommentPublicFeedback" time="7.889"/>
+  <testcase name="TestCommentPublicFeedback" classname="Feedback.CommentPublicFeedback" time="7.715"/>
+  <testcase name="TestCommentPublicFeedbackNotLoggedin" classname="Feedback.CommentPublicFeedbackNotLoggedin" time="2.079"/>
+  <testcase name="TestCommentPublicFeedbackNotLoggedin" classname="Feedback.CommentPublicFeedbackNotLoggedin" time="2.044"/>
+  <testcase name="TestCommentPublicFeedbackNotLoggedin" classname="Feedback.CommentPublicFeedbackNotLoggedin" time="2.013"/>
+  <testcase name="TestAnswerFeedback" classname="Feedback.AnswerFeedback" time="6.643"/>
+  <testcase name="TestAnswerFeedback" classname="Feedback.AnswerFeedback" time="6.132"/>
+  <testcase name="TestAnswerFeedback" classname="Feedback.AnswerFeedback" time="6.055"/>
+  <testcase name="TestKysimused" classname="Kysimus.Kysimused" time="257.933"/>
+  <testcase name="TestSurveywithInvalid" classname="Survey.SurveywithInvalidData" time="9.975">
+    <failure message="unknown error: Element is not clickable at point (363, 446). Other element would receive the click: &lt;div id=&quot;container_new_survey&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; data-backdrop=&quot;static&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 49 milliseconds&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir6288_7061}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: a9a37ae38915dbd333b7686d2287e30c" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (363, 446). Other element would receive the click: <div id="container_new_survey" class="modal fade" tabindex="-1" data-backdrop="static" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 49 milliseconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir6288_7061}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a9a37ae38915dbd333b7686d2287e30c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at Survey.SurveywithInvalidData.TestSurveywithInvalid(SurveywithInvalidData.java:38)
+]]></failure>
+    <system-out><![CDATA[tavalinetont27
+puhtaloom27
+filmweird27
+testime11
+Anon kiidab sind
+Oma küla vana
+Jalgpalliäss
+Eks sa tea paremini
+selentest13@mailinator.com
+selentest@hotmail.com
+1
+puhtaloom27
+filmweird27
+tavalinetont27
+testime11
+Veits imelik
+Omamoodi
+We meet again. Weirdo
+Eks kaitsetöö ole kah tähtis
+testimeauto12@mailinator.com
+selentest@hotmail.com
+2
+filmweird27
+tavalinetont27
+puhtaloom27
+testime11
+Sa ei tea kes ma olen
+Ma tunnen vist sind
+Vaikne Vend
+Indeed
+vahekonto11@mailinator.com
+selentest@hotmail.com
+3
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 17345
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveywithInvalid" classname="Survey.SurveywithInvalidData" time="14.574">
+    <failure message="unknown error: Element is not clickable at point (363, 446). Other element would receive the click: &lt;div id=&quot;container_new_survey&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; data-backdrop=&quot;static&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 35 milliseconds&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7968_2336}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: e9ac869bf0b37901b2d52dffe84ff7e7" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (363, 446). Other element would receive the click: <div id="container_new_survey" class="modal fade" tabindex="-1" data-backdrop="static" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7968_2336}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e9ac869bf0b37901b2d52dffe84ff7e7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at Survey.SurveywithInvalidData.TestSurveywithInvalid(SurveywithInvalidData.java:38)
+]]></failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 30662
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveywithInvalid" classname="Survey.SurveywithInvalidData" time="7.821">
+    <failure message="unknown error: Element is not clickable at point (363, 446). Other element would receive the click: &lt;div id=&quot;container_new_survey&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; data-backdrop=&quot;static&quot; aria-hidden=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 31 milliseconds&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir9168_26471}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 591294e129777d4d2d0c1a3f2b260e0f" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (363, 446). Other element would receive the click: <div id="container_new_survey" class="modal fade" tabindex="-1" data-backdrop="static" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir9168_26471}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 591294e129777d4d2d0c1a3f2b260e0f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at Survey.SurveywithInvalidData.TestSurveywithInvalid(SurveywithInvalidData.java:38)
+]]></failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 12867
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveywithvalidData" classname="Survey.SurveyWithValidData" time="35.002">
+    <failure message="no such element&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.03 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir10424_13315}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: f11a589c24c49a475c205a20cae61ad7" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir10424_13315}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f11a589c24c49a475c205a20cae61ad7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.UusKysitlusWhenExisting(LoggedIn.java:184)
+	at Survey.SurveyWithValidData.TestSurveywithvalidData(SurveyWithValidData.java:33)
 </failure>
     <system-out><![CDATA[tavalinetont27
 testime11
-Toivo Tavaline
-valepass
+Tavaline
+Kas see on tavaline küsitlius
+Tundub täiesti tavaline
+Mis meeldib mulle
+Tavalised asjad
+Action
+Draama
+Õnnenumbrid on mul
+Kolmteist
+Seitse
+Üks
 puhtaloom27
 testime11
-Martin Loom
-valepass
+Loomaed
+Kas Loomaias on loomi? Põhjenda?
+Jah. Sest seda kutsutakse aiaks kus elavad loomad
+Keda leidub loomaaias
+gorilla
+mammut
+yeti
+Mis loomad on mul kodus elanud
+kassid
+tsintsilja
+tiiger
 filmweird27
 testime11
-Toomas Film
-valepass
+Filmid
+Kas liiga palju järge on halb?
+Kahjuks küll, kuid raha toovad nad sisse
+Minu lemmikfilmi zanr
+Comedy
+Action
+Draama
+Minu lemmik filmid
+Chinese Odyssey
+Clerks
+Tulnukas
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 1733
+]]></system-err>
   </testcase>
-  <testcase name="testLoginInval" classname="Login.LoginInval" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testLoginInval" classname="Login.LoginInval" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="closeBrowser" classname="Login.LoginInval" time="13.586">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+  <testcase name="TestSurveywithvalidData" classname="Survey.SurveyWithValidData" time="37.437">
+    <failure message="no such element&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.05 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir11852_28468}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 69674673cdad61fbfd1f9bd426f08056" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
 System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir11852_28468}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69674673cdad61fbfd1f9bd426f08056
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.UusKysitlusWhenExisting(LoggedIn.java:184)
+	at Survey.SurveyWithValidData.TestSurveywithvalidData(SurveyWithValidData.java:33)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 36339
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveywithvalidData" classname="Survey.SurveyWithValidData" time="35.521">
+    <failure message="no such element&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.03 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir5396_4863}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 93cbbf9c717a5c8a5fb1ecee16f62839" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir5396_4863}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 93cbbf9c717a5c8a5fb1ecee16f62839
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.UusKysitlusWhenExisting(LoggedIn.java:184)
+	at Survey.SurveyWithValidData.TestSurveywithvalidData(SurveyWithValidData.java:33)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 34740
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveyAnswer" classname="Survey.AnswerSurvey" time="32.105">
+    <failure message="no such element&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.02 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir3432_31414}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 985ec88ba43fefc1e02065319cf3d2d9" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir3432_31414}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 985ec88ba43fefc1e02065319cf3d2d9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.Profile.ProfileKysitlused(Profile.java:147)
+	at Survey.AnswerSurvey.TestSurveyAnswer(AnswerSurvey.java:19)
+</failure>
+    <system-out><![CDATA[tavalinetont27
+testime11
+Tavaline
+Kas see on tavaline küsitlius
+Tundub täiesti tavaline
+Mis meeldib mulle
+Tavalised asjad
+Action
+Draama
+Õnnenumbrid on mul
+Kolmteist
+Seitse
+Üks
+puhtaloom27
+testime11
+Loomaed
+Kas Loomaias on loomi? Põhjenda?
+Jah. Sest seda kutsutakse aiaks kus elavad loomad
+Keda leidub loomaaias
+gorilla
+mammut
+yeti
+Mis loomad on mul kodus elanud
+kassid
+tsintsilja
+tiiger
+filmweird27
+testime11
+Filmid
+Kas liiga palju järge on halb?
+Kahjuks küll, kuid raha toovad nad sisse
+Minu lemmikfilmi zanr
+Comedy
+Action
+Draama
+Minu lemmik filmid
+Chinese Odyssey
+Clerks
+Tulnukas
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 35269
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveyAnswer" classname="Survey.AnswerSurvey" time="32.002">
+    <failure message="no such element&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir10288_24591}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: f7fab88ec3c9166e1814bf885d60fd11" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir10288_24591}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f7fab88ec3c9166e1814bf885d60fd11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.Profile.ProfileKysitlused(Profile.java:147)
+	at Survey.AnswerSurvey.TestSurveyAnswer(AnswerSurvey.java:19)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 8990
+]]></system-err>
+  </testcase>
+  <testcase name="TestSurveyAnswer" classname="Survey.AnswerSurvey" time="14.959">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at Survey.AnswerSurvey.TestSurveyAnswer(AnswerSurvey.java:19)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 39088
+]]></system-err>
+  </testcase>
+  <testcase name="closeBrowser" classname="Survey.AnswerSurvey" time="15.249">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=38.0.2125.111)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 260 milliseconds&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir11848_519}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: fabb13b57152c79a5cfb6b79e2936044" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=38.0.2125.111)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 260 milliseconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.0.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir11848_519}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=38.0.2125.111, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fabb13b57152c79a5cfb6b79e2936044
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
-	at Utils.Browser.closeBrowser(Browser.java:166)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
-	at Utils.Browser.closeBrowser(Browser.java:166)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
-	at Utils.Browser.closeBrowser(Browser.java:166)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at Utils.Browser.closeBrowser(Browser.java:174)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
@@ -263,16 +615,223 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </failure>
   </testcase>
-  <testcase name="closeBrowser" classname="Login.LoginInval" time="0">
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangeProfilePic" time="0">
+    <skipped/>
+    <system-out><![CDATA[1
+firefox
+1110
+4760
+5922
+2
+chrome
+1047
+6391
+9549
+3
+IE
+1900
+10627
+8920
+]]></system-out>
+  </testcase>
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangeProfilePic" time="0">
     <skipped/>
   </testcase>
-  <testcase name="closeBrowser" classname="Login.LoginInval" time="0">
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangeProfilePic" time="0">
     <skipped/>
   </testcase>
-  <testcase name="beforeTest" classname="Login.LoginInval" time="0">
+  <testcase name="TestProfilePic" classname="GeneralFunctions.ChangeProfilePic" time="0">
     <skipped/>
   </testcase>
-  <testcase name="beforeTest" classname="Login.LoginInval" time="0">
+  <testcase name="TestProfilePic" classname="GeneralFunctions.ChangeProfilePic" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestProfilePic" classname="GeneralFunctions.ChangeProfilePic" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangeProfilePic" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangeProfilePic" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangeProfilePic" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangeProfilePic2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="AvalikultProfiililtpildivahetus" classname="GeneralFunctions.ChangeProfilePic2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangeProfilePic2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangeProfileInvalid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="f" classname="GeneralFunctions.ChangeProfileInvalid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangeProfileInvalid" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+    <system-out><![CDATA[tavalinetont27
+puhtaloom27
+filmweird27
+testime11
+Anon kiidab sind
+Oma küla vana
+Jalgpalliäss
+Eks sa tea paremini
+selentest13@mailinator.com
+selentest@hotmail.com
+1
+puhtaloom27
+filmweird27
+tavalinetont27
+testime11
+Veits imelik
+Omamoodi
+We meet again. Weirdo
+Eks kaitsetöö ole kah tähtis
+testimeauto12@mailinator.com
+selentest@hotmail.com
+2
+filmweird27
+tavalinetont27
+puhtaloom27
+testime11
+Sa ei tea kes ma olen
+Ma tunnen vist sind
+Vaikne Vend
+Indeed
+vahekonto11@mailinator.com
+selentest@hotmail.com
+3
+]]></system-out>
+  </testcase>
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestChangePw" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestChangePw" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestChangePw" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="GeneralFunctions.ChangePw" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="Friends.FollowFriends" time="0">
+    <skipped/>
+    <system-out><![CDATA[tavalinetont27
+Toivo Tavaline
+puhtaloom27
+Martin Loom
+filmweird27
+Toomas Film
+testime11
+Registration was a success
+]]></system-out>
+  </testcase>
+  <testcase name="SopradeJalgimine" classname="Friends.FollowFriends" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="Friends.FollowFriends" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+    <system-out><![CDATA[tavalinetont27
+puhtaloom27
+filmweird27
+testime11
+Anon kiidab sind
+Oma küla vana
+Jalgpalliäss
+Eks sa tea paremini
+selentest13@mailinator.com
+selentest@hotmail.com
+1
+puhtaloom27
+filmweird27
+tavalinetont27
+testime11
+Veits imelik
+Omamoodi
+We meet again. Weirdo
+Eks kaitsetöö ole kah tähtis
+testimeauto12@mailinator.com
+selentest@hotmail.com
+2
+filmweird27
+tavalinetont27
+puhtaloom27
+testime11
+Sa ei tea kes ma olen
+Ma tunnen vist sind
+Vaikne Vend
+Indeed
+vahekonto11@mailinator.com
+selentest@hotmail.com
+3
+]]></system-out>
+  </testcase>
+  <testcase name="beforeTest" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestFriendsFeedback" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestFriendsFeedback" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TestFriendsFeedback" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="Friends.FriendsFeedback" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="Friends.UnfollowFriends" time="0">
+    <skipped/>
+    <system-out><![CDATA[tavalinetont27
+Toivo Tavaline
+puhtaloom27
+Martin Loom
+filmweird27
+Toomas Film
+testime11
+Registration was a success
+]]></system-out>
+  </testcase>
+  <testcase name="StopFollowing" classname="Friends.UnfollowFriends" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="Friends.UnfollowFriends" time="0">
     <skipped/>
   </testcase>
 </testsuite>

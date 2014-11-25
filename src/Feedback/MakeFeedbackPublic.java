@@ -18,7 +18,7 @@ public class MakeFeedbackPublic extends Browser {
 
 
   @Test(dataProvider = "FeedbackPublic")
-  public void TestFeedbackPublic(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String Number) throws InterruptedException {
+  public void MakingFeedbackPublic(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String Number) throws InterruptedException {
 	  
 	  driver.get("http://kask6iktundubkorras.sayat.me");
 	  Homepage.Login(driver).click();	
@@ -28,7 +28,7 @@ public class MakeFeedbackPublic extends Browser {
 	  LoggedIn.TeeAvalikuks(driver).click();
 	  
 
-	  Assert.assertTrue(LoggedIn.TeePrivaatseks(driver).isDisplayed());
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TeePrivaatseks(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));

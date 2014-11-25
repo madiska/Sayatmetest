@@ -1,6 +1,8 @@
 
 package Utils;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
+
 
 
 
@@ -27,7 +29,10 @@ protected  WebDriver driver;
 protected String baseUrl;
 protected String  brauser;
 protected WebDriverWait wait;
-	
+	//protected Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver)
+//.withTimeout(30, SECONDS)
+//.pollingEvery(5, SECONDS)
+//.ignoring(NoSuchElementException.class);
 
 
 @BeforeMethod   

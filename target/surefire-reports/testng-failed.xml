@@ -2,16 +2,121 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]" parallel="none">
   <parameter name="browser" value="IELive"/>
-  <test name="Firefox kask6intundubkorras(failed)" parallel="none">
-    <parameter name="browser" value="firefoxkorras"/>
+  <test name="chrome kask6intundubkorras(failed)" parallel="none">
+    <parameter name="browser" value="chromekorras"/>
     <classes>
-      <class name="Login.LoginInval">
+      <class name="Feedback.FeedbackVal">
         <methods>
-          <include name="testLoginInval" invocation-numbers="0"/>
+          <include name="testFeedbackVal" invocation-numbers="0 1 2"/>
           <include name="beforeTest"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- Login.LoginInval -->
+      </class> <!-- Feedback.FeedbackVal -->
+      <class name="GeneralFunctions.ChangeProfilePic2">
+        <methods>
+          <include name="AvalikultProfiililtpildivahetus"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfilePic2 -->
+      <class name="Survey.SurveywithInvalidData">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="TestSurveywithInvalid" invocation-numbers="0 1 2"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Survey.SurveywithInvalidData -->
+      <class name="Login.LoginVal">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Login.LoginVal -->
+      <class name="Friends.FollowFriends">
+        <methods>
+          <include name="SopradeJalgimine"/>
+        </methods>
+      </class> <!-- Friends.FollowFriends -->
+      <class name="Feedback.CommentPrivateFeedback">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.CommentPrivateFeedback -->
+      <class name="Feedback.CommentPublicFeedbackNotLoggedin">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.CommentPublicFeedbackNotLoggedin -->
+      <class name="Feedback.AnswerFeedback">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.AnswerFeedback -->
+      <class name="GeneralFunctions.ChangePw">
+        <methods>
+          <include name="TestChangePw"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangePw -->
+      <class name="Survey.AnswerSurvey">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="TestSurveyAnswer" invocation-numbers="0 1 2"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Survey.AnswerSurvey -->
+      <class name="Friends.FriendsFeedback">
+        <methods>
+          <include name="TestFriendsFeedback"/>
+        </methods>
+      </class> <!-- Friends.FriendsFeedback -->
+      <class name="Kysimus.Kysimused">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Kysimus.Kysimused -->
+      <class name="Feedback.CommentPublicFeedback">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.CommentPublicFeedback -->
+      <class name="Feedback.AnswerPrivateFeedback">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.AnswerPrivateFeedback -->
+      <class name="Friends.UnfollowFriends">
+        <methods>
+          <include name="StopFollowing"/>
+        </methods>
+      </class> <!-- Friends.UnfollowFriends -->
+      <class name="Feedback.MakeFeedbackPublic">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="TestFeedbackPublic" invocation-numbers="0 1 2"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Feedback.MakeFeedbackPublic -->
+      <class name="GeneralFunctions.ChangeProfilePic">
+        <methods>
+          <include name="TestProfilePic"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfilePic -->
+      <class name="Survey.SurveyWithValidData">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="TestSurveywithvalidData" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- Survey.SurveyWithValidData -->
+      <class name="GeneralFunctions.ChangeProfileInvalid">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfileInvalid -->
     </classes>
-  </test> <!-- Firefox kask6intundubkorras(failed) -->
+  </test> <!-- chrome kask6intundubkorras(failed) -->
 </suite> <!-- Failed suite [Suite] -->

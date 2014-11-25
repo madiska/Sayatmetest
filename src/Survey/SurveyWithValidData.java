@@ -34,6 +34,8 @@ public class SurveyWithValidData extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
 	  Kysitlus.KysitlusPealkiri(driver).sendKeys(Pealkiri);
 	  Kysitlus.KysitlusSalvesta(driver).click();
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus1);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
@@ -53,7 +55,8 @@ public class SurveyWithValidData extends Browser {
 	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).click();
 	  Kysitlus.KysitlusyksVariantiKolmasBox(driver).sendKeys(Kysimus2Valik3);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
-	  
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
@@ -68,6 +71,8 @@ public class SurveyWithValidData extends Browser {
 	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).click();
 	  Kysitlus.KysitlusMituVariantiKolmasBox(driver).sendKeys(Kysimus3Valik3);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	 Kysitlus.KysitlusAvalda(driver).click();
 	 

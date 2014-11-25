@@ -5,6 +5,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -48,10 +49,23 @@ public class ChangeProfilePic extends Browser{
 						System.out.println(brauser);
 					  	if (numbriks == 1){
 					 
-						  WebElement Fileinput = driver.findElement(By.name("account_image"));
-							 Fileinput.click();
-							
-							 Fileinput.sendKeys(Constant.Pilt1);
+					  		UserSettings.Valipilt(driver).click(); 
+
+							 
+							 
+							 String myString = Constant.Pilt1;
+							 StringSelection stringSelection = new StringSelection (myString);
+							 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
+							 clpbrd.setContents (stringSelection, null);
+							 Thread.sleep(2000);
+							 Robot robot = new Robot();
+							  robot.keyPress(KeyEvent.VK_CONTROL);
+							    robot.keyPress(KeyEvent.VK_V);
+							    robot.keyRelease(KeyEvent.VK_V);
+							    robot.keyRelease(KeyEvent.VK_CONTROL);
+							    robot.keyPress(KeyEvent.VK_ENTER);
+							    robot.keyRelease(KeyEvent.VK_ENTER);
+					
 							
 							 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 							  Robot r = new Robot();
@@ -237,6 +251,7 @@ public class ChangeProfilePic extends Browser{
 					System.out.println(brauser);
 					if(numbriks == 2){
 						UserSettings.SettingsCloseInformation(driver).click();
+						Thread.sleep(3000);
 						 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 						LoggedIn.Friends(driver).click();
 						  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Saadetud(driver)));
@@ -402,6 +417,7 @@ public class ChangeProfilePic extends Browser{
 						
 					
 					UserSettings.SettingsCloseInformation(driver).click();
+					Thread.sleep(3000);
 					 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 					 LoggedIn.Friends(driver).click();
 					 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Saadetud(driver)));

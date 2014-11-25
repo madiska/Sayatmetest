@@ -1,5 +1,6 @@
 package Survey;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -34,6 +35,9 @@ public class SurveywithInvalidData extends Browser{
 	  Thread.sleep(2000);
 	  Assert.assertTrue(ErrorMessages.KysitlusPealkiriError(driver).isDisplayed());
 	  Kysitlus.KysitlusTyhista(driver).click();
+
+	 
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.UusKysitlusFollowuppage(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
@@ -50,6 +54,7 @@ public class SurveywithInvalidData extends Browser{
 	  Assert.assertTrue(ErrorMessages.KysitlusKysimusError(driver).isDisplayed());
 	  Assert.assertTrue(ErrorMessages.KysitlusValikError(driver).isDisplayed());
 	  Kysitlus.KysitlusKysimusTyhista(driver).click();
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();

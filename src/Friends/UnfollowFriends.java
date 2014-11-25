@@ -37,6 +37,8 @@ public class UnfollowFriends extends Browser{
 	 Thread.sleep(4000);
 	
 	  LoggedIn.FriendsClose(driver).click();
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.Friends(driver).click();
 
@@ -62,6 +64,8 @@ public class UnfollowFriends extends Browser{
 	 Thread.sleep(4000);
 	
 	  LoggedIn.FriendsClose(driver).click();
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.Friends(driver).click();
 
@@ -85,6 +89,8 @@ public class UnfollowFriends extends Browser{
 	 Thread.sleep(4000);
 
 	  LoggedIn.FriendsClose(driver).click();
+	  if (brauser == "chrome") {Thread.sleep(3000);}
+	  else {}
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		  LoggedIn.Friends(driver).click();
 	

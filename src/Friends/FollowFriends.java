@@ -52,6 +52,7 @@ public class FollowFriends extends Browser {
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi3)));
 	
 	  LoggedIn.FriendsClose(driver).click();
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
@@ -79,10 +80,12 @@ public class FollowFriends extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(SearchResult.LopetaJalgimine(driver)));
 	  LoggedIn.Friends(driver).click();
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
+
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi1)));
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi3)));
 	  LoggedIn.FriendsClose(driver).click();
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
@@ -117,6 +120,7 @@ public class FollowFriends extends Browser {
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi1)));
 	
 	  LoggedIn.FriendsClose(driver).click();
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
