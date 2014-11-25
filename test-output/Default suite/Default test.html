@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/7/99</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 17 14:44:39 EET 2014</td>
+<td>Started on:</td><td>Tue Nov 25 17:47:06 EET 2014</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (20 ms)</td>
+<tr><td>Total time:</td><td>94 seconds (94240 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Kysimus.Kysimused.beforeTest()'><b>beforeTest</b><br>Test class: Kysimus.Kysimused</td>
+<td title='Login.LoginVal.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginVal</td>
 <td><div><pre>org.testng.TestNGException: 
 Parameter &apos;browser&apos; is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\Users\Madis\AppData\Local\Temp\testng-eclipse--2021877010\testng-customsuite.xml
+in C:\Users\Madis\AppData\Local\Temp\testng-eclipse-679941399\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
@@ -102,10 +102,10 @@ in C:\Users\Madis\AppData\Local\Temp\testng-eclipse--2021877010\testng-customsui
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace191382150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace191382150'><pre>org.testng.TestNGException: 
+</pre></div><a href='#' onClick='toggleBox("stack-trace1970436060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1970436060'><pre>org.testng.TestNGException: 
 Parameter &apos;browser&apos; is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\Users\Madis\AppData\Local\Temp\testng-eclipse--2021877010\testng-customsuite.xml
+in C:\Users\Madis\AppData\Local\Temp\testng-eclipse-679941399\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
@@ -131,7 +131,271 @@ in C:\Users\Madis\AppData\Local\Temp\testng-eclipse--2021877010\testng-customsui
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
 <td>0</td>
-<td>Kysimus.Kysimused@c39f790</td></tr>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Test.testime.closeBrowser()'><b>closeBrowser</b><br>Test class: Test.testime</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at Test.testime.closeBrowser(testime.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 43 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1988746735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1988746735'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at Test.testime.closeBrowser(testime.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 43 more
+</pre></div></td>
+<td>0</td>
+<td>Test.testime@783e6358</td></tr>
+<tr>
+<td title='Test.TestingUuno.tearDown()'><b>tearDown</b><br>Test class: Test.TestingUuno</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at Test.TestingUuno.tearDown(TestingUuno.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 43 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1544147328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1544147328'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at Test.TestingUuno.tearDown(TestingUuno.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 43 more
+</pre></div></td>
+<td>0</td>
+<td>Test.TestingUuno@2d554825</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -141,10 +405,1862 @@ in C:\Users\Madis\AppData\Local\Temp\testng-eclipse--2021877010\testng-customsui
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Login.LoginVal.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginVal</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginVal.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginVal</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginInval.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginInval</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginInval.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginInval</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginInval.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginInval</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic2.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangeProfilePic2</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic2@3a03464</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.MakeFeedbackPublic</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.MakeFeedbackPublic</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.MakeFeedbackPublic</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Friends.ManageFriends.beforeTest()'><b>beforeTest</b><br>Test class: Friends.ManageFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.ManageFriends@6be46e8f</td></tr>
+<tr>
+<td title='sayatme.Registration.registrationsuccess.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.registrationsuccess</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.registrationsuccess@5d624da6</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.AnswerPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.AnswerPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.AnswerPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Kysimus.Kysimused.beforeTest()'><b>beforeTest</b><br>Test class: Kysimus.Kysimused</td>
+<td></td>
+<td>0</td>
+<td>Kysimus.Kysimused@6df97b55</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfileInvalid.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangeProfileInvalid</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfileInvalid@34b7bfc0</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.beforeTest()'><b>beforeTest</b><br>Test class: Screenshot.EmailInboxScreenshot</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.beforeTest()'><b>beforeTest</b><br>Test class: Screenshot.EmailInboxScreenshot</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.beforeTest()'><b>beforeTest</b><br>Test class: Screenshot.EmailInboxScreenshot</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='sayatme.Registration.RegisterTwitter.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.RegisterTwitter</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterTwitter@1324409e</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Friends.FriendsFeedback</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Friends.FriendsFeedback</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Friends.FriendsFeedback</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Test.uus.beforeTest()'><b>beforeTest</b><br>Test class: Test.uus</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Test.uus.beforeTest()'><b>beforeTest</b><br>Test class: Test.uus</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Test.uus.beforeTest()'><b>beforeTest</b><br>Test class: Test.uus</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPublicFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPublicFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPublicFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveywithInvalidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveywithInvalidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveywithInvalidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.beforeTest()'><b>beforeTest</b><br>Test class: Survey.AnswerSurvey</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.beforeTest()'><b>beforeTest</b><br>Test class: Survey.AnswerSurvey</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.beforeTest()'><b>beforeTest</b><br>Test class: Survey.AnswerSurvey</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Login.LoginFacebook.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginFacebook</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Login.LoginFacebook.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginFacebook</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Login.LoginFacebook.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginFacebook</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Friends.FollowFriends.beforeTest()'><b>beforeTest</b><br>Test class: Friends.FollowFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.FollowFriends@4e04a765</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveyDownload</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveyDownload</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveyDownload</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.FacebookLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.FacebookLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.FacebookLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangePw</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangePw</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangePw</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.RegisterFacebook.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.RegisterFacebook</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterFacebook@6537cf78</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.ShareFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.ShareFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.ShareFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.TwitterLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.TwitterLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.TwitterLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.FeedbackVal</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.FeedbackVal</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.FeedbackVal</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.feedbackinv</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.feedbackinv</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.feedbackinv</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.ShareOthersFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.ShareOthersFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.ShareOthersFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveyWithValidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveyWithValidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.beforeTest()'><b>beforeTest</b><br>Test class: Survey.SurveyWithValidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangeProfilePic</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangeProfilePic</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.beforeTest()'><b>beforeTest</b><br>Test class: GeneralFunctions.ChangeProfilePic</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.AnswerFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.AnswerFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.beforeTest()'><b>beforeTest</b><br>Test class: Feedback.AnswerFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Login.LoginTwitter.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginTwitter</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Login.LoginTwitter.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginTwitter</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Login.LoginTwitter.beforeTest()'><b>beforeTest</b><br>Test class: Login.LoginTwitter</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Friends.UnfollowFriends.beforeTest()'><b>beforeTest</b><br>Test class: Friends.UnfollowFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.UnfollowFriends@60addb54</td></tr>
+<tr>
+<td title='Linking.EmailLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.EmailLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.EmailLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.EmailLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.EmailLinking.beforeTest()'><b>beforeTest</b><br>Test class: Linking.EmailLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='Login.LoginVal.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginVal</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginVal.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginVal</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginVal.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginVal</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginInval.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginInval</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginInval.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginInval</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginInval.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginInval</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic2.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangeProfilePic2</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic2@3a03464</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.MakeFeedbackPublic</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.MakeFeedbackPublic</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.MakeFeedbackPublic</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Friends.ManageFriends.closeBrowser()'><b>closeBrowser</b><br>Test class: Friends.ManageFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.ManageFriends@6be46e8f</td></tr>
+<tr>
+<td title='sayatme.Registration.registrationsuccess.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.registrationsuccess</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.registrationsuccess@5d624da6</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.AnswerPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.AnswerPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.AnswerPrivateFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
 <td title='Kysimus.Kysimused.closeBrowser()'><b>closeBrowser</b><br>Test class: Kysimus.Kysimused</td>
 <td></td>
 <td>0</td>
-<td>Kysimus.Kysimused@c39f790</td></tr>
+<td>Kysimus.Kysimused@6df97b55</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfileInvalid.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangeProfileInvalid</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfileInvalid@34b7bfc0</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.closeBrowser()'><b>closeBrowser</b><br>Test class: Screenshot.EmailInboxScreenshot</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.closeBrowser()'><b>closeBrowser</b><br>Test class: Screenshot.EmailInboxScreenshot</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.closeBrowser()'><b>closeBrowser</b><br>Test class: Screenshot.EmailInboxScreenshot</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='sayatme.Registration.RegisterTwitter.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.RegisterTwitter</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterTwitter@1324409e</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Friends.FriendsFeedback</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Friends.FriendsFeedback</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Friends.FriendsFeedback</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Test.uus.closeBrowser()'><b>closeBrowser</b><br>Test class: Test.uus</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Test.uus.closeBrowser()'><b>closeBrowser</b><br>Test class: Test.uus</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Test.uus.closeBrowser()'><b>closeBrowser</b><br>Test class: Test.uus</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPublicFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPublicFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPublicFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveywithInvalidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveywithInvalidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveywithInvalidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.AnswerSurvey</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.AnswerSurvey</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.AnswerSurvey</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Login.LoginFacebook.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginFacebook</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Login.LoginFacebook.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginFacebook</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Login.LoginFacebook.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginFacebook</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Friends.FollowFriends.closeBrowser()'><b>closeBrowser</b><br>Test class: Friends.FollowFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.FollowFriends@4e04a765</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveyDownload</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveyDownload</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveyDownload</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.FacebookLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.FacebookLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.FacebookLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangePw</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangePw</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangePw</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.RegisterFacebook.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.RegisterFacebook</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterFacebook@6537cf78</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.ShareFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.ShareFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.ShareFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.TwitterLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.TwitterLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.TwitterLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.FeedbackVal</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.FeedbackVal</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.FeedbackVal</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.feedbackinv</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.feedbackinv</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.feedbackinv</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.ShareOthersFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.ShareOthersFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.ShareOthersFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveyWithValidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveyWithValidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.closeBrowser()'><b>closeBrowser</b><br>Test class: Survey.SurveyWithValidData</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangeProfilePic</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangeProfilePic</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.closeBrowser()'><b>closeBrowser</b><br>Test class: GeneralFunctions.ChangeProfilePic</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.AnswerFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.AnswerFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.closeBrowser()'><b>closeBrowser</b><br>Test class: Feedback.AnswerFeedback</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Login.LoginTwitter.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginTwitter</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Login.LoginTwitter.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginTwitter</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Login.LoginTwitter.closeBrowser()'><b>closeBrowser</b><br>Test class: Login.LoginTwitter</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Friends.UnfollowFriends.closeBrowser()'><b>closeBrowser</b><br>Test class: Friends.UnfollowFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.UnfollowFriends@60addb54</td></tr>
+<tr>
+<td title='Linking.EmailLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.EmailLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.EmailLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.EmailLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.EmailLinking.closeBrowser()'><b>closeBrowser</b><br>Test class: Linking.EmailLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='GeneralFunctions.Search.TestSearch()'><b>TestSearch</b><br>Test class: GeneralFunctions.Search</td>
+<td><div><pre>org.testng.TestNGException: 
+The data provider is trying to pass 11 parameters but the method GeneralFunctions.Search#TestSearch takes 10
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1337)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1225)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div><a href='#' onClick='toggleBox("stack-trace811562535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811562535'><pre>org.testng.TestNGException: 
+The data provider is trying to pass 11 parameters but the method GeneralFunctions.Search#TestSearch takes 10
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1337)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1225)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>GeneralFunctions.Search@26ba2a48</td></tr>
+<tr>
+<td title='Test.testingstuff.f()'><b>f</b><br>Test class: Test.testingstuff<br>Parameters: tavalinetont9, puhtaloom9, filmweird9, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, tavalinetont13@mailinator.com, selentest@hotmail.com, 1</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.Epost(LoggedIn.java:23)
+	at Test.testingstuff.f(testingstuff.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 44 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1280603381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1280603381'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.Epost(LoggedIn.java:23)
+	at Test.testingstuff.f(testingstuff.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 44 more
+</pre></div></td>
+<td>10</td>
+<td>Test.testingstuff@4909b8da</td></tr>
+<tr>
+<td title='Test.testingstuff.f()'><b>f</b><br>Test class: Test.testingstuff<br>Parameters: puhtaloom9, filmweird9, tavalinetont9, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, puhtaloom10@mailinator.com, selentest@hotmail.com, 2</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.Epost(LoggedIn.java:23)
+	at Test.testingstuff.f(testingstuff.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 44 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1756207614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756207614'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.Epost(LoggedIn.java:23)
+	at Test.testingstuff.f(testingstuff.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 44 more
+</pre></div></td>
+<td>8</td>
+<td>Test.testingstuff@4909b8da</td></tr>
+<tr>
+<td title='Test.testingstuff.f()'><b>f</b><br>Test class: Test.testingstuff<br>Parameters: filmweird9, tavalinetont9, puhtaloom9, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, filmweird11@mailinator.com, selentest@hotmail.com, 3</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.Epost(LoggedIn.java:23)
+	at Test.testingstuff.f(testingstuff.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 44 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace2095677157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095677157'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.LoggedIn.Epost(LoggedIn.java:23)
+	at Test.testingstuff.f(testingstuff.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 44 more
+</pre></div></td>
+<td>7</td>
+<td>Test.testingstuff@4909b8da</td></tr>
+<tr>
+<td title='Test.TestingUuno.testProovitest3()'><b>testProovitest3</b><br>Test class: Test.TestingUuno</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Test.TestingUuno.testProovitest3(TestingUuno.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 40 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1604342290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604342290'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Test.TestingUuno.testProovitest3(TestingUuno.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 40 more
+</pre></div></td>
+<td>4</td>
+<td>Test.TestingUuno@2d554825</td></tr>
+<tr>
+<td title='Test.testime.testTextreplace()'><b>testTextreplace</b><br>Test class: Test.testime<br>Parameters: tavalinetont9, Toivo Tavaline, puhtaloom9, Martin Loom, filmweird9, Toomas Film, testime11, Registration was a success</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Test.testime.testTextreplace(testime.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 40 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1160652496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1160652496'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Test.testime.testTextreplace(testime.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 40 more
+</pre></div></td>
+<td>4</td>
+<td>Test.testime@783e6358</td></tr>
+<tr>
+<td title='Test.NewTest.testTextreplace()'><b>testTextreplace</b><br>Test class: Test.NewTest<br>Parameters: tavalinetont31, Toivo Tavaline, puhtaloom31, Martin Loom, filmweird31, Toomas Film, testime11, Registration was a success</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Test.NewTest.testTextreplace(NewTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 40 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace466661605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace466661605'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at Test.NewTest.testTextreplace(NewTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 40 more
+</pre></div></td>
+<td>3</td>
+<td>Test.NewTest@366e2eef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sayatme.Registration.RegisterVK.TestREgisterWithVK()'><b>TestREgisterWithVK</b><br>Test class: sayatme.Registration.RegisterVK</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterVK@73f792cf</td></tr>
+<tr>
+<td title='Survey.ShareSurvey.TestShareSurvey()'><b>TestShareSurvey</b><br>Test class: Survey.ShareSurvey<br>Parameters: tavalinetont31, testime11, Tavaline, Kas see on tavaline küsitlius, Tundub täiesti tavaline, Mis meeldib mulle, Tavalised asjad, Action, Draama, Õnnenumbrid on mul, Kolmteist, Seitse, Üks</td>
+<td></td>
+<td>5</td>
+<td>Survey.ShareSurvey@77b52d12</td></tr>
+<tr>
+<td title='Survey.ShareSurvey.TestShareSurvey()'><b>TestShareSurvey</b><br>Test class: Survey.ShareSurvey<br>Parameters: puhtaloom31, testime11, Loomaed, Kas Loomaias on loomi? Põhjenda?, Jah. Sest seda kutsutakse aiaks kus elavad loomad, Keda leidub loomaaias, gorilla, mammut, yeti, Mis loomad on mul kodus elanud, kassid, tsintsilja, tiiger</td>
+<td></td>
+<td>5</td>
+<td>Survey.ShareSurvey@77b52d12</td></tr>
+<tr>
+<td title='Survey.ShareSurvey.TestShareSurvey()'><b>TestShareSurvey</b><br>Test class: Survey.ShareSurvey<br>Parameters: filmweird31, testime11, Filmid, Kas liiga palju järge on halb?, Kahjuks küll, kuid raha toovad nad sisse, Minu lemmikfilmi zanr, Comedy, Action, Draama, Minu lemmik filmid, Chinese Odyssey, Clerks, Tulnukas</td>
+<td></td>
+<td>5</td>
+<td>Survey.ShareSurvey@77b52d12</td></tr>
+<tr>
+<td title='Linking.VKLinking.TestVKlinking()'><b>TestVKlinking</b><br>Test class: Linking.VKLinking</td>
+<td></td>
+<td>0</td>
+<td>Linking.VKLinking@180bc464</td></tr>
+<tr>
+<td title='Login.LoginVK.f()'><b>f</b><br>Test class: Login.LoginVK</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVK@6fb554cc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -154,10 +2270,500 @@ in C:\Users\Madis\AppData\Local\Temp\testng-eclipse--2021877010\testng-customsui
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Kysimus.Kysimused.TestKüsimused()'><b>TestKüsimused</b><br>Test class: Kysimus.Kysimused</td>
+<td title='Feedback.AnswerFeedback.AnswerPublicFeedback()'><b>AnswerPublicFeedback</b><br>Test class: Feedback.AnswerFeedback<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
 <td></td>
 <td>0</td>
-<td>Kysimus.Kysimused@c39f790</td></tr>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.AnswerPublicFeedback()'><b>AnswerPublicFeedback</b><br>Test class: Feedback.AnswerFeedback<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='Feedback.AnswerFeedback.AnswerPublicFeedback()'><b>AnswerPublicFeedback</b><br>Test class: Feedback.AnswerFeedback<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerFeedback@617c74e5</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic2.AvalikultProfiililtpildivahetus()'><b>AvalikultProfiililtpildivahetus</b><br>Test class: GeneralFunctions.ChangeProfilePic2</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic2@3a03464</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfileInvalid.ChangeProfileInvalidSize()'><b>ChangeProfileInvalidSize</b><br>Test class: GeneralFunctions.ChangeProfileInvalid</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfileInvalid@34b7bfc0</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.CommentAPrivateFeedback()'><b>CommentAPrivateFeedback</b><br>Test class: Feedback.CommentPrivateFeedback<br>Parameters: tavalinetont31, puhtaloom31, testime11, Jalgpall on elu, Sinu jaoks jah, Väravaid oskab lüüa, kuid kaitsa ei oska, Jalgpalliäss</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.CommentAPrivateFeedback()'><b>CommentAPrivateFeedback</b><br>Test class: Feedback.CommentPrivateFeedback<br>Parameters: puhtaloom31, filmweird31, testime11, Eks me kõik oleme natuke imelikud, Eks ta ole jah nii, Teab palju imelike filme, We meet again. Weirdo</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPrivateFeedback.CommentAPrivateFeedback()'><b>CommentAPrivateFeedback</b><br>Test class: Feedback.CommentPrivateFeedback<br>Parameters: filmweird31, tavalinetont31, testime11, Asja tuleb rahulikult v6tta, Oleks ma nii rahulik, Teda ei häiri miski, Vaikne Vend</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPrivateFeedback@735f7ae5</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.CommentPublicFeedbackTest()'><b>CommentPublicFeedbackTest</b><br>Test class: Feedback.CommentPublicFeedback<br>Parameters: tavalinetont31, puhtaloom31, testime11, Jalgpall on elu, Sinu jaoks jah, Väravaid oskab lüüa, kuid kaitsa ei oska, Jalgpalliäss</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.CommentPublicFeedbackTest()'><b>CommentPublicFeedbackTest</b><br>Test class: Feedback.CommentPublicFeedback<br>Parameters: puhtaloom31, filmweird31, testime11, Eks me kõik oleme natuke imelikud, Eks ta ole jah nii, Teab palju imelike filme, We meet again. Weirdo</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedback.CommentPublicFeedbackTest()'><b>CommentPublicFeedbackTest</b><br>Test class: Feedback.CommentPublicFeedback<br>Parameters: filmweird31, tavalinetont31, testime11, Asja tuleb rahulikult v6tta, Oleks ma nii rahulik, Teda ei häiri miski, Vaikne Vend</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedback@4157f54e</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.GivePrivateFeedbackanswer()'><b>GivePrivateFeedbackanswer</b><br>Test class: Feedback.AnswerPrivateFeedback<br>Parameters: tavalinetont31, puhtaloom31, testime11, Jalgpall on elu, Sinu jaoks jah, Väravaid oskab lüüa, kuid kaitsa ei oska, Jalgpalliäss</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.GivePrivateFeedbackanswer()'><b>GivePrivateFeedbackanswer</b><br>Test class: Feedback.AnswerPrivateFeedback<br>Parameters: puhtaloom31, filmweird31, testime11, Eks me kõik oleme natuke imelikud, Eks ta ole jah nii, Teab palju imelike filme, We meet again. Weirdo</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.AnswerPrivateFeedback.GivePrivateFeedbackanswer()'><b>GivePrivateFeedbackanswer</b><br>Test class: Feedback.AnswerPrivateFeedback<br>Parameters: filmweird31, tavalinetont31, testime11, Asja tuleb rahulikult v6tta, Oleks ma nii rahulik, Teda ei häiri miski, Vaikne Vend</td>
+<td></td>
+<td>0</td>
+<td>Feedback.AnswerPrivateFeedback@64616ca2</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.GiveValidFeedback()'><b>GiveValidFeedback</b><br>Test class: Feedback.FeedbackVal<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.GiveValidFeedback()'><b>GiveValidFeedback</b><br>Test class: Feedback.FeedbackVal<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.FeedbackVal.GiveValidFeedback()'><b>GiveValidFeedback</b><br>Test class: Feedback.FeedbackVal<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Feedback.FeedbackVal@3567135c</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.MakingFeedbackPublic()'><b>MakingFeedbackPublic</b><br>Test class: Feedback.MakeFeedbackPublic<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.MakingFeedbackPublic()'><b>MakingFeedbackPublic</b><br>Test class: Feedback.MakeFeedbackPublic<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='Feedback.MakeFeedbackPublic.MakingFeedbackPublic()'><b>MakingFeedbackPublic</b><br>Test class: Feedback.MakeFeedbackPublic<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Feedback.MakeFeedbackPublic@2ef9b8bc</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.ProfilePictureChange()'><b>ProfilePictureChange</b><br>Test class: GeneralFunctions.ChangeProfilePic<br>Parameters: 1, firefox, 4582, 6130, 7914</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.ProfilePictureChange()'><b>ProfilePictureChange</b><br>Test class: GeneralFunctions.ChangeProfilePic<br>Parameters: 2, chrome, 1334, 5677, 7161</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangeProfilePic.ProfilePictureChange()'><b>ProfilePictureChange</b><br>Test class: GeneralFunctions.ChangeProfilePic<br>Parameters: 3, IE, 1819, 6792, 7582</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangeProfilePic@62043840</td></tr>
+<tr>
+<td title='Friends.FollowFriends.SopradeJalgimine()'><b>SopradeJalgimine</b><br>Test class: Friends.FollowFriends<br>Parameters: tavalinetont31, Toivo Tavaline, puhtaloom31, Martin Loom, filmweird31, Toomas Film, testime11, Registration was a success</td>
+<td></td>
+<td>0</td>
+<td>Friends.FollowFriends@4e04a765</td></tr>
+<tr>
+<td title='Friends.UnfollowFriends.StopFollowing()'><b>StopFollowing</b><br>Test class: Friends.UnfollowFriends<br>Parameters: tavalinetont31, Toivo Tavaline, puhtaloom31, Martin Loom, filmweird31, Toomas Film, testime11, Registration was a success</td>
+<td></td>
+<td>0</td>
+<td>Friends.UnfollowFriends@60addb54</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.SurveywithInvData()'><b>SurveywithInvData</b><br>Test class: Survey.SurveywithInvalidData<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.SurveywithInvData()'><b>SurveywithInvData</b><br>Test class: Survey.SurveywithInvalidData<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveywithInvalidData.SurveywithInvData()'><b>SurveywithInvData</b><br>Test class: Survey.SurveywithInvalidData<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveywithInvalidData@246ae04d</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.SurveywithValData()'><b>SurveywithValData</b><br>Test class: Survey.SurveyWithValidData<br>Parameters: tavalinetont31, testime11, Tavaline, Kas see on tavaline küsitlius, Tundub täiesti tavaline, Mis meeldib mulle, Tavalised asjad, Action, Draama, Õnnenumbrid on mul, Kolmteist, Seitse, Üks</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.SurveywithValData()'><b>SurveywithValData</b><br>Test class: Survey.SurveyWithValidData<br>Parameters: puhtaloom31, testime11, Loomaed, Kas Loomaias on loomi? Põhjenda?, Jah. Sest seda kutsutakse aiaks kus elavad loomad, Keda leidub loomaaias, gorilla, mammut, yeti, Mis loomad on mul kodus elanud, kassid, tsintsilja, tiiger</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Survey.SurveyWithValidData.SurveywithValData()'><b>SurveywithValData</b><br>Test class: Survey.SurveyWithValidData<br>Parameters: filmweird31, testime11, Filmid, Kas liiga palju järge on halb?, Kahjuks küll, kuid raha toovad nad sisse, Minu lemmikfilmi zanr, Comedy, Action, Draama, Minu lemmik filmid, Chinese Odyssey, Clerks, Tulnukas</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyWithValidData@2c6a3f77</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.TakeScreenshot()'><b>TakeScreenshot</b><br>Test class: Screenshot.EmailInboxScreenshot<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.TakeScreenshot()'><b>TakeScreenshot</b><br>Test class: Screenshot.EmailInboxScreenshot<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='Screenshot.EmailInboxScreenshot.TakeScreenshot()'><b>TakeScreenshot</b><br>Test class: Screenshot.EmailInboxScreenshot<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Screenshot.EmailInboxScreenshot@1936f0f5</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.TestChangePw()'><b>TestChangePw</b><br>Test class: GeneralFunctions.ChangePw<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.TestChangePw()'><b>TestChangePw</b><br>Test class: GeneralFunctions.ChangePw<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='GeneralFunctions.ChangePw.TestChangePw()'><b>TestChangePw</b><br>Test class: GeneralFunctions.ChangePw<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.ChangePw@67b6d4ae</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.TestCommentPublicFeedbackNotLoggedin()'><b>TestCommentPublicFeedbackNotLoggedin</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.TestCommentPublicFeedbackNotLoggedin()'><b>TestCommentPublicFeedbackNotLoggedin</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='Feedback.CommentPublicFeedbackNotLoggedin.TestCommentPublicFeedbackNotLoggedin()'><b>TestCommentPublicFeedbackNotLoggedin</b><br>Test class: Feedback.CommentPublicFeedbackNotLoggedin<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Feedback.CommentPublicFeedbackNotLoggedin@13fee20c</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.TestDeleteUser()'><b>TestDeleteUser</b><br>Test class: GeneralFunctions.DeleteUser<br>Parameters: tavalinetont31, testime11, Toivo Tavaline, valepass</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.TestDeleteUser()'><b>TestDeleteUser</b><br>Test class: GeneralFunctions.DeleteUser<br>Parameters: puhtaloom31, testime11, Martin Loom, valepass</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='GeneralFunctions.DeleteUser.TestDeleteUser()'><b>TestDeleteUser</b><br>Test class: GeneralFunctions.DeleteUser<br>Parameters: filmweird31, testime11, Toomas Film, valepass</td>
+<td></td>
+<td>0</td>
+<td>GeneralFunctions.DeleteUser@2d3fcdbd</td></tr>
+<tr>
+<td title='Linking.EmailLinking.TestEmailLinking()'><b>TestEmailLinking</b><br>Test class: Linking.EmailLinking<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.EmailLinking.TestEmailLinking()'><b>TestEmailLinking</b><br>Test class: Linking.EmailLinking<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.EmailLinking.TestEmailLinking()'><b>TestEmailLinking</b><br>Test class: Linking.EmailLinking<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Linking.EmailLinking@5315b42e</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.TestFacebookLinking()'><b>TestFacebookLinking</b><br>Test class: Linking.FacebookLinking<br>Parameters: tavalinetont31, puhtaloom31, testime11, tuejljw_fergiewitz_1415285430@tfbnw.net, madis, tuejljw_fergiewitz_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.TestFacebookLinking()'><b>TestFacebookLinking</b><br>Test class: Linking.FacebookLinking<br>Parameters: puhtaloom31, filmweird31, testime11, xgiydud_rosenthalson_1415285429@tfbnw.net, madis, xgiydud_rosenthalson_141528542@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Linking.FacebookLinking.TestFacebookLinking()'><b>TestFacebookLinking</b><br>Test class: Linking.FacebookLinking<br>Parameters: filmweird31, tavalinetont31, testime11, bbltrpz_shepardsky_1415285430@tfbnw.net, madis, bbltrpz_shepardsky_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Linking.FacebookLinking@47f6473</td></tr>
+<tr>
+<td title='Login.LoginFacebook.TestFacebookLogin()'><b>TestFacebookLogin</b><br>Test class: Login.LoginFacebook<br>Parameters: tavalinetont31, puhtaloom31, testime11, tuejljw_fergiewitz_1415285430@tfbnw.net, madis, tuejljw_fergiewitz_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Login.LoginFacebook.TestFacebookLogin()'><b>TestFacebookLogin</b><br>Test class: Login.LoginFacebook<br>Parameters: puhtaloom31, filmweird31, testime11, xgiydud_rosenthalson_1415285429@tfbnw.net, madis, xgiydud_rosenthalson_141528542@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Login.LoginFacebook.TestFacebookLogin()'><b>TestFacebookLogin</b><br>Test class: Login.LoginFacebook<br>Parameters: filmweird31, tavalinetont31, testime11, bbltrpz_shepardsky_1415285430@tfbnw.net, madis, bbltrpz_shepardsky_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFacebook@90f6bfd</td></tr>
+<tr>
+<td title='Friends.ManageFriends.TestFriendManagment()'><b>TestFriendManagment</b><br>Test class: Friends.ManageFriends</td>
+<td></td>
+<td>0</td>
+<td>Friends.ManageFriends@6be46e8f</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.TestFriendsFeedback()'><b>TestFriendsFeedback</b><br>Test class: Friends.FriendsFeedback<br>Parameters: tavalinetont31, puhtaloom31, filmweird31, testime11, Anon kiidab sind, Oma küla vana, Jalgpalliäss, Eks sa tea paremini, selentest16@mailinator.com, selentest@hotmail.com, 1</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.TestFriendsFeedback()'><b>TestFriendsFeedback</b><br>Test class: Friends.FriendsFeedback<br>Parameters: puhtaloom31, filmweird31, tavalinetont31, testime11, Veits imelik, Omamoodi, We meet again. Weirdo, Eks kaitsetöö ole kah tähtis, testimeauto13@mailinator.com, selentest@hotmail.com, 2</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Friends.FriendsFeedback.TestFriendsFeedback()'><b>TestFriendsFeedback</b><br>Test class: Friends.FriendsFeedback<br>Parameters: filmweird31, tavalinetont31, puhtaloom31, testime11, Sa ei tea kes ma olen, Ma tunnen vist sind, Vaikne Vend, Indeed, vahekonto11@mailinator.com, selentest@hotmail.com, 3</td>
+<td></td>
+<td>0</td>
+<td>Friends.FriendsFeedback@1e67b872</td></tr>
+<tr>
+<td title='Kysimus.Kysimused.TestKysimused()'><b>TestKysimused</b><br>Test class: Kysimus.Kysimused</td>
+<td></td>
+<td>0</td>
+<td>Kysimus.Kysimused@6df97b55</td></tr>
+<tr>
+<td title='sayatme.Registration.RegisterTwitter.TestRegisterTwitter()'><b>TestRegisterTwitter</b><br>Test class: sayatme.Registration.RegisterTwitter</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterTwitter@1324409e</td></tr>
+<tr>
+<td title='sayatme.Registration.RegisterFacebook.TestRegisterwithFacebook()'><b>TestRegisterwithFacebook</b><br>Test class: sayatme.Registration.RegisterFacebook</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.RegisterFacebook@6537cf78</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.TestShareFeedback()'><b>TestShareFeedback</b><br>Test class: Feedback.ShareFeedback<br>Parameters: tavalinetont31, puhtaloom31, testime11, tuejljw_fergiewitz_1415285430@tfbnw.net, madis, tuejljw_fergiewitz_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.TestShareFeedback()'><b>TestShareFeedback</b><br>Test class: Feedback.ShareFeedback<br>Parameters: puhtaloom31, filmweird31, testime11, xgiydud_rosenthalson_1415285429@tfbnw.net, madis, xgiydud_rosenthalson_141528542@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareFeedback.TestShareFeedback()'><b>TestShareFeedback</b><br>Test class: Feedback.ShareFeedback<br>Parameters: filmweird31, tavalinetont31, testime11, bbltrpz_shepardsky_1415285430@tfbnw.net, madis, bbltrpz_shepardsky_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareFeedback@38082d64</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.TestShareOthersFeedback()'><b>TestShareOthersFeedback</b><br>Test class: Feedback.ShareOthersFeedback<br>Parameters: tavalinetont31, puhtaloom31, testime11, tuejljw_fergiewitz_1415285430@tfbnw.net, madis, tuejljw_fergiewitz_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.TestShareOthersFeedback()'><b>TestShareOthersFeedback</b><br>Test class: Feedback.ShareOthersFeedback<br>Parameters: puhtaloom31, filmweird31, testime11, xgiydud_rosenthalson_1415285429@tfbnw.net, madis, xgiydud_rosenthalson_141528542@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Feedback.ShareOthersFeedback.TestShareOthersFeedback()'><b>TestShareOthersFeedback</b><br>Test class: Feedback.ShareOthersFeedback<br>Parameters: filmweird31, tavalinetont31, testime11, bbltrpz_shepardsky_1415285430@tfbnw.net, madis, bbltrpz_shepardsky_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Feedback.ShareOthersFeedback@4cb2c100</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.TestSurveyAnswer()'><b>TestSurveyAnswer</b><br>Test class: Survey.AnswerSurvey<br>Parameters: tavalinetont31, testime11, Tavaline, Kas see on tavaline küsitlius, Tundub täiesti tavaline, Mis meeldib mulle, Tavalised asjad, Action, Draama, Õnnenumbrid on mul, Kolmteist, Seitse, Üks</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.TestSurveyAnswer()'><b>TestSurveyAnswer</b><br>Test class: Survey.AnswerSurvey<br>Parameters: puhtaloom31, testime11, Loomaed, Kas Loomaias on loomi? Põhjenda?, Jah. Sest seda kutsutakse aiaks kus elavad loomad, Keda leidub loomaaias, gorilla, mammut, yeti, Mis loomad on mul kodus elanud, kassid, tsintsilja, tiiger</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.AnswerSurvey.TestSurveyAnswer()'><b>TestSurveyAnswer</b><br>Test class: Survey.AnswerSurvey<br>Parameters: filmweird31, testime11, Filmid, Kas liiga palju järge on halb?, Kahjuks küll, kuid raha toovad nad sisse, Minu lemmikfilmi zanr, Comedy, Action, Draama, Minu lemmik filmid, Chinese Odyssey, Clerks, Tulnukas</td>
+<td></td>
+<td>0</td>
+<td>Survey.AnswerSurvey@3b81a1bc</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.TestSurveyDownload()'><b>TestSurveyDownload</b><br>Test class: Survey.SurveyDownload<br>Parameters: tavalinetont31, testime11, Tavaline, Kas see on tavaline küsitlius, Tundub täiesti tavaline, Mis meeldib mulle, Tavalised asjad, Action, Draama, Õnnenumbrid on mul, Kolmteist, Seitse, Üks</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.TestSurveyDownload()'><b>TestSurveyDownload</b><br>Test class: Survey.SurveyDownload<br>Parameters: puhtaloom31, testime11, Loomaed, Kas Loomaias on loomi? Põhjenda?, Jah. Sest seda kutsutakse aiaks kus elavad loomad, Keda leidub loomaaias, gorilla, mammut, yeti, Mis loomad on mul kodus elanud, kassid, tsintsilja, tiiger</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Survey.SurveyDownload.TestSurveyDownload()'><b>TestSurveyDownload</b><br>Test class: Survey.SurveyDownload<br>Parameters: filmweird31, testime11, Filmid, Kas liiga palju järge on halb?, Kahjuks küll, kuid raha toovad nad sisse, Minu lemmikfilmi zanr, Comedy, Action, Draama, Minu lemmik filmid, Chinese Odyssey, Clerks, Tulnukas</td>
+<td></td>
+<td>0</td>
+<td>Survey.SurveyDownload@327471b5</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.TestTwitterLinking()'><b>TestTwitterLinking</b><br>Test class: Linking.TwitterLinking<br>Parameters: tavalinetont31, puhtaloom31, testime11, tuejljw_fergiewitz_1415285430@tfbnw.net, madis, tuejljw_fergiewitz_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.TestTwitterLinking()'><b>TestTwitterLinking</b><br>Test class: Linking.TwitterLinking<br>Parameters: puhtaloom31, filmweird31, testime11, xgiydud_rosenthalson_1415285429@tfbnw.net, madis, xgiydud_rosenthalson_141528542@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Linking.TwitterLinking.TestTwitterLinking()'><b>TestTwitterLinking</b><br>Test class: Linking.TwitterLinking<br>Parameters: filmweird31, tavalinetont31, testime11, bbltrpz_shepardsky_1415285430@tfbnw.net, madis, bbltrpz_shepardsky_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Linking.TwitterLinking@2ed94a8b</td></tr>
+<tr>
+<td title='Login.LoginTwitter.TestTwitterLogin()'><b>TestTwitterLogin</b><br>Test class: Login.LoginTwitter<br>Parameters: tavalinetont31, puhtaloom31, testime11, tuejljw_fergiewitz_1415285430@tfbnw.net, madis, tuejljw_fergiewitz_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Login.LoginTwitter.TestTwitterLogin()'><b>TestTwitterLogin</b><br>Test class: Login.LoginTwitter<br>Parameters: puhtaloom31, filmweird31, testime11, xgiydud_rosenthalson_1415285429@tfbnw.net, madis, xgiydud_rosenthalson_141528542@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Login.LoginTwitter.TestTwitterLogin()'><b>TestTwitterLogin</b><br>Test class: Login.LoginTwitter<br>Parameters: filmweird31, tavalinetont31, testime11, bbltrpz_shepardsky_1415285430@tfbnw.net, madis, bbltrpz_shepardsky_1415285430@mailinator.com</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginTwitter@68837a77</td></tr>
+<tr>
+<td title='Test.uus.f()'><b>f</b><br>Test class: Test.uus<br>Parameters: 1, firefox, 4582, 6130, 7914</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Test.uus.f()'><b>f</b><br>Test class: Test.uus<br>Parameters: 2, chrome, 1334, 5677, 7161</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='Test.uus.f()'><b>f</b><br>Test class: Test.uus<br>Parameters: 3, IE, 1819, 6792, 7582</td>
+<td></td>
+<td>0</td>
+<td>Test.uus@15975490</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.testFeedbackRegInval()'><b>testFeedbackRegInval</b><br>Test class: sayatme.Registration.FeedbackRegInval<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.testFeedbackRegInval()'><b>testFeedbackRegInval</b><br>Test class: sayatme.Registration.FeedbackRegInval<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.testFeedbackRegInval()'><b>testFeedbackRegInval</b><br>Test class: sayatme.Registration.FeedbackRegInval<br>Parameters: Peerfoooooo, testime14, korralik3, korralik4, liiga, Peerfoooooo, Mktest!, See sul kolmas test, No ei leia midagi</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3f2a3a5</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Peerfoooooo, testime14, korralik3, korralik4, liiga, Peerfoooooo, Mktest!, See sul kolmas test, No ei leia midagi</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@5f2050f6</td></tr>
+<tr>
+<td title='Login.LoginInval.testLoginInval()'><b>testLoginInval</b><br>Test class: Login.LoginInval<br>Parameters: tavalinetont31, testime11, Toivo Tavaline, valepass</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginInval.testLoginInval()'><b>testLoginInval</b><br>Test class: Login.LoginInval<br>Parameters: puhtaloom31, testime11, Martin Loom, valepass</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginInval.testLoginInval()'><b>testLoginInval</b><br>Test class: Login.LoginInval<br>Parameters: filmweird31, testime11, Toomas Film, valepass</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginInval@6b143ee9</td></tr>
+<tr>
+<td title='Login.LoginVal.testLoginVal()'><b>testLoginVal</b><br>Test class: Login.LoginVal<br>Parameters: tavalinetont31, testime11, Toivo Tavaline, valepass</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginVal.testLoginVal()'><b>testLoginVal</b><br>Test class: Login.LoginVal<br>Parameters: puhtaloom31, testime11, Martin Loom, valepass</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='Login.LoginVal.testLoginVal()'><b>testLoginVal</b><br>Test class: Login.LoginVal<br>Parameters: filmweird31, testime11, Toomas Film, valepass</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginVal@6615435c</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.testProfileRegInv()'><b>testProfileRegInv</b><br>Test class: sayatme.Registration.ProfileRegInv<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.testProfileRegInv()'><b>testProfileRegInv</b><br>Test class: sayatme.Registration.ProfileRegInv<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.testProfileRegInv()'><b>testProfileRegInv</b><br>Test class: sayatme.Registration.ProfileRegInv<br>Parameters: Peerfoooooo, testime14, korralik3, korralik4, liiga, Peerfoooooo, Mktest!, See sul kolmas test, No ei leia midagi</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@17550481</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.testfeedbackinv()'><b>testfeedbackinv</b><br>Test class: Feedback.feedbackinv<br>Parameters: tavalinetont31, testime11, See on testi konto jah?</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.testfeedbackinv()'><b>testfeedbackinv</b><br>Test class: Feedback.feedbackinv<br>Parameters: puhtaloom31, testime11, See sul teine konto</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='Feedback.feedbackinv.testfeedbackinv()'><b>testfeedbackinv</b><br>Test class: Feedback.feedbackinv<br>Parameters: filmweird31, testime11, See sul kolmas test</td>
+<td></td>
+<td>0</td>
+<td>Feedback.feedbackinv@614c5515</td></tr>
+<tr>
+<td title='sayatme.Registration.registrationsuccess.testregistrationsuccess()'><b>testregistrationsuccess</b><br>Test class: sayatme.Registration.registrationsuccess<br>Parameters: tavalinetont31, Toivo Tavaline, puhtaloom31, Martin Loom, filmweird31, Toomas Film, testime11, Registration was a success</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.registrationsuccess@5d624da6</td></tr>
 </table><p>
 </body>
 </html>

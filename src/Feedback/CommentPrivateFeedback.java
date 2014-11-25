@@ -28,6 +28,7 @@ public class CommentPrivateFeedback extends Browser{
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
 	  LoggedIn.Saadetud(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TagasiVasta(driver)));
 	  LoggedIn.TagasiVasta(driver).click();
 
 	

@@ -3,11 +3,237 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+      <class name="Survey.ShareSurvey">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Survey.ShareSurvey -->
+      <class name="Test.TestingUuno">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testProovitest3"/>
+        </methods>
+      </class> <!-- Test.TestingUuno -->
+      <class name="Login.LoginTwitter">
+        <methods>
+          <include name="TestTwitterLogin"/>
+        </methods>
+      </class> <!-- Login.LoginTwitter -->
+      <class name="Linking.TwitterLinking">
+        <methods>
+          <include name="TestTwitterLinking"/>
+        </methods>
+      </class> <!-- Linking.TwitterLinking -->
+      <class name="Friends.ManageFriends">
+        <methods>
+          <include name="TestFriendManagment"/>
+        </methods>
+      </class> <!-- Friends.ManageFriends -->
+      <class name="GeneralFunctions.Search">
+        <methods>
+          <include name="TestSearch"/>
+        </methods>
+      </class> <!-- GeneralFunctions.Search -->
+      <class name="Feedback.ShareFeedback">
+        <methods>
+          <include name="TestShareFeedback"/>
+        </methods>
+      </class> <!-- Feedback.ShareFeedback -->
+      <class name="sayatme.Registration.Frontpagereg">
+        <methods>
+          <include name="testFrontpagereg"/>
+        </methods>
+      </class> <!-- sayatme.Registration.Frontpagereg -->
+      <class name="Survey.AnswerSurvey">
+        <methods>
+          <include name="TestSurveyAnswer"/>
+        </methods>
+      </class> <!-- Survey.AnswerSurvey -->
+      <class name="Feedback.AnswerPrivateFeedback">
+        <methods>
+          <include name="GivePrivateFeedbackanswer"/>
+        </methods>
+      </class> <!-- Feedback.AnswerPrivateFeedback -->
+      <class name="Feedback.FeedbackVal">
+        <methods>
+          <include name="GiveValidFeedback"/>
+        </methods>
+      </class> <!-- Feedback.FeedbackVal -->
+      <class name="Survey.SurveyDownload">
+        <methods>
+          <include name="TestSurveyDownload"/>
+        </methods>
+      </class> <!-- Survey.SurveyDownload -->
+      <class name="Feedback.CommentPublicFeedback">
+        <methods>
+          <include name="CommentPublicFeedbackTest"/>
+        </methods>
+      </class> <!-- Feedback.CommentPublicFeedback -->
+      <class name="Login.LoginFacebook">
+        <methods>
+          <include name="TestFacebookLogin"/>
+        </methods>
+      </class> <!-- Login.LoginFacebook -->
+      <class name="Feedback.CommentPublicFeedbackNotLoggedin">
+        <methods>
+          <include name="TestCommentPublicFeedbackNotLoggedin"/>
+        </methods>
+      </class> <!-- Feedback.CommentPublicFeedbackNotLoggedin -->
+      <class name="Friends.FollowFriends">
+        <methods>
+          <include name="SopradeJalgimine"/>
+        </methods>
+      </class> <!-- Friends.FollowFriends -->
+      <class name="Linking.FacebookLinking">
+        <methods>
+          <include name="TestFacebookLinking"/>
+        </methods>
+      </class> <!-- Linking.FacebookLinking -->
+      <class name="Test.testime">
+        <methods>
+          <include name="testTextreplace" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Test.testime -->
+      <class name="sayatme.Registration.ProfileRegInv">
+        <methods>
+          <include name="testProfileRegInv"/>
+        </methods>
+      </class> <!-- sayatme.Registration.ProfileRegInv -->
+      <class name="Test.uus">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Test.uus -->
+      <class name="Feedback.CommentPrivateFeedback">
+        <methods>
+          <include name="CommentAPrivateFeedback"/>
+        </methods>
+      </class> <!-- Feedback.CommentPrivateFeedback -->
+      <class name="Login.LoginInval">
+        <methods>
+          <include name="testLoginInval"/>
+        </methods>
+      </class> <!-- Login.LoginInval -->
+      <class name="Screenshot.EmailInboxScreenshot">
+        <methods>
+          <include name="TakeScreenshot"/>
+        </methods>
+      </class> <!-- Screenshot.EmailInboxScreenshot -->
+      <class name="sayatme.Registration.RegisterTwitter">
+        <methods>
+          <include name="TestRegisterTwitter"/>
+        </methods>
+      </class> <!-- sayatme.Registration.RegisterTwitter -->
+      <class name="Login.LoginVal">
+        <methods>
+          <include name="testLoginVal"/>
+        </methods>
+      </class> <!-- Login.LoginVal -->
+      <class name="Survey.SurveyWithValidData">
+        <methods>
+          <include name="SurveywithValData"/>
+        </methods>
+      </class> <!-- Survey.SurveyWithValidData -->
+      <class name="Test.testingstuff">
+        <methods>
+          <include name="f" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Test.testingstuff -->
+      <class name="Survey.SurveywithInvalidData">
+        <methods>
+          <include name="SurveywithInvData"/>
+        </methods>
+      </class> <!-- Survey.SurveywithInvalidData -->
+      <class name="GeneralFunctions.ChangeProfilePic">
+        <methods>
+          <include name="ProfilePictureChange"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfilePic -->
+      <class name="GeneralFunctions.ChangeProfilePic2">
+        <methods>
+          <include name="AvalikultProfiililtpildivahetus"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfilePic2 -->
+      <class name="Linking.EmailLinking">
+        <methods>
+          <include name="TestEmailLinking"/>
+        </methods>
+      </class> <!-- Linking.EmailLinking -->
+      <class name="Feedback.MakeFeedbackPublic">
+        <methods>
+          <include name="MakingFeedbackPublic"/>
+        </methods>
+      </class> <!-- Feedback.MakeFeedbackPublic -->
+      <class name="sayatme.Registration.registrationsuccess">
+        <methods>
+          <include name="testregistrationsuccess"/>
+        </methods>
+      </class> <!-- sayatme.Registration.registrationsuccess -->
+      <class name="GeneralFunctions.DeleteUser">
+        <methods>
+          <include name="TestDeleteUser"/>
+        </methods>
+      </class> <!-- GeneralFunctions.DeleteUser -->
+      <class name="Friends.FriendsFeedback">
+        <methods>
+          <include name="TestFriendsFeedback"/>
+        </methods>
+      </class> <!-- Friends.FriendsFeedback -->
+      <class name="Friends.UnfollowFriends">
+        <methods>
+          <include name="StopFollowing"/>
+        </methods>
+      </class> <!-- Friends.UnfollowFriends -->
+      <class name="Feedback.AnswerFeedback">
+        <methods>
+          <include name="AnswerPublicFeedback"/>
+        </methods>
+      </class> <!-- Feedback.AnswerFeedback -->
+      <class name="sayatme.Registration.RegisterFacebook">
+        <methods>
+          <include name="TestRegisterwithFacebook"/>
+        </methods>
+      </class> <!-- sayatme.Registration.RegisterFacebook -->
+      <class name="sayatme.Registration.FeedbackRegInval">
+        <methods>
+          <include name="testFeedbackRegInval"/>
+        </methods>
+      </class> <!-- sayatme.Registration.FeedbackRegInval -->
+      <class name="GeneralFunctions.ChangePw">
+        <methods>
+          <include name="TestChangePw"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangePw -->
+      <class name="Feedback.ShareOthersFeedback">
+        <methods>
+          <include name="TestShareOthersFeedback"/>
+        </methods>
+      </class> <!-- Feedback.ShareOthersFeedback -->
+      <class name="GeneralFunctions.ChangeProfileInvalid">
+        <methods>
+          <include name="ChangeProfileInvalidSize"/>
+        </methods>
+      </class> <!-- GeneralFunctions.ChangeProfileInvalid -->
+      <class name="Test.NewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testTextreplace" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.NewTest -->
       <class name="Kysimus.Kysimused">
         <methods>
-          <include name="TestKüsimused"/>
+          <include name="TestKysimused"/>
         </methods>
       </class> <!-- Kysimus.Kysimused -->
+      <class name="Feedback.feedbackinv">
+        <methods>
+          <include name="testfeedbackinv"/>
+        </methods>
+      </class> <!-- Feedback.feedbackinv -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
