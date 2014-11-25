@@ -41,12 +41,12 @@ public void beforeTest(String browser) {
               driver = new FirefoxDriver();
               baseUrl = "http://kask6iktundubkorras.sayat.me/";
               driver.get(baseUrl);
-              driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+              driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
               driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
            
                  driver.manage().window().setPosition(new Point(0,0));
               driver.manage().window().setSize(new Dimension(1600,1000));
-              wait = new WebDriverWait(driver, 25, 100);
+              wait = new WebDriverWait(driver, 15, 100);
          
                 brauser = "firefox";
        
@@ -56,12 +56,12 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
     driver = new FirefoxDriver();
     baseUrl = "http://betastaging.sayat.me/";
     driver.get(baseUrl);
-    driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
  
        driver.manage().window().setPosition(new Point(0,0));
     driver.manage().window().setSize(new Dimension(1600,1000));
-    wait = new WebDriverWait(driver, 25);
+    wait = new WebDriverWait(driver, 15);
       brauser = "firefox";
       
 }
@@ -69,12 +69,12 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
           driver = new FirefoxDriver();
           baseUrl = "http://sayat.me/";
           driver.get(baseUrl);
-          driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+          driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
           driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
        
              driver.manage().window().setPosition(new Point(0,0));
           driver.manage().window().setSize(new Dimension(1600,1000));
-          wait = new WebDriverWait(driver, 25);
+          wait = new WebDriverWait(driver, 15);
             brauser = "firefox";
    
 
@@ -87,11 +87,11 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
 	            Constant.ChromeDriver);
 	driver = new ChromeDriver();
 	baseUrl = "http://kask6iktundubkorras.sayat.me/";
-	driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
 	driver.manage().window().setPosition(new Point(0,0));
 	driver.manage().window().setSize(new Dimension(1600,1000));
-	  wait = new WebDriverWait(driver, 25, 1000);
+	  wait = new WebDriverWait(driver, 15, 1000);
 	brauser = "chrome";
 	 
 }
@@ -102,11 +102,11 @@ else if(browser.equalsIgnoreCase("firefoxbeta")) {
             Constant.ChromeDriver);
 driver = new ChromeDriver();
 baseUrl = "http://betastaging.sayat.me/";
-driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
 driver.manage().window().setPosition(new Point(0,0));
 driver.manage().window().setSize(new Dimension(1600,1000));
-wait = new WebDriverWait(driver, 25);
+wait = new WebDriverWait(driver, 15);
 brauser = "chrome";
 
 }
@@ -116,11 +116,11 @@ brauser = "chrome";
 	            Constant.ChromeDriver);
 	driver = new ChromeDriver();
 	baseUrl ="http://sayat.me/" ;
-	driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
 	driver.manage().window().setPosition(new Point(0,0));
 	driver.manage().window().setSize(new Dimension(1600,1000));
-	wait = new WebDriverWait(driver, 25);
+	wait = new WebDriverWait(driver, 15);
 	brauser = "chrome";
 
 	}
@@ -135,9 +135,9 @@ brauser = "chrome";
 		 caps.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 	driver = new InternetExplorerDriver(caps);
 	baseUrl ="http://kask6iktundubkorras.sayat.me/";
-	driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
-	wait = new WebDriverWait(driver, 25);
+	wait = new WebDriverWait(driver, 15);
 
 	brauser = "IE";
 
@@ -151,9 +151,9 @@ brauser = "chrome";
 		 caps.setCapability("ignoreZoomSetting", true);
 	driver = new InternetExplorerDriver(caps);
 	baseUrl ="http://betastaging.sayat.me/";
-	driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
-	wait = new WebDriverWait(driver, 25);
+	wait = new WebDriverWait(driver, 15);
 
 	brauser = "IE";
 
@@ -167,9 +167,9 @@ brauser = "chrome";
 		 caps.setCapability("ignoreZoomSetting", true);
 	driver = new InternetExplorerDriver(caps);
 	baseUrl = "http://sayat.me/";
-	driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
-	wait = new WebDriverWait(driver, 25);
+	wait = new WebDriverWait(driver, 15);
 
 	brauser = "IE";
 
