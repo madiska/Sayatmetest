@@ -106,7 +106,7 @@ public class ChangeProfilePic2 extends Browser{
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 			  Robot r = new Robot();
 			  Thread.sleep(1000);

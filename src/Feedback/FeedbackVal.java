@@ -76,7 +76,7 @@ Assert.assertTrue(LoggedIn.SaadetudFeedItem(driver).isDisplayed());
 
 Assert.assertTrue(driver.getPageSource().contains(Feedback3));
 
-
+wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
 LoggedIn.DropdownMenu(driver).click();
 LoggedIn.Logout(driver).click();
 

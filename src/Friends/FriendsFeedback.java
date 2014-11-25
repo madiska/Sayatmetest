@@ -16,7 +16,7 @@ public class FriendsFeedback extends Browser{
 	
 	
   @Test(dataProvider = "FriendsFeedbackVal")
-  public void TestFriendsFeedback(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3, String Answer, String Email, String Social, String Number) {
+  public void TestFriendsFeedback(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3, String Answer, String Email, String Social, String Number) throws InterruptedException {
 	  
 	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
@@ -27,7 +27,7 @@ public class FriendsFeedback extends Browser{
 	  LoggedIn.Friends(driver).click();
 	  
 	
-		
+		Thread.sleep(2000);
 		 Assert.assertTrue(driver.getPageSource().contains(Feedback3));
 
 	 
