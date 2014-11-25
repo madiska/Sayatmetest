@@ -5,7 +5,7 @@ public class Constant {
 	public static final String ExceliAsukoht = System.getProperty("user.dir")+"//src//testdata//reg.xlsx";
 	
 	
-	public static final String ChromeDriver = System.getProperty("user.dir")+"//src//Utils//chromedriver.exe";
+	public static final String ChromeDriver = System.getProperty("user.dir")+"//src//Utils//chromedriver";
 	public static final String Pilt1 = System.getProperty("user.dir")+"//src//testdata//test1.png";
 	public static final String Pilt2 = System.getProperty("user.dir")+"//src//Utils//1mb.jpg";
 	public static final String Pilt3 = System.getProperty("user.dir")+"//src//Utils//2mb.jpg";

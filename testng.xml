@@ -19,7 +19,7 @@
 	 <class name = "Feedback.CommentPublicFeedback" />
 	  <class name = "Feedback.CommentPublicFeedbackNotLoggedin" />
 	  <class name = "Feedback.AnswerFeedback" />
-	  <class name = "Kysimus.Kysimused" />
+	
 	  <class name = "Survey.SurveywithInvalidData" />
 	  <class name = "Survey.SurveyWithValidData" />
 	  <class name = "Survey.AnswerSurvey" />
