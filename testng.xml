@@ -9,7 +9,7 @@
 
 
  	
-	 <class name = "sayatme.Registraion.registrationsuccess" />
+	 <class name = "sayatme.Registration.registrationsuccess" />
 	 <class name = "Login.LoginVal" />
 	
 	 <class name = "Feedback.FeedbackVal" />
