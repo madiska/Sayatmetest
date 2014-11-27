@@ -35,7 +35,7 @@ public class CommentPublicFeedback extends Browser{
 	  Profile.CommentFeedbackTextBoxButton(driver).click();
 	  
 	
-	  
+	  wait.until(ExpectedConditions.elementToBeClickable(Profile.CommentFeedback(driver)));
 	  Assert.assertTrue(driver.getPageSource().contains(publiccomment));
 	  
 	  LoggedIn.DropdownMenu(driver).click();

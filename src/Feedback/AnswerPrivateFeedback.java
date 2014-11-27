@@ -40,7 +40,7 @@ public class AnswerPrivateFeedback extends Browser{
 			  LoggedIn.Logout(driver).click();
 			  wait.until(ExpectedConditions.elementToBeClickable(Homepage.RegButton(driver)));
 			  
-			  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+			  driver.get(baseUrl+Url2);
 			  
 			  Assert.assertFalse(driver.getPageSource().contains(PrivateAnswer));
 		  }

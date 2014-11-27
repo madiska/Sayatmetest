@@ -37,16 +37,14 @@ public class SurveywithInvalidData extends Browser{
 	  Kysitlus.KysitlusTyhista(driver).click();
 
 	 
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.UusKysitlusFollowuppage(driver)));
 	  LoggedIn.UusKysitlusFollowuppage(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
 	  Kysitlus.KysitlusPealkiri(driver).sendKeys("Pealkiri");
 	  Kysitlus.KysitlusSalvesta(driver).click();
 	  
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.Kysitlusyksvariant(driver)));
 	  Kysitlus.Kysitlusyksvariant(driver).click();
 	

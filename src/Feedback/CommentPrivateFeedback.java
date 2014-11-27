@@ -36,7 +36,7 @@ public class CommentPrivateFeedback extends Browser{
 	  LoggedIn.TagasiVastaBox(driver).sendKeys(PrivateComment);
 
 	  LoggedIn.TagasiVastaButton(driver).click();
-	  driver.findElement(By.cssSelector("div.comment:nth-child(3) > div:nth-child(1)"));
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TagasiVasta(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
