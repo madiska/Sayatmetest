@@ -28,7 +28,7 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
@@ -37,8 +37,7 @@ public class UnfollowFriends extends Browser{
 	 Thread.sleep(4000);
 	
 	  LoggedIn.FriendsClose(driver).click();
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+		Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.Friends(driver).click();
 
@@ -55,7 +54,7 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-	
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
@@ -64,8 +63,7 @@ public class UnfollowFriends extends Browser{
 	 Thread.sleep(4000);
 	
 	  LoggedIn.FriendsClose(driver).click();
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+		Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.Friends(driver).click();
 
@@ -80,7 +78,7 @@ public class UnfollowFriends extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url3);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
-
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.FriendsSeeallOfthem(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.FriendsWhoFollowYou(driver)));
 	  LoggedIn.FriendsWhoYouFollowStop(driver).click();
@@ -89,8 +87,7 @@ public class UnfollowFriends extends Browser{
 	 Thread.sleep(4000);
 
 	  LoggedIn.FriendsClose(driver).click();
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+		Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		  LoggedIn.Friends(driver).click();
 	

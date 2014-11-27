@@ -34,8 +34,7 @@ public class SurveyWithValidData extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
 	  Kysitlus.KysitlusPealkiri(driver).sendKeys(Pealkiri);
 	  Kysitlus.KysitlusSalvesta(driver).click();
-	  if (brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
+	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusKysimusPealkiri(driver)));
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus1);
 	  Kysitlus.KysitlusKysimusSalvesta(driver).click();

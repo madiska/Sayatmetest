@@ -1,6 +1,7 @@
 package GeneralFunctions;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -44,9 +45,8 @@ public class ChangePw extends Browser{
 	  else {}
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	  UserSettings.SettingsCloseInformation(driver).click();
-	  if(brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	
+	  Thread.sleep(3000);
 
 	  LoggedIn.DropdownMenu(driver).click();
 	
@@ -77,14 +77,12 @@ public class ChangePw extends Browser{
 	  Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());
 	
 	  UserSettings.SettingsCloseInformation(driver).click();
-	  if(brauser == "chrome") {Thread.sleep(3000);}
-	  else {}
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+		Thread.sleep(3000);
 	
 	  LoggedIn.DropdownMenu(driver).click();
 	
 	  LoggedIn.Logout(driver).click();
-	  
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  
 	  

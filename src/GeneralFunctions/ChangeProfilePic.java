@@ -113,7 +113,7 @@ public class ChangeProfilePic extends Browser{
 							  long start = System.currentTimeMillis();
 							  UserSettings.SettingsSaveInformation(driver).click();
 						
-							Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
+							wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
 					
 							 long finish = System.currentTimeMillis();
 							 long totalTime = finish - start; 
@@ -258,16 +258,16 @@ public class ChangeProfilePic extends Browser{
 						    robot.keyPress(KeyEvent.VK_ENTER);
 						    robot.keyRelease(KeyEvent.VK_ENTER);
 				
-						Thread.sleep(2000);
-						 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
+					
+						wait.until(ExpectedConditions.visibilityOf(UserSettings.Eemaldapilt(driver)));
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
 						
 						
 						  long start = System.currentTimeMillis();
 						  UserSettings.SettingsSaveInformation(driver).click();
-					
-						Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
+						  
+							wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
 				
 						 long finish = System.currentTimeMillis();
 						 long totalTime = finish - start; 
@@ -432,8 +432,7 @@ public class ChangeProfilePic extends Browser{
 						
 						  long start = System.currentTimeMillis();
 						  UserSettings.SettingsSaveInformation(driver).click();
-					
-						Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
+						 wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
 				
 						 long finish = System.currentTimeMillis();
 						 long totalTime = finish - start; 
@@ -500,7 +499,14 @@ public class ChangeProfilePic extends Browser{
 					}else
 					{
 					}
+					
+					
 				}
+				  UserSettings.SettingsCloseInformation(driver).click();
+				  Thread.sleep(3000);
+				  LoggedIn.DropdownMenu(driver).click();
+				  LoggedIn.Logout(driver).click();
+				  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
   }
   @DataProvider
   

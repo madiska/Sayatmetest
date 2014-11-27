@@ -106,7 +106,7 @@ public class ChangeProfilePic2 extends Browser{
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 			  Robot r = new Robot();
 			  Thread.sleep(1000);
@@ -116,7 +116,7 @@ public class ChangeProfilePic2 extends Browser{
 			 
 			  UserSettings.SettingsSaveInformation(driver).click();
 		
-			Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
+				wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
 	
 		
 		
@@ -212,6 +212,7 @@ public class ChangeProfilePic2 extends Browser{
 	System.out.println(brauser);
 	
 		UserSettings.SettingsCloseInformation(driver).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 		driver.get(baseUrl+"testime13");
 		wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -238,9 +239,7 @@ public class ChangeProfilePic2 extends Browser{
 		    robot.keyRelease(KeyEvent.VK_ENTER);
 
 		Thread.sleep(2000);
-		 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
-	
-		
+			wait.until(ExpectedConditions.visibilityOf(UserSettings.Eemaldapilt(driver)));
 		
 		  UserSettings.SettingsSaveInformation(driver).click();
 	
@@ -335,6 +334,7 @@ else if (brauser == "chrome"){
 	  
 
 	UserSettings.SettingsCloseInformation(driver).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	driver.get(baseUrl+"testime13");
 	wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -371,7 +371,7 @@ else if (brauser == "chrome"){
 		
 		  UserSettings.SettingsSaveInformation(driver).click();
 	
-		Assert.assertTrue(UserSettings.DataAdded(driver).isDisplayed());  
+		wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
 
 	}
 	
@@ -418,5 +418,12 @@ else if (brauser == "chrome"){
 
 	
   }
+  UserSettings.SettingsCloseInformation(driver).click();
+  Thread.sleep(3000);
+  LoggedIn.DropdownMenu(driver).click();
+  LoggedIn.Logout(driver).click();
+  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
+  
 }
+  
 }

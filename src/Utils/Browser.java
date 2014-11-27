@@ -35,7 +35,7 @@ protected WebDriverWait wait;
 
 
 
-@BeforeTest
+@BeforeMethod
 
 @Parameters("browser")
 public void beforeTest(String browser) {

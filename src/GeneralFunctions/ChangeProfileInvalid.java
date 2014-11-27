@@ -86,7 +86,7 @@ public class ChangeProfileInvalid extends Browser {
 			    robot.keyPress(KeyEvent.VK_ENTER);
 			    robot.keyRelease(KeyEvent.VK_ENTER);
 	
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			
 			  
 			  
@@ -144,5 +144,9 @@ public class ChangeProfileInvalid extends Browser {
 	
 		
   }
+	  Thread.sleep(3000);
+	  LoggedIn.DropdownMenu(driver).click();
+	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 }
 }

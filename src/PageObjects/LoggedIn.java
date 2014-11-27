@@ -461,4 +461,10 @@ public class LoggedIn {
 			 
 			 return element;
 		 }
+		public static WebElement ModalWindow(WebDriver driver){
+			 
+			 element = driver.findElement(By.cssSelector("html body.modal-open div.modal-backdrop.fade.in"));
+			 
+			 return element;
+		 }
 }
