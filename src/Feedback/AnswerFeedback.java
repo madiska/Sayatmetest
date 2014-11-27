@@ -22,7 +22,7 @@ public class AnswerFeedback extends Browser{
   public void AnswerPublicFeedback(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Vastus, String Email, String Social, String Number) throws InterruptedException {
 	  
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);

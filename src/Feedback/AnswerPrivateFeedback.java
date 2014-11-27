@@ -23,7 +23,7 @@ public class AnswerPrivateFeedback extends Browser{
 		  public void GivePrivateFeedbackanswer(String Url1, String Url2,String Parool, String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
 		 
 		  
-			  driver.get("http://kask6iktundubkorras.sayat.me");
+			  driver.get(baseUrl);
 			  Homepage.Login(driver).click();	
 			  Homepage.LoginUrl(driver).sendKeys(Url2);
 			  Homepage.LoginPW(driver).sendKeys(Parool);

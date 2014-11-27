@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="172376" started-at="2014-11-25T15:48:56Z" finished-at="2014-11-25T15:51:49Z">
+  <suite name="Suite" duration-ms="2318946" started-at="2014-11-26T13:31:56Z" finished-at="2014-11-26T14:10:35Z">
     <groups>
     </groups>
-    <test name="chrome kask6intundubkorras" duration-ms="172306" started-at="2014-11-25T15:48:56Z" finished-at="2014-11-25T15:51:48Z">
-      <class name="Friends.FriendsFeedback">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="beforeTest" is-config="true" duration-ms="2821" started-at="2014-11-25T17:49:56Z" finished-at="2014-11-25T17:49:59Z">
+    <test name="chrome kask6intundubkorras" duration-ms="713647" started-at="2014-11-26T13:31:56Z" finished-at="2014-11-26T13:43:50Z">
+      <class name="sayatme.Registration.FeedbackRegInval">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="beforeTest" is-config="true" duration-ms="2546" started-at="2014-11-26T15:40:51Z" finished-at="2014-11-26T15:40:54Z">
           <params>
             <param index="0">
               <value>
@@ -18,72 +18,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TestFriendsFeedback(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="TestFriendsFeedback" duration-ms="11375" started-at="2014-11-25T17:49:59Z" data-provider="FriendsFeedbackVal" finished-at="2014-11-25T17:50:10Z">
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="testFeedbackRegInval" duration-ms="54780" started-at="2014-11-26T15:40:54Z" data-provider="FeedbackReg" finished-at="2014-11-26T15:41:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tavalinetont31]]>
+                <![CDATA[Manualtest]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[puhtaloom31]]>
+                <![CDATA[testime13]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[filmweird31]]>
+                <![CDATA[korralik1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[testime11]]>
+                <![CDATA[korralik2]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Anon kiidab sind]]>
+                <![CDATA[eiso]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Oma küla vana]]>
+                <![CDATA[manualtest]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Jalgpalliäss]]>
+                <![CDATA[selentest@]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Eks sa tea paremini]]>
+                <![CDATA[See on testi konto jah?]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[selentest16@mailinator.com]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[selentest@hotmail.com]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[1]]>
+                <![CDATA[Ei tohi leida midagi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestFriendsFeedback -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="closeBrowser" is-config="true" duration-ms="2424" started-at="2014-11-25T17:50:10Z" finished-at="2014-11-25T17:50:13Z">
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="closeBrowser" is-config="true" duration-ms="1616" started-at="2014-11-26T15:41:49Z" finished-at="2014-11-26T15:41:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="beforeTest" is-config="true" duration-ms="2631" started-at="2014-11-25T17:50:13Z" finished-at="2014-11-25T17:50:16Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="beforeTest" is-config="true" duration-ms="3237" started-at="2014-11-26T15:41:50Z" finished-at="2014-11-26T15:41:53Z">
           <params>
             <param index="0">
               <value>
@@ -94,72 +84,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TestFriendsFeedback(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="TestFriendsFeedback" duration-ms="10329" started-at="2014-11-25T17:50:16Z" data-provider="FriendsFeedbackVal" finished-at="2014-11-25T17:50:26Z">
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="testFeedbackRegInval" duration-ms="54359" started-at="2014-11-26T15:41:53Z" data-provider="FeedbackReg" finished-at="2014-11-26T15:42:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[puhtaloom31]]>
+                <![CDATA[Automaaaat]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[filmweird31]]>
+                <![CDATA[madiskangro]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tavalinetont31]]>
+                <![CDATA[korralik2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[testime11]]>
+                <![CDATA[korralik3]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Veits imelik]]>
+                <![CDATA[vaike]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Omamoodi]]>
+                <![CDATA[Automaaaat]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[We meet again. Weirdo]]>
+                <![CDATA[madiskangro$]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Eks kaitsetöö ole kah tähtis]]>
+                <![CDATA[See sul teine konto]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[testimeauto13@mailinator.com]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[selentest@hotmail.com]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[2]]>
+                <![CDATA[Ei tohi yldse leida]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestFriendsFeedback -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="closeBrowser" is-config="true" duration-ms="2486" started-at="2014-11-25T17:50:26Z" finished-at="2014-11-25T17:50:28Z">
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="closeBrowser" is-config="true" duration-ms="2467" started-at="2014-11-26T15:42:48Z" finished-at="2014-11-26T15:42:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="beforeTest" is-config="true" duration-ms="2710" started-at="2014-11-25T17:50:28Z" finished-at="2014-11-25T17:50:31Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="beforeTest" is-config="true" duration-ms="2793" started-at="2014-11-26T15:42:50Z" finished-at="2014-11-26T15:42:53Z">
           <params>
             <param index="0">
               <value>
@@ -170,74 +150,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TestFriendsFeedback(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="TestFriendsFeedback" duration-ms="9756" started-at="2014-11-25T17:50:31Z" data-provider="FriendsFeedbackVal" finished-at="2014-11-25T17:50:41Z">
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="testFeedbackRegInval" duration-ms="54423" started-at="2014-11-26T15:42:53Z" data-provider="FeedbackReg" finished-at="2014-11-26T15:43:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[filmweird31]]>
+                <![CDATA[Peerfoooooo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tavalinetont31]]>
+                <![CDATA[testime14]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[puhtaloom31]]>
+                <![CDATA[korralik3]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[testime11]]>
+                <![CDATA[korralik4]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Sa ei tea kes ma olen]]>
+                <![CDATA[liiga]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Ma tunnen vist sind]]>
+                <![CDATA[Peerfoooooo]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Vaikne Vend]]>
+                <![CDATA[Mktest!]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Indeed]]>
+                <![CDATA[See sul kolmas test]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[vahekonto11@mailinator.com]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[selentest@hotmail.com]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[3]]>
+                <![CDATA[No ei leia midagi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestFriendsFeedback -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Friends.FriendsFeedback@3796751b]" name="closeBrowser" is-config="true" duration-ms="2422" started-at="2014-11-25T17:50:41Z" finished-at="2014-11-25T17:50:43Z">
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@3d8c7aca]" name="closeBrowser" is-config="true" duration-ms="2524" started-at="2014-11-26T15:43:47Z" finished-at="2014-11-26T15:43:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Friends.FriendsFeedback -->
-      <class name="Friends.UnfollowFriends">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Friends.UnfollowFriends@3cda1055]" name="beforeTest" is-config="true" duration-ms="2644" started-at="2014-11-25T17:50:43Z" finished-at="2014-11-25T17:50:46Z">
+      </class> <!-- sayatme.Registration.FeedbackRegInval -->
+      <class name="sayatme.Registration.ProfileRegInv">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="beforeTest" is-config="true" duration-ms="2900" started-at="2014-11-26T15:39:31Z" finished-at="2014-11-26T15:39:34Z">
           <params>
             <param index="0">
               <value>
@@ -248,59 +218,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="StopFollowing(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Friends.UnfollowFriends@3cda1055]" name="StopFollowing" duration-ms="59904" started-at="2014-11-25T17:50:46Z" data-provider="UnFollowFriends" finished-at="2014-11-25T17:51:46Z">
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="testProfileRegInv" duration-ms="21563" started-at="2014-11-26T15:39:34Z" data-provider="ProfRegamine" finished-at="2014-11-26T15:39:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tavalinetont31]]>
+                <![CDATA[Manualtest]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Toivo Tavaline]]>
+                <![CDATA[testime13]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[puhtaloom31]]>
+                <![CDATA[korralik1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Martin Loom]]>
+                <![CDATA[korralik2]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[filmweird31]]>
+                <![CDATA[eiso]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Toomas Film]]>
+                <![CDATA[manualtest]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[testime11]]>
+                <![CDATA[selentest@]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Registration was a success]]>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StopFollowing -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Friends.UnfollowFriends@3cda1055]" name="closeBrowser" is-config="true" duration-ms="2526" started-at="2014-11-25T17:51:46Z" finished-at="2014-11-25T17:51:48Z">
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="closeBrowser" is-config="true" duration-ms="2495" started-at="2014-11-26T15:39:56Z" finished-at="2014-11-26T15:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Friends.UnfollowFriends -->
-      <class name="Friends.FollowFriends">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Friends.FollowFriends@668bc3d5]" name="beforeTest" is-config="true" duration-ms="3365" started-at="2014-11-25T17:48:57Z" finished-at="2014-11-25T17:49:00Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="beforeTest" is-config="true" duration-ms="2664" started-at="2014-11-26T15:39:58Z" finished-at="2014-11-26T15:40:01Z">
           <params>
             <param index="0">
               <value>
@@ -311,73 +284,1544 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="SopradeJalgimine(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Friends.FollowFriends@668bc3d5]" name="SopradeJalgimine" duration-ms="53296" started-at="2014-11-25T17:49:00Z" data-provider="FollowFriendsValues" finished-at="2014-11-25T17:49:54Z">
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="testProfileRegInv" duration-ms="22131" started-at="2014-11-26T15:40:01Z" data-provider="ProfRegamine" finished-at="2014-11-26T15:40:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tavalinetont31]]>
+                <![CDATA[Automaaaat]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Toivo Tavaline]]>
+                <![CDATA[madiskangro]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[puhtaloom31]]>
+                <![CDATA[korralik2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Martin Loom]]>
+                <![CDATA[korralik3]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[filmweird31]]>
+                <![CDATA[vaike]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Toomas Film]]>
+                <![CDATA[Automaaaat]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[testime11]]>
+                <![CDATA[madiskangro$]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Registration was a success]]>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SopradeJalgimine -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Friends.FollowFriends@668bc3d5]" name="closeBrowser" is-config="true" duration-ms="2586" started-at="2014-11-25T17:49:54Z" finished-at="2014-11-25T17:49:56Z">
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="closeBrowser" is-config="true" duration-ms="2572" started-at="2014-11-26T15:40:23Z" finished-at="2014-11-26T15:40:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Friends.FollowFriends -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="beforeTest" is-config="true" duration-ms="2430" started-at="2014-11-26T15:40:25Z" finished-at="2014-11-26T15:40:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromekorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="testProfileRegInv" duration-ms="21715" started-at="2014-11-26T15:40:28Z" data-provider="ProfRegamine" finished-at="2014-11-26T15:40:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@2acf57e3]" name="closeBrowser" is-config="true" duration-ms="1516" started-at="2014-11-26T15:40:50Z" finished-at="2014-11-26T15:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.ProfileRegInv -->
+      <class name="sayatme.Registration.Frontpagereg">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="beforeTest" is-config="true" duration-ms="3426" started-at="2014-11-26T15:31:57Z" finished-at="2014-11-26T15:32:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromekorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="testFrontpagereg" duration-ms="146401" started-at="2014-11-26T15:32:01Z" data-provider="Regamine" finished-at="2014-11-26T15:34:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="closeBrowser" is-config="true" duration-ms="2623" started-at="2014-11-26T15:34:27Z" finished-at="2014-11-26T15:34:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="beforeTest" is-config="true" duration-ms="2222" started-at="2014-11-26T15:34:30Z" finished-at="2014-11-26T15:34:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromekorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="testFrontpagereg" duration-ms="146406" started-at="2014-11-26T15:34:32Z" data-provider="Regamine" finished-at="2014-11-26T15:36:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="closeBrowser" is-config="true" duration-ms="2422" started-at="2014-11-26T15:36:58Z" finished-at="2014-11-26T15:37:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="beforeTest" is-config="true" duration-ms="2776" started-at="2014-11-26T15:37:01Z" finished-at="2014-11-26T15:37:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromekorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="testFrontpagereg" duration-ms="145057" started-at="2014-11-26T15:37:03Z" data-provider="Regamine" finished-at="2014-11-26T15:39:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@1a407d53]" name="closeBrowser" is-config="true" duration-ms="2497" started-at="2014-11-26T15:39:29Z" finished-at="2014-11-26T15:39:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.Frontpagereg -->
     </test> <!-- chrome kask6intundubkorras -->
-    <test name="chrome Beta" duration-ms="0" started-at="2014-11-25T15:51:48Z" finished-at="2014-11-25T15:51:48Z">
+    <test name="chrome Beta" duration-ms="0" started-at="2014-11-26T13:43:50Z" finished-at="2014-11-26T13:43:50Z">
     </test> <!-- chrome Beta -->
-    <test name="chrome Live" duration-ms="0" started-at="2014-11-25T15:51:48Z" finished-at="2014-11-25T15:51:48Z">
+    <test name="chrome Live" duration-ms="0" started-at="2014-11-26T13:43:50Z" finished-at="2014-11-26T13:43:50Z">
     </test> <!-- chrome Live -->
-    <test name="Firefox kask6intundubkorras" duration-ms="0" started-at="2014-11-25T15:51:48Z" finished-at="2014-11-25T15:51:48Z">
+    <test name="Firefox kask6intundubkorras" duration-ms="720216" started-at="2014-11-26T13:43:50Z" finished-at="2014-11-26T13:55:50Z">
+      <class name="sayatme.Registration.FeedbackRegInval">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="beforeTest" is-config="true" duration-ms="5789" started-at="2014-11-26T15:52:47Z" finished-at="2014-11-26T15:52:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="testFeedbackRegInval" duration-ms="55209" started-at="2014-11-26T15:52:53Z" data-provider="FeedbackReg" finished-at="2014-11-26T15:53:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="closeBrowser" is-config="true" duration-ms="301" started-at="2014-11-26T15:53:48Z" finished-at="2014-11-26T15:53:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="beforeTest" is-config="true" duration-ms="6160" started-at="2014-11-26T15:53:48Z" finished-at="2014-11-26T15:53:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="testFeedbackRegInval" duration-ms="55168" started-at="2014-11-26T15:53:54Z" data-provider="FeedbackReg" finished-at="2014-11-26T15:54:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="closeBrowser" is-config="true" duration-ms="350" started-at="2014-11-26T15:54:50Z" finished-at="2014-11-26T15:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="beforeTest" is-config="true" duration-ms="5767" started-at="2014-11-26T15:54:50Z" finished-at="2014-11-26T15:54:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="testFeedbackRegInval" duration-ms="54212" started-at="2014-11-26T15:54:56Z" data-provider="FeedbackReg" finished-at="2014-11-26T15:55:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@6fb554cc]" name="closeBrowser" is-config="true" duration-ms="299" started-at="2014-11-26T15:55:50Z" finished-at="2014-11-26T15:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.FeedbackRegInval -->
+      <class name="sayatme.Registration.ProfileRegInv">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="beforeTest" is-config="true" duration-ms="6345" started-at="2014-11-26T15:51:22Z" finished-at="2014-11-26T15:51:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="testProfileRegInv" duration-ms="21243" started-at="2014-11-26T15:51:28Z" data-provider="ProfRegamine" finished-at="2014-11-26T15:51:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="closeBrowser" is-config="true" duration-ms="291" started-at="2014-11-26T15:51:49Z" finished-at="2014-11-26T15:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="beforeTest" is-config="true" duration-ms="5870" started-at="2014-11-26T15:51:50Z" finished-at="2014-11-26T15:51:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="testProfileRegInv" duration-ms="21022" started-at="2014-11-26T15:51:56Z" data-provider="ProfRegamine" finished-at="2014-11-26T15:52:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="closeBrowser" is-config="true" duration-ms="320" started-at="2014-11-26T15:52:17Z" finished-at="2014-11-26T15:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="beforeTest" is-config="true" duration-ms="8541" started-at="2014-11-26T15:52:17Z" finished-at="2014-11-26T15:52:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="testProfileRegInv" duration-ms="21265" started-at="2014-11-26T15:52:25Z" data-provider="ProfRegamine" finished-at="2014-11-26T15:52:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@3f2a3a5]" name="closeBrowser" is-config="true" duration-ms="295" started-at="2014-11-26T15:52:47Z" finished-at="2014-11-26T15:52:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.ProfileRegInv -->
+      <class name="sayatme.Registration.Frontpagereg">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="beforeTest" is-config="true" duration-ms="6781" started-at="2014-11-26T15:43:50Z" finished-at="2014-11-26T15:43:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="testFrontpagereg" duration-ms="144667" started-at="2014-11-26T15:43:57Z" data-provider="Regamine" finished-at="2014-11-26T15:46:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="closeBrowser" is-config="true" duration-ms="421" started-at="2014-11-26T15:46:22Z" finished-at="2014-11-26T15:46:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="beforeTest" is-config="true" duration-ms="5439" started-at="2014-11-26T15:46:22Z" finished-at="2014-11-26T15:46:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="testFrontpagereg" duration-ms="143950" started-at="2014-11-26T15:46:27Z" data-provider="Regamine" finished-at="2014-11-26T15:48:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="closeBrowser" is-config="true" duration-ms="301" started-at="2014-11-26T15:48:51Z" finished-at="2014-11-26T15:48:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="beforeTest" is-config="true" duration-ms="5316" started-at="2014-11-26T15:48:52Z" finished-at="2014-11-26T15:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="testFrontpagereg" duration-ms="144298" started-at="2014-11-26T15:48:57Z" data-provider="Regamine" finished-at="2014-11-26T15:51:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@4cb2c100]" name="closeBrowser" is-config="true" duration-ms="358" started-at="2014-11-26T15:51:21Z" finished-at="2014-11-26T15:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.Frontpagereg -->
     </test> <!-- Firefox kask6intundubkorras -->
-    <test name="Firefox betastaging" duration-ms="0" started-at="2014-11-25T15:51:48Z" finished-at="2014-11-25T15:51:48Z">
+    <test name="Firefox betastaging" duration-ms="0" started-at="2014-11-26T13:55:50Z" finished-at="2014-11-26T13:55:50Z">
     </test> <!-- Firefox betastaging -->
-    <test name="Firefox Live" duration-ms="0" started-at="2014-11-25T15:51:48Z" finished-at="2014-11-25T15:51:48Z">
+    <test name="Firefox Live" duration-ms="0" started-at="2014-11-26T13:55:50Z" finished-at="2014-11-26T13:55:50Z">
     </test> <!-- Firefox Live -->
-    <test name="IE kask6intundubkorras" duration-ms="0" started-at="2014-11-25T15:51:48Z" finished-at="2014-11-25T15:51:48Z">
+    <test name="IE kask6intundubkorras" duration-ms="884992" started-at="2014-11-26T13:55:50Z" finished-at="2014-11-26T14:10:35Z">
+      <class name="sayatme.Registration.FeedbackRegInval">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="beforeTest" is-config="true" duration-ms="9794" started-at="2014-11-26T16:06:36Z" finished-at="2014-11-26T16:06:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="testFeedbackRegInval" duration-ms="67824" started-at="2014-11-26T16:06:45Z" data-provider="FeedbackReg" finished-at="2014-11-26T16:07:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="closeBrowser" is-config="true" duration-ms="1062" started-at="2014-11-26T16:07:53Z" finished-at="2014-11-26T16:07:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="beforeTest" is-config="true" duration-ms="8765" started-at="2014-11-26T16:07:54Z" finished-at="2014-11-26T16:08:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="testFeedbackRegInval" duration-ms="74061" started-at="2014-11-26T16:08:03Z" data-provider="FeedbackReg" finished-at="2014-11-26T16:09:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="closeBrowser" is-config="true" duration-ms="1071" started-at="2014-11-26T16:09:17Z" finished-at="2014-11-26T16:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="beforeTest" is-config="true" duration-ms="9157" started-at="2014-11-26T16:09:18Z" finished-at="2014-11-26T16:09:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFeedbackRegInval(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="testFeedbackRegInval" duration-ms="66848" started-at="2014-11-26T16:09:27Z" data-provider="FeedbackReg" finished-at="2014-11-26T16:10:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackRegInval -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.FeedbackRegInval@617c74e5]" name="closeBrowser" is-config="true" duration-ms="1068" started-at="2014-11-26T16:10:34Z" finished-at="2014-11-26T16:10:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.FeedbackRegInval -->
+      <class name="sayatme.Registration.ProfileRegInv">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="beforeTest" is-config="true" duration-ms="9098" started-at="2014-11-26T16:04:32Z" finished-at="2014-11-26T16:04:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="testProfileRegInv" duration-ms="31873" started-at="2014-11-26T16:04:42Z" data-provider="ProfRegamine" finished-at="2014-11-26T16:05:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="closeBrowser" is-config="true" duration-ms="1059" started-at="2014-11-26T16:05:13Z" finished-at="2014-11-26T16:05:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="beforeTest" is-config="true" duration-ms="8843" started-at="2014-11-26T16:05:14Z" finished-at="2014-11-26T16:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="testProfileRegInv" duration-ms="30432" started-at="2014-11-26T16:05:23Z" data-provider="ProfRegamine" finished-at="2014-11-26T16:05:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="closeBrowser" is-config="true" duration-ms="1061" started-at="2014-11-26T16:05:54Z" finished-at="2014-11-26T16:05:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="beforeTest" is-config="true" duration-ms="9383" started-at="2014-11-26T16:05:55Z" finished-at="2014-11-26T16:06:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProfileRegInv(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="testProfileRegInv" duration-ms="30390" started-at="2014-11-26T16:06:04Z" data-provider="ProfRegamine" finished-at="2014-11-26T16:06:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileRegInv -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.ProfileRegInv@3a03464]" name="closeBrowser" is-config="true" duration-ms="1068" started-at="2014-11-26T16:06:35Z" finished-at="2014-11-26T16:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.ProfileRegInv -->
+      <class name="sayatme.Registration.Frontpagereg">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="beforeTest" is-config="true" duration-ms="8772" started-at="2014-11-26T15:55:50Z" finished-at="2014-11-26T15:55:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="testFrontpagereg" duration-ms="165318" started-at="2014-11-26T15:55:59Z" data-provider="Regamine" finished-at="2014-11-26T15:58:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manualtest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime13]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[eiso]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manualtest]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[selentest@]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See on testi konto jah?]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi leida midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="closeBrowser" is-config="true" duration-ms="1043" started-at="2014-11-26T15:58:44Z" finished-at="2014-11-26T15:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="beforeTest" is-config="true" duration-ms="9770" started-at="2014-11-26T15:58:46Z" finished-at="2014-11-26T15:58:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="testFrontpagereg" duration-ms="163004" started-at="2014-11-26T15:58:55Z" data-provider="Regamine" finished-at="2014-11-26T16:01:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madiskangro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vaike]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Automaaaat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[madiskangro$]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul teine konto]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ei tohi yldse leida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="closeBrowser" is-config="true" duration-ms="1056" started-at="2014-11-26T16:01:38Z" finished-at="2014-11-26T16:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="beforeTest" is-config="true" duration-ms="8983" started-at="2014-11-26T16:01:39Z" finished-at="2014-11-26T16:01:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IEkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testFrontpagereg(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="testFrontpagereg" duration-ms="162966" started-at="2014-11-26T16:01:48Z" data-provider="Regamine" finished-at="2014-11-26T16:04:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testime14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[korralik3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[korralik4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[liiga]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Peerfoooooo]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Mktest!]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[See sul kolmas test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[No ei leia midagi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrontpagereg -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sayatme.Registration.Frontpagereg@2d3fcdbd]" name="closeBrowser" is-config="true" duration-ms="1049" started-at="2014-11-26T16:04:31Z" finished-at="2014-11-26T16:04:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sayatme.Registration.Frontpagereg -->
     </test> <!-- IE kask6intundubkorras -->
-    <test name="IE betastaging" duration-ms="0" started-at="2014-11-25T15:51:49Z" finished-at="2014-11-25T15:51:49Z">
+    <test name="IE betastaging" duration-ms="0" started-at="2014-11-26T14:10:35Z" finished-at="2014-11-26T14:10:35Z">
     </test> <!-- IE betastaging -->
-    <test name="IE Live" duration-ms="0" started-at="2014-11-25T15:51:49Z" finished-at="2014-11-25T15:51:49Z">
+    <test name="IE Live" duration-ms="0" started-at="2014-11-26T14:10:35Z" finished-at="2014-11-26T14:10:35Z">
     </test> <!-- IE Live -->
   </suite> <!-- Suite -->
 </testng-results>

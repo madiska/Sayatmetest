@@ -18,7 +18,7 @@ public class ShareFeedback extends Browser {
   public void TestShareFeedback(String Url1, String Url2, String Parool, String Facebook, String FBPw, String TwitterTMbl) throws InterruptedException {
 	  
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
@@ -38,14 +38,14 @@ public class ShareFeedback extends Browser {
 	  SocialMedia.FacebookLoginPublish(driver).click();
 	 Thread.sleep(5000);
 	  driver.switchTo().window(parentHandle);
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  LoggedIn.TagasiJaga(driver).click();
 	  LoggedIn.TagasiJagatwitter(driver).click();
 	  SocialMedia.TwitterLoginEmail(driver).sendKeys(TwitterTMbl);
 	  SocialMedia.TwitterLoginPw(driver).sendKeys(Parool);
 	  SocialMedia.TwitterLoginButton(driver).click();
 	  SocialMedia.TwitterTweetButton(driver).click();
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  
 	  
 	  
@@ -66,7 +66,7 @@ public class ShareFeedback extends Browser {
 	  
 	  
 	  driver.switchTo().window(parentHandle);
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  
 	  
 	  

@@ -40,7 +40,7 @@ public class FeedbackVal extends Browser{
    Profile.TagasisideButton(driver).click();
  
 
-   driver.get("http://kask6iktundubkorras.sayat.me");
+   driver.get(baseUrl);
    Homepage.Login(driver).click();
 
    Homepage.LoginUrl(driver).sendKeys(Url1);

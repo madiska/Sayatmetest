@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="124.566" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="222.745" tests="27" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Madis\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf92267519961840962.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Madis\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1957855761525761246.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1257"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Madis\AppData\Roaming\npm;C:\Program Files (x86)\WinAnt\bin;C:\Users\Madis\Documents\apache-maven-3.2.3\bin;.;;C:\Users\Madis\Documents\eclipse;;.;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,9 +62,31 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="SopradeJalgimine" classname="Friends.FollowFriends" time="53.298"/>
-  <testcase name="TestFriendsFeedback" classname="Friends.FriendsFeedback" time="11.373"/>
-  <testcase name="TestFriendsFeedback" classname="Friends.FriendsFeedback" time="10.328"/>
-  <testcase name="TestFriendsFeedback" classname="Friends.FriendsFeedback" time="9.752"/>
-  <testcase name="StopFollowing" classname="Friends.UnfollowFriends" time="59.895"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="146.398"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="146.393"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="145.057"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="144.667"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="143.951"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="144.297"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="165.32"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="163.005"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="162.967"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.561"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="22.129"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.715"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.242"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.024"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.264"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="31.872"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="30.432"/>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="30.39"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.786"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.361"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.423"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="55.211"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="55.167"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.212"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="67.824"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="74.063"/>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="66.848"/>
 </testsuite>

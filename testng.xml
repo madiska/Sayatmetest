@@ -8,11 +8,11 @@
 		<classes>
 
 
- 	
+<class name = "sayatme.Registration.Frontpagereg" />
+<class name = "sayatme.Registration.ProfileRegInv" /> 
+<class name = "sayatme.Registration.FeedbackRegInval" />
 
-	  <class name = "Friends.FollowFriends" />
-	  <class name = "Friends.FriendsFeedback" />
-	  <class name = "Friends.UnfollowFriends" />
+
  	  
 	 
 
@@ -51,6 +51,9 @@
  
 		<classes>
 	
+<class name = "sayatme.Registration.Frontpagereg" />
+<class name = "sayatme.Registration.ProfileRegInv" /> 
+<class name = "sayatme.Registration.FeedbackRegInval" />
 		 </classes>
  
  </test>
@@ -88,6 +91,9 @@
 
 
 
+<class name = "sayatme.Registration.Frontpagereg" />
+<class name = "sayatme.Registration.ProfileRegInv" /> 
+<class name = "sayatme.Registration.FeedbackRegInval" />
 
 
 

@@ -20,7 +20,7 @@ public class MakeFeedbackPublic extends Browser {
   @Test(dataProvider = "FeedbackPublic")
   public void MakingFeedbackPublic(String Url1, String Url2, String Url3, String Parool, String Feedback1, String Feedback2, String Feedback3,String Answer, String Email, String Social, String Number) throws InterruptedException {
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);

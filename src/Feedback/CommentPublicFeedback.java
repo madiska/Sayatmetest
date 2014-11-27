@@ -19,7 +19,7 @@ public class CommentPublicFeedback extends Browser{
   @Test(dataProvider = "CommentData")
   public void CommentPublicFeedbackTest (String Url1, String Url2, String Parool, String PrivateAnswer, String PrivateComment, String publiccomment, String Feedback3) throws InterruptedException {
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
@@ -28,7 +28,7 @@ public class CommentPublicFeedback extends Browser{
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 	  Profile.CommentFeedback(driver).click();
 	  Profile.CommentFeedbackTextBox(driver).click();
 	  Profile.CommentFeedbackTextBox(driver).sendKeys(publiccomment);
@@ -42,7 +42,7 @@ public class CommentPublicFeedback extends Browser{
 	  LoggedIn.Logout(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.RegButton(driver)));
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 	  Assert.assertFalse(driver.getPageSource().contains(PrivateComment));
 	  Assert.assertFalse(driver.getPageSource().contains(PrivateAnswer));
 	  

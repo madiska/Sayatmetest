@@ -17,13 +17,13 @@ public class ShareOthersFeedback extends Browser {
 	 
   @Test(dataProvider = "ShareOthersFeedbackdata")
   public void TestShareOthersFeedback(String Url1, String Url2, String Parool, String Facebook, String FBPw, String TwitterTMbl) throws InterruptedException {
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys(Url1);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
 	
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 	  String parentHandle = driver.getWindowHandle(); 
 	  LoggedIn.TagasiJaga(driver).click();
 	  LoggedIn.TagasiJagaFacebook(driver).click();
@@ -42,7 +42,7 @@ public class ShareOthersFeedback extends Browser {
 	  
 	  
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 	  LoggedIn.TagasiJaga(driver).click();
 	  LoggedIn.TagasiJagatwitterKeegiTeine(driver).click();
 	  Thread.sleep(2000);
@@ -54,7 +54,7 @@ public class ShareOthersFeedback extends Browser {
 	  SocialMedia.TwitterLoginButton(driver).click();
 	  SocialMedia.TwitterTweetButton(driver).click();
 	  driver.switchTo().window(parentHandle);
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 	  
 	  
 	  
@@ -75,7 +75,7 @@ public class ShareOthersFeedback extends Browser {
 	  
 	  
 	  driver.switchTo().window(parentHandle);
-	  driver.get("http://kask6iktundubkorras.sayat.me");
+	  driver.get(baseUrl);
 	  
 	  
 	  
