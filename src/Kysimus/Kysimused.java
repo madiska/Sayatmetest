@@ -216,7 +216,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 				}
 				else {}
 				driver.close();
-				Thread.sleep(1500);
+				Thread.sleep(3000);
 				
 				driver.switchTo().window(parenthandle);
 	}
