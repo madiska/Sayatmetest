@@ -36,7 +36,7 @@ public class CommentPublicFeedback extends Browser{
 	  Profile.CommentFeedbackTextBoxButton(driver).click();
 	  
 	
-	  driver.findElement(By.cssSelector("span.feed-item-form button.btn.btn-xs.btn-link.reply"));
+	  driver.findElement(By.cssSelector("button.btn.btn-xs.btn-link.reply"));
 	  Assert.assertTrue(driver.getPageSource().contains(publiccomment));
 	  
 	  LoggedIn.DropdownMenu(driver).click();

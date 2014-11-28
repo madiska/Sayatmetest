@@ -60,7 +60,7 @@
 <class name = "Friends.FollowFriends" />
 <class name = "Friends.FriendsFeedback" />
 <class name = "Friends.UnfollowFriends" />
-<class name = "Kysimus.Kysimused" />
+
 <class name = "Survey.SurveywithInvalidData" />
 <class name = "Survey.SurveyWithValidData" />
 <class name = "Survey.AnswerSurvey" />

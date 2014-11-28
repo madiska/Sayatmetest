@@ -57,6 +57,7 @@ public class FollowFriends extends Browser {
 		  LoggedIn.Friends(driver).click();
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
 	
 	  
 	  
@@ -91,7 +92,8 @@ public class FollowFriends extends Browser {
 		  LoggedIn.Friends(driver).click();
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
-	 
+	  wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
+		
 
 	
 	
