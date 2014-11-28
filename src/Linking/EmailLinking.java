@@ -1,5 +1,6 @@
 package Linking;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -77,6 +78,7 @@ public class EmailLinking extends Browser  {
 	
 	LoggedIn.DropdownMenu(driver).click();
 	LoggedIn.Logout(driver).click();
+	wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
   }
 @DataProvider

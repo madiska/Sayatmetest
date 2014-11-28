@@ -3,8 +3,14 @@ package Kysimus;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -22,7 +28,7 @@ public class Kysimused extends Browser {
 	 
 	  
   @Test
-  public void TestKysimused() throws InterruptedException, AWTException {
+  public void TestKysimused() throws InterruptedException, AWTException, IOException {
 	  
 	  String kyssa = "Vaatame, et ta loikaks selle korralikult muidu probleem";
 	  driver.get(baseUrl);
@@ -172,9 +178,14 @@ LoggedIn.JagaUrlTwitter(driver).click();
 			driver.get(baseUrl);
 Thread.sleep(1000);		
 LoggedIn.JagaUrlTumblr(driver).click();
-Thread.sleep(2000);
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//Now you can do whatever you need to do with it, for example copy somewhere
+FileUtils.copyFile(scrFile, new File(Constant.Screenshots+"Url1.png"));
+
+
+Thread.sleep(4000);
 for (String winHandle2 : driver.getWindowHandles()) {
-	Thread.sleep(2000);
+	
     driver.switchTo().window(winHandle2); // Vahetame Fookust uuele avanud aknale
 }
 

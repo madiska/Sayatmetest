@@ -3,7 +3,7 @@ package Utils;
 public class Constant {
 	
 	public static final String ExceliAsukoht = System.getProperty("user.dir")+"//src//testdata//reg.xlsx";
-	
+	public static final String Screenshots = System.getProperty("user.dir")+"//Screenshots//";
 	
 	public static final String ChromeDriver = System.getProperty("user.dir")+"//src//Utils//chromedriver";
 	public static final String Pilt1 = System.getProperty("user.dir")+"//src//testdata//test1.png";

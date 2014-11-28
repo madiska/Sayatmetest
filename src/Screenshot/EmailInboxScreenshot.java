@@ -32,7 +32,7 @@ public class EmailInboxScreenshot extends Browser{
 	  
 	  File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	// Now you can do whatever you need to do with it, for example copy somewhere
-	FileUtils.copyFile(scrFile, new File("c:\\tmp\\"+Url1+".png"));
+	FileUtils.copyFile(scrFile, new File(Constant.Screenshots+Url1+".png"));
   }
   
 @DataProvider

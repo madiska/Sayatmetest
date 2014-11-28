@@ -32,11 +32,12 @@ public class AnswerFeedback extends Browser{
 	  LoggedIn.TagasiVastaBox(driver).sendKeys(Vastus);
 	  LoggedIn.TagasiVastaButton(driver).click();
 
-	  
-	  driver.findElement(By.cssSelector("div.comment:nth-child(4) > div:nth-child(1)"));
+	  // Stale Element Exceptioni lahti saamiseks, tuli element uuesti leida. 
+	  driver.findElement(By.cssSelector("span.feed-item-form button.btn.btn-xs.btn-link.reply"));
 	  
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
   }
   
