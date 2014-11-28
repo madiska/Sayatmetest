@@ -1,5 +1,6 @@
 package Feedback;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -35,7 +36,7 @@ public class CommentPublicFeedback extends Browser{
 	  Profile.CommentFeedbackTextBoxButton(driver).click();
 	  
 	
-	  wait.until(ExpectedConditions.elementToBeClickable(Profile.CommentFeedback(driver)));
+	  driver.findElement(By.cssSelector("span.feed-item-form button.btn.btn-xs.btn-link.reply"));
 	  Assert.assertTrue(driver.getPageSource().contains(publiccomment));
 	  
 	  LoggedIn.DropdownMenu(driver).click();

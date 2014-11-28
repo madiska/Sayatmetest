@@ -144,7 +144,7 @@ public class LoggedIn {
 	 
 	 public static WebElement TagasiVasta(WebDriver driver){
 		 
-		    element = driver.findElement(By.cssSelector("button.btn.btn-xs.btn-link.reply"));
+		    element = driver.findElement(By.cssSelector("span.feed-item-form button.btn.btn-xs.btn-link.reply"));
 		 
 		    return element;
 		 
