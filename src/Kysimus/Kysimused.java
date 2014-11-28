@@ -221,7 +221,9 @@ for (String winHandle2 : driver.getWindowHandles()) {
 				driver.switchTo().window(parenthandle);
 	}
 
-
+	LoggedIn.DropdownMenu(driver).click();
+	LoggedIn.Logout(driver).click();
+	wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 
 
 }
