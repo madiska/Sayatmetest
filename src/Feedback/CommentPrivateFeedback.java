@@ -28,7 +28,8 @@ public class CommentPrivateFeedback extends Browser{
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
 	  LoggedIn.Saadetud(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TagasiVasta(driver)));
+	  
+	  wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span.feed-item-time a")));
 	  LoggedIn.TagasiVasta(driver).click();
 
 	
@@ -36,7 +37,7 @@ public class CommentPrivateFeedback extends Browser{
 	  LoggedIn.TagasiVastaBox(driver).sendKeys(PrivateComment);
 
 	  LoggedIn.TagasiVastaButton(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.TagasiVasta(driver)));
+	  driver.findElement(By.cssSelector("span.feed-item-form button.btn.btn-xs.btn-link.reply"));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
@@ -45,6 +46,7 @@ public class CommentPrivateFeedback extends Browser{
 	  Homepage.LoginUrl(driver).sendKeys(Url2);
 	  Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 	
 	  Assert.assertTrue(driver.getPageSource().contains(PrivateComment));
 	  

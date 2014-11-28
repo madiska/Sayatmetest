@@ -30,7 +30,7 @@ public class CommentPublicFeedback extends Browser{
 	  
 	  driver.get(baseUrl+Url2);
 	  Profile.CommentFeedback(driver).click();
-	  Profile.CommentFeedbackTextBox(driver).click();
+
 	  Profile.CommentFeedbackTextBox(driver).sendKeys(publiccomment);
 	  Profile.CommentFeedbackTextBoxButton(driver).click();
 	  

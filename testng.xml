@@ -29,9 +29,7 @@
 <class name = "Survey.SurveyWithValidData" />
 <class name = "Survey.AnswerSurvey" />
 
-<class name = "GeneralFunctions.ChangeProfileInvalid" />
-<class name = "GeneralFunctions.ChangeProfilePic" />
-<class name = "GeneralFunctions.ChangeProfilePic2" />
+
 <class name = "GeneralFunctions.ChangePw" />
 
  	  

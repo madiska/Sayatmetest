@@ -33,7 +33,7 @@ public class AnswerPrivateFeedback extends Browser{
 			  LoggedIn.TagasiVastaBox(driver).sendKeys(PrivateAnswer);
 			  LoggedIn.TagasiVastaButton(driver).click();
 			
-			  Assert.assertEquals(PrivateAnswer, driver.findElement(By.cssSelector("div.comment.col-xs-offset-1 div")).getText());
+			  driver.findElement(By.cssSelector("span.feed-item-form button.btn.btn-xs.btn-link.reply"));
 			
 				 Assert.assertTrue(driver.getPageSource().contains(Feedback3));  
 			  LoggedIn.DropdownMenu(driver).click();
