@@ -7,30 +7,9 @@
  
 		<classes>
 
-<class name = "sayatme.Registration.Frontpagereg" />
-<class name = "sayatme.Registration.ProfileRegInv" /> 
-<class name = "sayatme.Registration.FeedbackRegInval" />
 
 
 
-<class name = "Feedback.feedbackinv" />
-<class name = "Feedback.FeedbackVal" />
-<class name = "Feedback.AnswerPrivateFeedback" />
-<class name = "Feedback.CommentPrivateFeedback" />
-<class name = "Feedback.MakeFeedbackPublic" />
-<class name = "Feedback.AnswerFeedback" />
-<class name = "Feedback.CommentPublicFeedback" />
-<class name = "Feedback.CommentPublicFeedbackNotLoggedin" />
-<class name = "Friends.FollowFriends" />
-<class name = "Friends.FriendsFeedback" />
-<class name = "Friends.UnfollowFriends" />
-<class name = "Kysimus.Kysimused" />
-<class name = "Survey.SurveywithInvalidData" />
-<class name = "Survey.SurveyWithValidData" />
-<class name = "Survey.AnswerSurvey" />
-
-
-<class name = "GeneralFunctions.ChangePw" />
 
  	  
 	 
@@ -70,6 +49,24 @@
  
 		<classes>
 
+<class name = "Feedback.feedbackinv" />
+<class name = "Feedback.FeedbackVal" />
+<class name = "Feedback.AnswerPrivateFeedback" />
+<class name = "Feedback.CommentPrivateFeedback" />
+<class name = "Feedback.MakeFeedbackPublic" />
+<class name = "Feedback.AnswerFeedback" />
+<class name = "Feedback.CommentPublicFeedback" />
+<class name = "Feedback.CommentPublicFeedbackNotLoggedin" />
+<class name = "Friends.FollowFriends" />
+<class name = "Friends.FriendsFeedback" />
+<class name = "Friends.UnfollowFriends" />
+<class name = "Kysimus.Kysimused" />
+<class name = "Survey.SurveywithInvalidData" />
+<class name = "Survey.SurveyWithValidData" />
+<class name = "Survey.AnswerSurvey" />
+
+
+<class name = "GeneralFunctions.ChangePw" />
 		 </classes>
  
  </test>
