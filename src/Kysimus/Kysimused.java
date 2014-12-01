@@ -120,6 +120,7 @@ driver.get(baseUrl);
 LoggedIn.JagaUrlFacebook(driver).click();
 	
 			for (String winHandle : driver.getWindowHandles()) {
+				System.out.print(driver.getWindowHandles().size());
 					driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
 					driver.switchTo().frame(driver.findElement(By.className("FB_UI_Dialog")));
 				}
