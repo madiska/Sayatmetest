@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="291312" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T11:00:00Z">
+  <suite name="Suite" duration-ms="931294" started-at="2014-12-01T12:01:50Z" finished-at="2014-12-01T12:17:22Z">
     <groups>
     </groups>
-    <test name="chrome kask6intundubkorras" duration-ms="10" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T10:55:09Z">
-    </test> <!-- chrome kask6intundubkorras -->
-    <test name="chrome Beta" duration-ms="0" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T10:55:09Z">
-    </test> <!-- chrome Beta -->
-    <test name="chrome Live" duration-ms="0" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T10:55:09Z">
-    </test> <!-- chrome Live -->
-    <test name="Firefox kask6intundubkorras" duration-ms="0" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T10:55:09Z">
-    </test> <!-- Firefox kask6intundubkorras -->
-    <test name="Firefox betastaging" duration-ms="0" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T10:55:09Z">
-    </test> <!-- Firefox betastaging -->
-    <test name="Firefox Live" duration-ms="0" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T10:55:09Z">
-    </test> <!-- Firefox Live -->
-    <test name="IE kask6intundubkorras" duration-ms="291210" started-at="2014-12-01T10:55:09Z" finished-at="2014-12-01T11:00:00Z">
+    <test name="chrome kask6intundubkorras" duration-ms="207445" started-at="2014-12-01T12:01:50Z" finished-at="2014-12-01T12:05:18Z">
       <class name="Kysimus.Kysimused">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Kysimus.Kysimused@96532d6]" name="beforeTest" is-config="true" duration-ms="8487" started-at="2014-12-01T12:55:09Z" finished-at="2014-12-01T12:55:17Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Kysimus.Kysimused@7d417077]" name="beforeTest" is-config="true" duration-ms="3319" started-at="2014-12-01T14:01:50Z" finished-at="2014-12-01T14:01:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromekorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TestKysimused()[pri:0, instance:Kysimus.Kysimused@7d417077]" name="TestKysimused" duration-ms="201601" started-at="2014-12-01T14:01:54Z" finished-at="2014-12-01T14:05:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestKysimused -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Kysimus.Kysimused@7d417077]" name="closeBrowser" is-config="true" duration-ms="2495" started-at="2014-12-01T14:05:15Z" finished-at="2014-12-01T14:05:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Kysimus.Kysimused -->
+    </test> <!-- chrome kask6intundubkorras -->
+    <test name="chrome Beta" duration-ms="0" started-at="2014-12-01T12:05:18Z" finished-at="2014-12-01T12:05:18Z">
+    </test> <!-- chrome Beta -->
+    <test name="chrome Live" duration-ms="0" started-at="2014-12-01T12:05:18Z" finished-at="2014-12-01T12:05:18Z">
+    </test> <!-- chrome Live -->
+    <test name="Firefox kask6intundubkorras" duration-ms="438380" started-at="2014-12-01T12:05:18Z" finished-at="2014-12-01T12:12:36Z">
+      <class name="Kysimus.Kysimused">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Kysimus.Kysimused@2812cbfa]" name="beforeTest" is-config="true" duration-ms="6576" started-at="2014-12-01T14:05:18Z" finished-at="2014-12-01T14:05:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefoxkorras]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TestKysimused()[pri:0, instance:Kysimus.Kysimused@2812cbfa]" name="TestKysimused" duration-ms="431321" started-at="2014-12-01T14:05:24Z" finished-at="2014-12-01T14:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestKysimused -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Kysimus.Kysimused@2812cbfa]" name="closeBrowser" is-config="true" duration-ms="482" started-at="2014-12-01T14:12:36Z" finished-at="2014-12-01T14:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Kysimus.Kysimused -->
+    </test> <!-- Firefox kask6intundubkorras -->
+    <test name="Firefox betastaging" duration-ms="0" started-at="2014-12-01T12:12:36Z" finished-at="2014-12-01T12:12:36Z">
+    </test> <!-- Firefox betastaging -->
+    <test name="Firefox Live" duration-ms="0" started-at="2014-12-01T12:12:36Z" finished-at="2014-12-01T12:12:36Z">
+    </test> <!-- Firefox Live -->
+    <test name="IE kask6intundubkorras" duration-ms="285405" started-at="2014-12-01T12:12:36Z" finished-at="2014-12-01T12:17:22Z">
+      <class name="Kysimus.Kysimused">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Kysimus.Kysimused@13969fbe]" name="beforeTest" is-config="true" duration-ms="9302" started-at="2014-12-01T14:12:36Z" finished-at="2014-12-01T14:12:45Z">
           <params>
             <param index="0">
               <value>
@@ -30,19 +72,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TestKysimused()[pri:0, instance:Kysimus.Kysimused@96532d6]" name="TestKysimused" duration-ms="281691" started-at="2014-12-01T12:55:17Z" finished-at="2014-12-01T12:59:59Z">
+        <test-method status="PASS" signature="TestKysimused()[pri:0, instance:Kysimus.Kysimused@13969fbe]" name="TestKysimused" duration-ms="274956" started-at="2014-12-01T14:12:45Z" finished-at="2014-12-01T14:17:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestKysimused -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Kysimus.Kysimused@96532d6]" name="closeBrowser" is-config="true" duration-ms="1022" started-at="2014-12-01T12:59:59Z" finished-at="2014-12-01T13:00:00Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Kysimus.Kysimused@13969fbe]" name="closeBrowser" is-config="true" duration-ms="1146" started-at="2014-12-01T14:17:20Z" finished-at="2014-12-01T14:17:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- Kysimus.Kysimused -->
     </test> <!-- IE kask6intundubkorras -->
-    <test name="IE betastaging" duration-ms="0" started-at="2014-12-01T11:00:00Z" finished-at="2014-12-01T11:00:00Z">
+    <test name="IE betastaging" duration-ms="1" started-at="2014-12-01T12:17:22Z" finished-at="2014-12-01T12:17:22Z">
     </test> <!-- IE betastaging -->
-    <test name="IE Live" duration-ms="0" started-at="2014-12-01T11:00:00Z" finished-at="2014-12-01T11:00:00Z">
+    <test name="IE Live" duration-ms="1" started-at="2014-12-01T12:17:22Z" finished-at="2014-12-01T12:17:22Z">
     </test> <!-- IE Live -->
   </suite> <!-- Suite -->
 </testng-results>

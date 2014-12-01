@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Kysimus.Kysimused" hash-for-method="TestKysimused">TestKysimused</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Kysimus.Kysimused" hash-for-method="TestKysimused">TestKysimused</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Kysimus.Kysimused" hash-for-method="TestKysimused">TestKysimused</a> <!-- method navigator-link -->
@@ -129,6 +139,20 @@
                   <span class="method-name">TestKysimused</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestKysimused">
+                  </a> <!-- TestKysimused -->
+                  <span class="method-name">TestKysimused</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestKysimused">
+                  </a> <!-- TestKysimused -->
+                  <span class="method-name">TestKysimused</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -143,6 +167,9 @@
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test name=&quot;chrome kask6intundubkorras&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chromekorras&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Kysimus.Kysimused&quot;/&gt;
+    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chrome kask6intundubkorras --&gt;
   &lt;test name=&quot;chrome Beta&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chromebeta&quot;/&gt;
@@ -152,6 +179,9 @@
   &lt;/test&gt; &lt;!-- chrome Live --&gt;
   &lt;test name=&quot;Firefox kask6intundubkorras&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefoxkorras&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Kysimus.Kysimused&quot;/&gt;
+    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Firefox kask6intundubkorras --&gt;
   &lt;test name=&quot;Firefox betastaging&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefoxbeta&quot;/&gt;
@@ -182,7 +212,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chrome kask6intundubkorras (0 classes)</span>
+                <span class="test-name">chrome kask6intundubkorras (1 class)</span>
               </li>
               <li>
                 <span class="test-name">chrome Beta (0 classes)</span>
@@ -191,7 +221,7 @@
                 <span class="test-name">chrome Live (0 classes)</span>
               </li>
               <li>
-                <span class="test-name">Firefox kask6intundubkorras (0 classes)</span>
+                <span class="test-name">Firefox kask6intundubkorras (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Firefox betastaging (0 classes)</span>
@@ -232,16 +262,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestKysimused')
 data.setCell(0, 2, 'Kysimus.Kysimused')
-data.setCell(0, 3, 281691);
+data.setCell(0, 3, 431321);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestKysimused')
+data.setCell(1, 2, 'Kysimus.Kysimused')
+data.setCell(1, 3, 274956);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestKysimused')
+data.setCell(2, 2, 'Kysimus.Kysimused')
+data.setCell(2, 3, 201601);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,16 +307,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Kysimus.Kysimused</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeTest(IEkorras)</span>
+                <span class="method-name">beforeTest(chromekorras)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestKysimused</span>
-                <span class="method-start">8487 ms</span>
+                <span class="method-start">3319 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">290178 ms</span>
+                <span class="method-start">204930 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(firefoxkorras)</span>
+                <span class="method-start">207455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestKysimused</span>
+                <span class="method-start">214031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">645353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(IEkorras)</span>
+                <span class="method-start">645855 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestKysimused</span>
+                <span class="method-start">655157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">930114 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

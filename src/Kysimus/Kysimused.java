@@ -202,6 +202,8 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					 SocialMedia.TumblrLoginPW(driver).sendKeys("testime11");
 					 SocialMedia.TumblrLoginButton(driver).click();
 					 Thread.sleep(3000);
+					 
+					 wait.until(ExpectedConditions.elementToBeClickable(By.id("link_post_one")));
 					Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 	
 	
@@ -210,10 +212,12 @@ for (String winHandle2 : driver.getWindowHandles()) {
 				else {
 				if (Olemasolev != null) {
 					Thread.sleep(1000);
+					 wait.until(ExpectedConditions.elementToBeClickable(By.id("link_post_one")));
 				Assert.assertTrue(driver.getPageSource().contains(Olemasolev));
 				}
 				else {
 					Thread.sleep(1000);
+					 wait.until(ExpectedConditions.elementToBeClickable(By.id("link_post_one")));
 					Assert.assertTrue(driver.getPageSource().contains(OlemasolevMuudetud));
 				}
 			}
