@@ -179,6 +179,9 @@ LoggedIn.JagaUrlTwitter(driver).click();
 
 			driver.get(baseUrl);
 Thread.sleep(1000);		
+
+if (brauser == "chrome"  ||  brauser == "IE")
+{
 LoggedIn.JagaUrlTumblr(driver).click();
 
 for (int o = 0; o < 20; o++) {
@@ -238,7 +241,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					driver.switchTo().window(parenthandle);
 					break;
 				}
-			
+			}else {}
 	}
 
 	LoggedIn.DropdownMenu(driver).click();

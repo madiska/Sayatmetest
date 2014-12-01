@@ -3,6 +3,8 @@ import Utils.Browser;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -125,6 +127,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 
 	LoggedIn.DropdownMenu(driver).click();
 	LoggedIn.Logout(driver).click();
+	wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 
 	  
 	driver.get(baseUrl+Url1);
@@ -145,7 +148,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 	   
 	   LoggedIn.DropdownMenu(driver).click();
 	   LoggedIn.Logout(driver).click();
-
+		wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	 
 	    
 	    driver.get(baseUrl+Url2);
@@ -161,7 +164,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 	  
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Logout(driver).click();
-
+		wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	
 }
 
