@@ -118,7 +118,13 @@ for (int i = 0; i <iListSize; i++) {
 String parenthandle =	driver.getWindowHandle();
 driver.get(baseUrl);
 LoggedIn.JagaUrlFacebook(driver).click();
+System.out.print(driver.getWindowHandles().size());
+while (driver.getWindowHandles().size() == 2) {
 	
+
+	break;
+}
+
 			for (String winHandle : driver.getWindowHandles()) {
 				System.out.print(driver.getWindowHandles().size());
 					driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
