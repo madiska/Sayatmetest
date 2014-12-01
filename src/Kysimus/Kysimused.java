@@ -124,12 +124,13 @@ while (driver.getWindowHandles().size() == 2) {
 
 	break;
 }
+System.out.print(driver.getWindowHandles().size());
 
-			for (String winHandle : driver.getWindowHandles()) {
-				System.out.print(driver.getWindowHandles().size());
-					driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
+		//	for (String winHandle : driver.getWindowHandles()) {
+		//		System.out.print(driver.getWindowHandles().size());
+			//		driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
 					driver.switchTo().frame(driver.findElement(By.className("FB_UI_Dialog")));
-				}
+			//	}
 					if(i==0){
 						Thread.sleep(1000);
 						Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
@@ -159,9 +160,9 @@ Thread.sleep(1000);
 driver.get(baseUrl);
 LoggedIn.JagaUrlTwitter(driver).click();
 
-	for (String winHandle : driver.getWindowHandles()) {
-			driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
-		}
+	//for (String winHandle : driver.getWindowHandles()) {
+		//	driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
+		//}
 
 			if(i==0){
 	
