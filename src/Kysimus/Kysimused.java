@@ -183,7 +183,13 @@ File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 FileUtils.copyFile(scrFile, new File(Constant.Screenshots+"Url1.png"));
 
 
-Thread.sleep(4000);
+while (driver.getWindowHandles().size() == 2) {
+	
+	System.out.print("Kaks akent");
+	break;
+}
+
+
 for (String winHandle2 : driver.getWindowHandles()) {
 	
     driver.switchTo().window(winHandle2); // Vahetame Fookust uuele avanud aknale
@@ -218,7 +224,14 @@ for (String winHandle2 : driver.getWindowHandles()) {
 				driver.close();
 				Thread.sleep(3000);
 				
-				driver.switchTo().window(parenthandle);
+				
+				while (driver.getWindowHandles().size() == 1) {
+					
+					System.out.print("Üks");
+					driver.switchTo().window(parenthandle);
+					break;
+				}
+			
 	}
 
 	LoggedIn.DropdownMenu(driver).click();
