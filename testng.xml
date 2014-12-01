@@ -11,7 +11,7 @@
 
 
 
- 	  
+ 	  <class name = "Kysimus.Kysimused" />
 	 
 
  		</classes>
@@ -50,7 +50,7 @@
 		<classes>
 
 
-<class name = "Kysimus.Kysimused" />
+
 
 
 		 </classes>
