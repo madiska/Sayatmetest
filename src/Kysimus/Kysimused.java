@@ -118,13 +118,7 @@ for (int i = 0; i <iListSize; i++) {
 String parenthandle =	driver.getWindowHandle();
 driver.get(baseUrl);
 LoggedIn.JagaUrlFacebook(driver).click();
-System.out.print(driver.getWindowHandles().size());
-while (driver.getWindowHandles().size() == 2) {
-	
 
-	break;
-}
-System.out.print(driver.getWindowHandles().size());
 
 		//	for (String winHandle : driver.getWindowHandles()) {
 		//		System.out.print(driver.getWindowHandles().size());
@@ -186,16 +180,16 @@ LoggedIn.JagaUrlTwitter(driver).click();
 			driver.get(baseUrl);
 Thread.sleep(1000);		
 LoggedIn.JagaUrlTumblr(driver).click();
-File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//Now you can do whatever you need to do with it, for example copy somewhere
-FileUtils.copyFile(scrFile, new File(Constant.Screenshots+"Url1.png"));
 
+for (int o = 0; o < 20; o++) {
 
-while (driver.getWindowHandles().size() == 2) {
+	if(driver.getWindowHandles().size()==2)
+		break;
+	else {
+		System.out.print("Aken pole veel lahti");
+	}
 	
-
-	break;
-}
+} 
 
 
 for (String winHandle2 : driver.getWindowHandles()) {
@@ -229,13 +223,13 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					driver.findElement(By.id("link_post_one")).clear();
 				}
 				else {}
-				System.out.print(driver.getWindowHandles().size());
-				driver.close();
-				Thread.sleep(3000);
 				
 				
-				while (driver.getWindowHandles().size() == 1) {
-					
+				
+				
+				while (driver.getWindowHandles().size() == 2) {
+					driver.close();
+					Thread.sleep(3000);
 					
 					driver.switchTo().window(parenthandle);
 					break;
