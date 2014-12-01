@@ -185,7 +185,7 @@ FileUtils.copyFile(scrFile, new File(Constant.Screenshots+"Url1.png"));
 
 while (driver.getWindowHandles().size() == 2) {
 	
-	System.out.print("Kaks akent");
+
 	break;
 }
 
@@ -221,13 +221,14 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					driver.findElement(By.id("link_post_one")).clear();
 				}
 				else {}
+				System.out.print(driver.getWindowHandles().size());
 				driver.close();
 				Thread.sleep(3000);
 				
 				
 				while (driver.getWindowHandles().size() == 1) {
 					
-					System.out.print("Üks");
+					
 					driver.switchTo().window(parenthandle);
 					break;
 				}
