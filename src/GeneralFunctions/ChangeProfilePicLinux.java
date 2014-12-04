@@ -171,8 +171,17 @@ public class ChangeProfilePicLinux extends Browser{
 					  
 				  }		
 				  			
-				  
+					wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Eemaldapilt(driver)));
+		  			 long start2 = System.currentTimeMillis();
+		  			UserSettings.SettingsSaveInformation(driver).click();
+		  			wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
+		  			 long finish2 = System.currentTimeMillis();
+					 long totalTime2 = finish2 - start2; 
+					 Esimenetulemus = Long.toString(totalTime);
+					 System.out.println("Total Time for page load - "+totalTime2); 
 				
+				  
+				  
 									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
 									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
 		
@@ -236,7 +245,14 @@ public class ChangeProfilePicLinux extends Browser{
 							  
 							  
 						  }	
-							  
+						  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Eemaldapilt(driver)));
+							 long start3 = System.currentTimeMillis();
+					  			UserSettings.SettingsSaveInformation(driver).click();
+					  			wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
+					  			 long finish3 = System.currentTimeMillis();
+								 long totalTime3 = finish3 - start3; 
+								 Esimenetulemus = Long.toString(totalTime3);
+								 System.out.println("Total Time for page load - "+totalTime3); 
 	
 												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
 												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,4);

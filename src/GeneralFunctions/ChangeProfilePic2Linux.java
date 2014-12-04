@@ -102,10 +102,12 @@ public class ChangeProfilePic2Linux extends Browser {
 				  LoggedIn.Seaded(driver).click();
 				  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 				  
+				  
+				  
 					 String myString2 = Constant.Pilt3;
 					 StringSelection stringSelection2 = new StringSelection (myString2);
 					 Clipboard clpbrd2 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
-					 clpbrd.setContents (stringSelection, null);
+					 clpbrd.setContents (stringSelection2, null);
 					  UserSettings.Valipilt(driver).click();
 					  
 					  
@@ -177,7 +179,7 @@ public class ChangeProfilePic2Linux extends Browser {
 						 String myString3 = Constant.Pilt4;
 						 StringSelection stringSelection3 = new StringSelection (myString3);
 						 Clipboard clpbrd3 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
-						 clpbrd.setContents (stringSelection, null);
+						 clpbrd.setContents (stringSelection3, null);
 						  UserSettings.Valipilt(driver).click();
 						  
 						  
