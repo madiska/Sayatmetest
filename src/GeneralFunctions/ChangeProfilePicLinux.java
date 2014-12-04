@@ -239,7 +239,7 @@ public class ChangeProfilePicLinux extends Browser{
 							  
 	
 												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,4);
 	
 											 
 										 }
