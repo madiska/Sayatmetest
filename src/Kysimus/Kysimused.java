@@ -117,6 +117,7 @@ for (int i = 0; i <iListSize; i++) {
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
 String parenthandle =	driver.getWindowHandle();
 driver.get(baseUrl);
+Thread.sleep(2000);
 LoggedIn.JagaUrlFacebook(driver).click();
 
 
@@ -153,6 +154,7 @@ LoggedIn.JagaUrlFacebook(driver).click();
 Thread.sleep(1000);		
 driver.get(baseUrl);
 LoggedIn.JagaUrlTwitter(driver).click();
+
 
 	//for (String winHandle : driver.getWindowHandles()) {
 		//	driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
