@@ -48,9 +48,11 @@ public class ChangeProfileInvalid extends Browser {
 			
 			 Fileinput.sendKeys(Constant.Pilt5);
 			
-			 
+			 Thread.sleep(2000);
 			  Robot r = new Robot();
 			  r.keyPress(KeyEvent.VK_ESCAPE);
+			  r.keyRelease(KeyEvent.VK_ESCAPE);
+			  Thread.sleep(2000);
 			  Assert.assertTrue(ErrorMessages.ProfilePicLiigaSuur(driver).isDisplayed());
 			  
 			

@@ -91,7 +91,7 @@ for (int i = 0; i <iListSize; i++) {
 		if (brauser == "firefox"){
 			 Robot robot = new Robot();
 			  robot.keyPress(KeyEvent.VK_ENTER);
-			
+			  robot.keyRelease(KeyEvent.VK_ENTER);
 			
 			
 		}
@@ -179,9 +179,6 @@ LoggedIn.JagaUrlTwitter(driver).click();
 
 			driver.get(baseUrl);
 Thread.sleep(1000);		
-
-if (brauser == "chrome"  ||  brauser == "IE")
-{
 LoggedIn.JagaUrlTumblr(driver).click();
 
 for (int o = 0; o < 20; o++) {
@@ -241,7 +238,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					driver.switchTo().window(parenthandle);
 					break;
 				}
-			}else {}
+			
 	}
 
 	LoggedIn.DropdownMenu(driver).click();

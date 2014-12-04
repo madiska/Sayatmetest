@@ -50,13 +50,14 @@ public class ChangeProfilePic extends Browser{
 					  	if (numbriks == 1){
 					  	  WebElement Fileinput = driver.findElement(By.name("account_image"));
 							 Fileinput.click();
-							
+							Thread.sleep(3000);
 							 Fileinput.sendKeys(Constant.Pilt3);
 							
 							 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
+							
 							  Robot r = new Robot();
 							  r.keyPress(KeyEvent.VK_ESCAPE);
-							 	
+							  r.keyRelease(KeyEvent.VK_ESCAPE);
 								 long start = System.currentTimeMillis();
 								  UserSettings.SettingsSaveInformation(driver).click();
 								 
@@ -108,6 +109,7 @@ public class ChangeProfilePic extends Browser{
 							 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 							  Robot r = new Robot();
 							  r.keyPress(KeyEvent.VK_ESCAPE);
+							  robot.keyRelease(KeyEvent.VK_ESCAPE);
 							
 							
 							  long start = System.currentTimeMillis();
@@ -157,7 +159,7 @@ public class ChangeProfilePic extends Browser{
 							 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 							  Robot r = new Robot();
 							  r.keyPress(KeyEvent.VK_ESCAPE);
-							
+							  r.keyRelease(KeyEvent.VK_ESCAPE);
 							
 							  long start = System.currentTimeMillis();
 							  UserSettings.SettingsSaveInformation(driver).click();
@@ -204,7 +206,7 @@ public class ChangeProfilePic extends Browser{
 						 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
-						 	
+						  r.keyRelease(KeyEvent.VK_ESCAPE);
 							 long start = System.currentTimeMillis();
 							  UserSettings.SettingsSaveInformation(driver).click();
 							 
@@ -262,7 +264,7 @@ public class ChangeProfilePic extends Browser{
 						wait.until(ExpectedConditions.visibilityOf(UserSettings.Eemaldapilt(driver)));
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
-						
+						  r.keyRelease(KeyEvent.VK_ESCAPE);
 						
 						  long start = System.currentTimeMillis();
 						  UserSettings.SettingsSaveInformation(driver).click();
@@ -318,7 +320,7 @@ public class ChangeProfilePic extends Browser{
 						 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
-						
+						  r.keyRelease(KeyEvent.VK_ESCAPE);
 						
 						  long start = System.currentTimeMillis();
 						  UserSettings.SettingsSaveInformation(driver).click();
@@ -366,7 +368,7 @@ public class ChangeProfilePic extends Browser{
 					
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
-						 	
+						  r.keyRelease(KeyEvent.VK_ESCAPE);
 							 long start = System.currentTimeMillis();
 							  UserSettings.SettingsSaveInformation(driver).click();
 							 
@@ -407,7 +409,7 @@ public class ChangeProfilePic extends Browser{
 						 LoggedIn.Seaded(driver).click();
 						 wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));		 Thread.sleep(2000);
 						UserSettings.Valipilt(driver).click(); 
-						Thread.sleep(1000);
+						Thread.sleep(4000);
 			
 						 
 						 
@@ -415,7 +417,7 @@ public class ChangeProfilePic extends Browser{
 						 StringSelection stringSelection = new StringSelection (myString);
 						 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 						 clpbrd.setContents (stringSelection, null);
-						 Thread.sleep(2000);
+						 
 						 Robot robot = new Robot();
 						  robot.keyPress(KeyEvent.VK_CONTROL);
 						    robot.keyPress(KeyEvent.VK_V);
@@ -428,7 +430,7 @@ public class ChangeProfilePic extends Browser{
 						 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
-						
+						  r.keyRelease(KeyEvent.VK_ESCAPE);
 						
 						  long start = System.currentTimeMillis();
 						  UserSettings.SettingsSaveInformation(driver).click();
@@ -483,7 +485,7 @@ public class ChangeProfilePic extends Browser{
 						 Assert.assertTrue(UserSettings.Eemaldapilt(driver).isDisplayed());
 						  Robot r = new Robot();
 						  r.keyPress(KeyEvent.VK_ESCAPE);
-						
+						  r.keyRelease(KeyEvent.VK_ESCAPE);
 						
 						  long start = System.currentTimeMillis();
 						  UserSettings.SettingsSaveInformation(driver).click();
