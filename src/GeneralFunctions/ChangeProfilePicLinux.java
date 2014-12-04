@@ -51,25 +51,49 @@ public class ChangeProfilePicLinux extends Browser{
 	  Thread.sleep(5000);
 	  
 	  Robot r = new Robot();
-	  r.mouseMove(140, 295);
-	  r.mousePress(InputEvent.BUTTON1_MASK);
-	  r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  	r.delay(1000);
-	  	r.mouseMove(115, 120);
-	  	r.mousePress(InputEvent.BUTTON1_MASK);
-	  	r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  		r.delay(1000);
-	  		r.mouseMove(200, 170);
-	  		r.mousePress(InputEvent.BUTTON1_MASK);
-	  		r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  		r.delay(2000);
-	  			r.keyPress(KeyEvent.VK_CONTROL);
-	  			r.keyPress(KeyEvent.VK_V);
-	  			r.delay(1000);
-	  			r.keyRelease(KeyEvent.VK_V);
-	  			r.keyRelease(KeyEvent.VK_CONTROL);
-	  			r.keyPress(KeyEvent.VK_ENTER);
-	  			r.keyRelease(KeyEvent.VK_ENTER);
+	  if (brauser == "firefox") {
+		  r.mouseMove(140, 295);
+		  r.mousePress(InputEvent.BUTTON1_MASK);
+		  r.mouseRelease(InputEvent.BUTTON1_MASK);
+		  	r.delay(1000);
+		  	r.mouseMove(115, 120);
+		  	r.mousePress(InputEvent.BUTTON1_MASK);
+		  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+		  		r.delay(1000);
+		  		r.mouseMove(200, 170);
+		  		r.mousePress(InputEvent.BUTTON1_MASK);
+		  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+		  		r.delay(1000);
+		  			r.keyPress(KeyEvent.VK_CONTROL);
+		  			r.keyPress(KeyEvent.VK_V);
+		  			r.keyRelease(KeyEvent.VK_V);
+		  			r.keyRelease(KeyEvent.VK_CONTROL);
+		  			r.delay(1000);
+		  			r.keyPress(KeyEvent.VK_ENTER);
+		  			r.keyRelease(KeyEvent.VK_ENTER);	
+	  } else {
+		  r.mouseMove(140, 265);
+		  r.mousePress(InputEvent.BUTTON1_MASK);
+		  r.mouseRelease(InputEvent.BUTTON1_MASK);
+		  	r.delay(1000);
+		  	r.mouseMove(115, 90);
+		  	r.mousePress(InputEvent.BUTTON1_MASK);
+		  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+		  		r.delay(1000);
+		  		r.mouseMove(200, 140);
+		  		r.mousePress(InputEvent.BUTTON1_MASK);
+		  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+		  		r.delay(1000);
+		  			r.keyPress(KeyEvent.VK_CONTROL);
+		  			r.keyPress(KeyEvent.VK_V);
+		  			r.keyRelease(KeyEvent.VK_V);
+		  			r.keyRelease(KeyEvent.VK_CONTROL);
+		  			r.delay(1000);
+		  			r.keyPress(KeyEvent.VK_ENTER);
+		  			r.keyRelease(KeyEvent.VK_ENTER);	
+		  
+		  
+	  }	
 	  			
 	  			wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Eemaldapilt(driver)));
 	  			 long start = System.currentTimeMillis();
@@ -103,25 +127,49 @@ public class ChangeProfilePicLinux extends Browser{
 				 Clipboard clpbrd2 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 				 clpbrd.setContents (stringSelection2, null);
 			  
-				  r.mouseMove(140, 295);
-				  r.mousePress(InputEvent.BUTTON1_MASK);
-				  r.mouseRelease(InputEvent.BUTTON1_MASK);
-				  	r.delay(1000);
-				  	r.mouseMove(115, 90);
-				  	r.mousePress(InputEvent.BUTTON1_MASK);
-				  	r.mouseRelease(InputEvent.BUTTON1_MASK);
-				  		r.delay(1000);
-				  		r.mouseMove(200, 170);
-				  		r.mousePress(InputEvent.BUTTON1_MASK);
-				  		r.mouseRelease(InputEvent.BUTTON1_MASK);
-				  		r.delay(1000);
-				  			r.keyPress(KeyEvent.VK_CONTROL);
-				  			r.keyPress(KeyEvent.VK_V);
-				  			r.keyRelease(KeyEvent.VK_V);
-				  			r.keyRelease(KeyEvent.VK_CONTROL);
-				  			r.delay(1000);
-				  			r.keyPress(KeyEvent.VK_ENTER);
-				  			r.keyRelease(KeyEvent.VK_ENTER);	
+				  if (brauser == "firefox") {
+					  r.mouseMove(140, 295);
+					  r.mousePress(InputEvent.BUTTON1_MASK);
+					  r.mouseRelease(InputEvent.BUTTON1_MASK);
+					  	r.delay(1000);
+					  	r.mouseMove(115, 120);
+					  	r.mousePress(InputEvent.BUTTON1_MASK);
+					  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+					  		r.delay(1000);
+					  		r.mouseMove(200, 170);
+					  		r.mousePress(InputEvent.BUTTON1_MASK);
+					  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+					  		r.delay(1000);
+					  			r.keyPress(KeyEvent.VK_CONTROL);
+					  			r.keyPress(KeyEvent.VK_V);
+					  			r.keyRelease(KeyEvent.VK_V);
+					  			r.keyRelease(KeyEvent.VK_CONTROL);
+					  			r.delay(1000);
+					  			r.keyPress(KeyEvent.VK_ENTER);
+					  			r.keyRelease(KeyEvent.VK_ENTER);	
+				  } else {
+					  r.mouseMove(140, 265);
+					  r.mousePress(InputEvent.BUTTON1_MASK);
+					  r.mouseRelease(InputEvent.BUTTON1_MASK);
+					  	r.delay(1000);
+					  	r.mouseMove(115, 90);
+					  	r.mousePress(InputEvent.BUTTON1_MASK);
+					  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+					  		r.delay(1000);
+					  		r.mouseMove(200, 140);
+					  		r.mousePress(InputEvent.BUTTON1_MASK);
+					  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+					  		r.delay(1000);
+					  			r.keyPress(KeyEvent.VK_CONTROL);
+					  			r.keyPress(KeyEvent.VK_V);
+					  			r.keyRelease(KeyEvent.VK_V);
+					  			r.keyRelease(KeyEvent.VK_CONTROL);
+					  			r.delay(1000);
+					  			r.keyPress(KeyEvent.VK_ENTER);
+					  			r.keyRelease(KeyEvent.VK_ENTER);	
+					  
+					  
+				  }		
 				  			
 				  
 				
@@ -145,12 +193,12 @@ public class ChangeProfilePicLinux extends Browser{
 							 StringSelection stringSelection3 = new StringSelection (myString3);
 							 Clipboard clpbrd3 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 							 clpbrd.setContents (stringSelection3, null);
-						  
+						  if (brauser == "firefox") {
 							  r.mouseMove(140, 295);
 							  r.mousePress(InputEvent.BUTTON1_MASK);
 							  r.mouseRelease(InputEvent.BUTTON1_MASK);
 							  	r.delay(1000);
-							  	r.mouseMove(115, 90);
+							  	r.mouseMove(115, 120);
 							  	r.mousePress(InputEvent.BUTTON1_MASK);
 							  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 							  		r.delay(1000);
@@ -165,7 +213,29 @@ public class ChangeProfilePicLinux extends Browser{
 							  			r.delay(1000);
 							  			r.keyPress(KeyEvent.VK_ENTER);
 							  			r.keyRelease(KeyEvent.VK_ENTER);	
-							  			
+						  } else {
+							  r.mouseMove(140, 265);
+							  r.mousePress(InputEvent.BUTTON1_MASK);
+							  r.mouseRelease(InputEvent.BUTTON1_MASK);
+							  	r.delay(1000);
+							  	r.mouseMove(115, 90);
+							  	r.mousePress(InputEvent.BUTTON1_MASK);
+							  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+							  		r.delay(1000);
+							  		r.mouseMove(200, 140);
+							  		r.mousePress(InputEvent.BUTTON1_MASK);
+							  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+							  		r.delay(1000);
+							  			r.keyPress(KeyEvent.VK_CONTROL);
+							  			r.keyPress(KeyEvent.VK_V);
+							  			r.keyRelease(KeyEvent.VK_V);
+							  			r.keyRelease(KeyEvent.VK_CONTROL);
+							  			r.delay(1000);
+							  			r.keyPress(KeyEvent.VK_ENTER);
+							  			r.keyRelease(KeyEvent.VK_ENTER);	
+							  
+							  
+						  }	
 							  
 	
 												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
