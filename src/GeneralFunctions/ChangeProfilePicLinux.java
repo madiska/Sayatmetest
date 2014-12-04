@@ -20,7 +20,7 @@ import PageObjects.UserSettings;
 import Utils.*;
 
 public class ChangeProfilePicLinux extends Browser{
-  @SuppressWarnings("unused")
+
 @Test(dataProvider = "Upload")
   public void ChangingProfilePicLinux(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus) throws Exception {
 	  
@@ -55,16 +55,17 @@ public class ChangeProfilePicLinux extends Browser{
 	  r.mousePress(InputEvent.BUTTON1_MASK);
 	  r.mouseRelease(InputEvent.BUTTON1_MASK);
 	  	r.delay(1000);
-	  	r.mouseMove(115, 150);
+	  	r.mouseMove(115, 120);
 	  	r.mousePress(InputEvent.BUTTON1_MASK);
 	  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 	  		r.delay(1000);
 	  		r.mouseMove(200, 170);
 	  		r.mousePress(InputEvent.BUTTON1_MASK);
 	  		r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  		r.delay(1000);
+	  		r.delay(2000);
 	  			r.keyPress(KeyEvent.VK_CONTROL);
 	  			r.keyPress(KeyEvent.VK_V);
+	  			r.delay(1000);
 	  			r.keyRelease(KeyEvent.VK_V);
 	  			r.keyRelease(KeyEvent.VK_CONTROL);
 	  			r.keyPress(KeyEvent.VK_ENTER);
@@ -92,19 +93,21 @@ public class ChangeProfilePicLinux extends Browser{
 				LoggedIn.DropdownMenu(driver).click();
 				LoggedIn.Seaded(driver).click();
 				wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
-	    
+
+				UserSettings.Valipilt(driver).click();
+				Thread.sleep(5000);
 				
 				
 				 String myString2 = Constant.Pilt3;
 				 StringSelection stringSelection2 = new StringSelection (myString2);
 				 Clipboard clpbrd2 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
-				 clpbrd.setContents (stringSelection, null);
+				 clpbrd.setContents (stringSelection2, null);
 			  
 				  r.mouseMove(140, 295);
 				  r.mousePress(InputEvent.BUTTON1_MASK);
 				  r.mouseRelease(InputEvent.BUTTON1_MASK);
 				  	r.delay(1000);
-				  	r.mouseMove(115, 150);
+				  	r.mouseMove(115, 120);
 				  	r.mousePress(InputEvent.BUTTON1_MASK);
 				  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 				  		r.delay(1000);
@@ -116,6 +119,7 @@ public class ChangeProfilePicLinux extends Browser{
 				  			r.keyPress(KeyEvent.VK_V);
 				  			r.keyRelease(KeyEvent.VK_V);
 				  			r.keyRelease(KeyEvent.VK_CONTROL);
+				  			r.delay(1000);
 				  			r.keyPress(KeyEvent.VK_ENTER);
 				  			r.keyRelease(KeyEvent.VK_ENTER);	
 				  			
@@ -134,18 +138,19 @@ public class ChangeProfilePicLinux extends Browser{
 							LoggedIn.Seaded(driver).click();
 							wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 				    
-							
+							UserSettings.Valipilt(driver).click();
+							Thread.sleep(5000);
 							
 							 String myString3 = Constant.Pilt4;
 							 StringSelection stringSelection3 = new StringSelection (myString3);
 							 Clipboard clpbrd3 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
-							 clpbrd.setContents (stringSelection, null);
+							 clpbrd.setContents (stringSelection3, null);
 						  
 							  r.mouseMove(140, 295);
 							  r.mousePress(InputEvent.BUTTON1_MASK);
 							  r.mouseRelease(InputEvent.BUTTON1_MASK);
 							  	r.delay(1000);
-							  	r.mouseMove(115, 150);
+							  	r.mouseMove(115, 120);
 							  	r.mousePress(InputEvent.BUTTON1_MASK);
 							  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 							  		r.delay(1000);
@@ -157,6 +162,7 @@ public class ChangeProfilePicLinux extends Browser{
 							  			r.keyPress(KeyEvent.VK_V);
 							  			r.keyRelease(KeyEvent.VK_V);
 							  			r.keyRelease(KeyEvent.VK_CONTROL);
+							  			r.delay(1000);
 							  			r.keyPress(KeyEvent.VK_ENTER);
 							  			r.keyRelease(KeyEvent.VK_ENTER);	
 							  			
@@ -173,7 +179,7 @@ public class ChangeProfilePicLinux extends Browser{
 				Thread.sleep(3000);
 				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
 				LoggedIn.DropdownMenu(driver).click();
-				LoggedIn.Logout(driver);
+				LoggedIn.Logout(driver).click();
 				wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  
