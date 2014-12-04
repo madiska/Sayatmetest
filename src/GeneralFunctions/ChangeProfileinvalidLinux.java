@@ -96,7 +96,7 @@ public class ChangeProfileinvalidLinux extends Browser {
 		  
 	  }	
 	  
-	  wait.until(ExpectedConditions.elementToBeClickable(ErrorMessages.ProfilePicLiigaSuur(driver)));
+	  wait.until(ExpectedConditions.visibilityOf(ErrorMessages.ProfilePicLiigaSuur(driver)));
 	  UserSettings.SettingsCloseInformation(driver).click();
 	  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));

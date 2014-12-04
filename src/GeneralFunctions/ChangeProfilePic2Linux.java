@@ -240,6 +240,7 @@ public class ChangeProfilePic2Linux extends Browser {
 	  
 						LoggedIn.DropdownMenu(driver).click();
 						LoggedIn.Logout(driver).click();
+						wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
   }
   
   
