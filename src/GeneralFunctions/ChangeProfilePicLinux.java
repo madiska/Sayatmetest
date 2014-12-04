@@ -10,6 +10,8 @@ import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
@@ -18,8 +20,9 @@ import PageObjects.UserSettings;
 import Utils.*;
 
 public class ChangeProfilePicLinux extends Browser{
-  @Test
-  public void ChangingProfilePicLinux() throws InterruptedException, AWTException {
+  @SuppressWarnings("unused")
+@Test(dataProvider = "Upload")
+  public void ChangingProfilePicLinux(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus) throws Exception {
 	  
 	  
 	  driver.get(baseUrl);		
@@ -32,10 +35,10 @@ public class ChangeProfilePicLinux extends Browser{
 	  driver.findElement(By.linkText("Toivo Tavaline")).click();
 	  LoggedIn.Seaded(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
+		Integer numbriks = Integer.valueOf(Case);
+	 
 	  
-	  UserSettings.Seaded(driver).click();
-	  
-	  UserSettings.ValipiltChrome(driver).click();
+	  UserSettings.Valipilt(driver).click();
 		 
 		 String myString = Constant.Pilt1;
 		 StringSelection stringSelection = new StringSelection (myString);
@@ -49,27 +52,242 @@ public class ChangeProfilePicLinux extends Browser{
 	  r.mouseMove(140, 295);
 	  r.mousePress(InputEvent.BUTTON1_MASK);
 	  r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  	r.delay(5);
+	  	r.delay(1000);
 	  	r.mouseMove(115, 150);
 	  	r.mousePress(InputEvent.BUTTON1_MASK);
 	  	r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  		r.delay(5);
+	  		r.delay(1000);
 	  		r.mouseMove(200, 190);
 	  		r.mousePress(InputEvent.BUTTON1_MASK);
 	  		r.mouseRelease(InputEvent.BUTTON1_MASK);
-	  		r.delay(5);
+	  		r.delay(1000);
 	  			r.keyPress(KeyEvent.VK_CONTROL);
 	  			r.keyPress(KeyEvent.VK_V);
 	  			r.keyRelease(KeyEvent.VK_V);
 	  			r.keyRelease(KeyEvent.VK_CONTROL);
 	  			r.keyPress(KeyEvent.VK_ENTER);
 	  			r.keyRelease(KeyEvent.VK_ENTER);
+	  			
+	  			wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Eemaldapilt(driver)));
+	  			 long start = System.currentTimeMillis();
+	  			UserSettings.SettingsSaveInformation(driver).click();
+	  			wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
+	  			 long finish = System.currentTimeMillis();
+				 long totalTime = finish - start; 
+				 Esimenetulemus = Long.toString(totalTime);
+				 System.out.println("Total Time for page load - "+totalTime); 
+				 
+				 if(brauser == "firefox") {
+					 
+					 if (numbriks == 1) {
+						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
+					 }
+					 else {
+						 
+						 
+					 }
+					 
+				 }
+				 
+				 else if (brauser == "chrome") {
+					 
+					 if (numbriks == 2) {
+						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
+					 }
+					 else {
+						 
+					 }
+					 
+				 }
+				 
+				 else {
+					 
+					 if(numbriks == 3) {
+						 
+					 
+						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
+					 }else{
+						 
+						 
+					 }
+					 
+				 }
+	  			
+				 UserSettings.SettingsCloseInformation(driver).click();
+				 Thread.sleep(3000);
+				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+				LoggedIn.Friends(driver).click();
+				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Saadetud(driver)));
+				
+				LoggedIn.DropdownMenu(driver).click();
+				LoggedIn.Seaded(driver).click();
+				wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 	    
-	  
-	  
+				
+				
+				 String myString2 = Constant.Pilt3;
+				 StringSelection stringSelection2 = new StringSelection (myString2);
+				 Clipboard clpbrd2 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
+				 clpbrd.setContents (stringSelection, null);
+			  
+				  r.mouseMove(140, 295);
+				  r.mousePress(InputEvent.BUTTON1_MASK);
+				  r.mouseRelease(InputEvent.BUTTON1_MASK);
+				  	r.delay(1000);
+				  	r.mouseMove(115, 150);
+				  	r.mousePress(InputEvent.BUTTON1_MASK);
+				  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+				  		r.delay(1000);
+				  		r.mouseMove(200, 190);
+				  		r.mousePress(InputEvent.BUTTON1_MASK);
+				  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+				  		r.delay(1000);
+				  			r.keyPress(KeyEvent.VK_CONTROL);
+				  			r.keyPress(KeyEvent.VK_V);
+				  			r.keyRelease(KeyEvent.VK_V);
+				  			r.keyRelease(KeyEvent.VK_CONTROL);
+				  			r.keyPress(KeyEvent.VK_ENTER);
+				  			r.keyRelease(KeyEvent.VK_ENTER);	
+				  			
+				  
+				  			 if(brauser == "firefox") {
+								 
+								 if (numbriks == 1) {
+									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+								 }
+								 else {
+									 
+									 
+								 }
+								 
+							 }
+							 
+							 else if (brauser == "chrome") {
+								 
+								 if (numbriks == 2) {
+									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+								 }
+								 else {
+									 
+								 }
+								 
+							 }
+							 
+							 else {
+								 
+								 if(numbriks == 3) {
+									 
+								 
+									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+								 }else{
+									 
+									 
+								 }
+								 
+							 }
+				  			 
+				  			 UserSettings.SettingsCloseInformation(driver).click();
+							 Thread.sleep(3000);
+							 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+							LoggedIn.Friends(driver).click();
+							wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Saadetud(driver)));
+							
+							LoggedIn.DropdownMenu(driver).click();
+							LoggedIn.Seaded(driver).click();
+							wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
+				    
+							
+							
+							 String myString3 = Constant.Pilt4;
+							 StringSelection stringSelection3 = new StringSelection (myString3);
+							 Clipboard clpbrd3 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
+							 clpbrd.setContents (stringSelection, null);
+						  
+							  r.mouseMove(140, 295);
+							  r.mousePress(InputEvent.BUTTON1_MASK);
+							  r.mouseRelease(InputEvent.BUTTON1_MASK);
+							  	r.delay(1000);
+							  	r.mouseMove(115, 150);
+							  	r.mousePress(InputEvent.BUTTON1_MASK);
+							  	r.mouseRelease(InputEvent.BUTTON1_MASK);
+							  		r.delay(1000);
+							  		r.mouseMove(200, 190);
+							  		r.mousePress(InputEvent.BUTTON1_MASK);
+							  		r.mouseRelease(InputEvent.BUTTON1_MASK);
+							  		r.delay(1000);
+							  			r.keyPress(KeyEvent.VK_CONTROL);
+							  			r.keyPress(KeyEvent.VK_V);
+							  			r.keyRelease(KeyEvent.VK_V);
+							  			r.keyRelease(KeyEvent.VK_CONTROL);
+							  			r.keyPress(KeyEvent.VK_ENTER);
+							  			r.keyRelease(KeyEvent.VK_ENTER);	
+							  			
+							  
+							  			 if(brauser == "firefox") {
+											 
+											 if (numbriks == 1) {
+												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+											 }
+											 else {
+												 
+												 
+											 }
+											 
+										 }
+										 
+										 else if (brauser == "chrome") {
+											 
+											 if (numbriks == 2) {
+												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+											 }
+											 else {
+												 
+											 }
+											 
+										 }
+										 
+										 else {
+											 
+											 if(numbriks == 3) {
+												 
+											 
+												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
+											 }else{
+												 
+												 
+											 }
+											 
+										 }
+							  			 
+				UserSettings.SettingsCloseInformation(driver).click();
+				Thread.sleep(3000);
+				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
+				LoggedIn.DropdownMenu(driver).click();
+				LoggedIn.Logout(driver);
+				wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  
 	  
 	
+  }
+  @DataProvider
+  
+  
+
+  public Object[][] Upload() throws Exception{
+
+   Object[][] testObjArray = ExcelUtils.getTableArray(Constant.ExceliAsukoht,"Sheet9");
+
+   return (testObjArray);
+
   }
 }
