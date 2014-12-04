@@ -8,7 +8,7 @@
 		<classes>
 
 
-<class name = "GeneralFunctions.ChangeProfileInvalidLinux" />
+<class name = "GeneralFunctions.ChangeProfileinvalidLinux" />
 <class name = "GeneralFunctions.ChangeProfilePicLinux" />
 <class name = "GeneralFunctions.ChangeProfilePic2Linux" />
 
@@ -51,7 +51,7 @@
 		<classes>
 
 
-<class name = "GeneralFunctions.ChangeProfileInvalidLinux" />
+<class name = "GeneralFunctions.ChangeProfileinvalidLinux" />
 <class name = "GeneralFunctions.ChangeProfilePicLinux" />
 <class name = "GeneralFunctions.ChangeProfilePic2Linux" />
 
