@@ -8,8 +8,9 @@
 		<classes>
 
 
-
-
+<class name = "GeneralFunctions.ChangeProfileInvalidLinux" />
+<class name = "GeneralFunctions.ChangeProfilePicLinux" />
+<class name = "GeneralFunctions.ChangeProfilePic2Linux" />
 
 
 	 
@@ -49,8 +50,10 @@
  
 		<classes>
 
-  <class name = "Kysimus.Kysimused" />
 
+<class name = "GeneralFunctions.ChangeProfileInvalidLinux" />
+<class name = "GeneralFunctions.ChangeProfilePicLinux" />
+<class name = "GeneralFunctions.ChangeProfilePic2Linux" />
 
 
 		 </classes>

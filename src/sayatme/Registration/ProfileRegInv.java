@@ -52,6 +52,7 @@ Assert.assertTrue(ErrorMessages.Urlonveotud(driver).isDisplayed());
 
 driver.get(baseUrl+Url);
 
+
 Profile.ProfileRegNimi(driver).sendKeys(Nimi);
 
 Profile.ProfileRegPW(driver).sendKeys(Passmismatch);
