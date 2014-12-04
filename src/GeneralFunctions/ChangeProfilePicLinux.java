@@ -59,7 +59,7 @@ public class ChangeProfilePicLinux extends Browser{
 	  	r.mousePress(InputEvent.BUTTON1_MASK);
 	  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 	  		r.delay(1000);
-	  		r.mouseMove(200, 190);
+	  		r.mouseMove(200, 170);
 	  		r.mousePress(InputEvent.BUTTON1_MASK);
 	  		r.mouseRelease(InputEvent.BUTTON1_MASK);
 	  		r.delay(1000);
@@ -108,7 +108,7 @@ public class ChangeProfilePicLinux extends Browser{
 				  	r.mousePress(InputEvent.BUTTON1_MASK);
 				  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 				  		r.delay(1000);
-				  		r.mouseMove(200, 190);
+				  		r.mouseMove(200, 170);
 				  		r.mousePress(InputEvent.BUTTON1_MASK);
 				  		r.mouseRelease(InputEvent.BUTTON1_MASK);
 				  		r.delay(1000);
@@ -149,7 +149,7 @@ public class ChangeProfilePicLinux extends Browser{
 							  	r.mousePress(InputEvent.BUTTON1_MASK);
 							  	r.mouseRelease(InputEvent.BUTTON1_MASK);
 							  		r.delay(1000);
-							  		r.mouseMove(200, 190);
+							  		r.mouseMove(200, 170);
 							  		r.mousePress(InputEvent.BUTTON1_MASK);
 							  		r.mouseRelease(InputEvent.BUTTON1_MASK);
 							  		r.delay(1000);
