@@ -36,14 +36,16 @@ public class ChangeProfilePicLinux extends Browser{
 	  LoggedIn.Seaded(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 		Integer numbriks = Integer.valueOf(Case);
-	 
-	  
-	  UserSettings.Valipilt(driver).click();
-		 
 		 String myString = Constant.Pilt1;
 		 StringSelection stringSelection = new StringSelection (myString);
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
+	
+		if (brauser == "firefox " && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
+	  
+	  UserSettings.Valipilt(driver).click();
+		 
+	
 	  
 	  //Siin tuleb linuxi file upload aken lahti. Selleks, et faili uploadida on vaja teha aktiivseks linuxi yleslaadimis aknal location bar 
 	  Thread.sleep(5000);
@@ -77,45 +79,10 @@ public class ChangeProfilePicLinux extends Browser{
 				 Esimenetulemus = Long.toString(totalTime);
 				 System.out.println("Total Time for page load - "+totalTime); 
 				 
-				 if(brauser == "firefox") {
-					 
-					 if (numbriks == 1) {
 						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
 						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
-					 }
-					 else {
+		
 						 
-						 
-					 }
-					 
-				 }
-				 
-				 else if (brauser == "chrome") {
-					 
-					 if (numbriks == 2) {
-						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
-					 }
-					 else {
-						 
-					 }
-					 
-				 }
-				 
-				 else {
-					 
-					 if(numbriks == 3) {
-						 
-					 
-						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,2);
-					 }else{
-						 
-						 
-					 }
-					 
-				 }
-	  			
 				 UserSettings.SettingsCloseInformation(driver).click();
 				 Thread.sleep(3000);
 				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -153,45 +120,10 @@ public class ChangeProfilePicLinux extends Browser{
 				  			r.keyRelease(KeyEvent.VK_ENTER);	
 				  			
 				  
-				  			 if(brauser == "firefox") {
-								 
-								 if (numbriks == 1) {
+				
 									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
 									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
-								 }
-								 else {
-									 
-									 
-								 }
-								 
-							 }
-							 
-							 else if (brauser == "chrome") {
-								 
-								 if (numbriks == 2) {
-									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
-								 }
-								 else {
-									 
-								 }
-								 
-							 }
-							 
-							 else {
-								 
-								 if(numbriks == 3) {
-									 
-								 
-									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
-								 }else{
-									 
-									 
-								 }
-								 
-							 }
-				  			 
+		
 				  			 UserSettings.SettingsCloseInformation(driver).click();
 							 Thread.sleep(3000);
 							 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
@@ -229,44 +161,13 @@ public class ChangeProfilePicLinux extends Browser{
 							  			r.keyRelease(KeyEvent.VK_ENTER);	
 							  			
 							  
-							  			 if(brauser == "firefox") {
-											 
-											 if (numbriks == 1) {
+	
 												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
 												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
-											 }
-											 else {
-												 
-												 
-											 }
+	
 											 
 										 }
-										 
-										 else if (brauser == "chrome") {
-											 
-											 if (numbriks == 2) {
-												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
-											 }
-											 else {
-												 
-											 }
-											 
-										 }
-										 
-										 else {
-											 
-											 if(numbriks == 3) {
-												 
-											 
-												WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-												 WriteToExcel.setCellData(Esimenetulemus, numbriks ,3);
-											 }else{
-												 
-												 
-											 }
-											 
-										 }
+		else {}
 							  			 
 				UserSettings.SettingsCloseInformation(driver).click();
 				Thread.sleep(3000);
