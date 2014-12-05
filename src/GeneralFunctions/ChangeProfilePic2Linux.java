@@ -8,6 +8,8 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
@@ -38,8 +40,15 @@ public class ChangeProfilePic2Linux extends Browser {
 		 StringSelection stringSelection = new StringSelection (myString);
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
-		  UserSettings.Valipilt(driver).click();
-		  
+		 if (brauser == "firefox") {
+
+			  WebElement Fileinput = driver.findElement(By.name("account_image"));
+				 Fileinput.click();
+		 }else {
+			 					 
+		 
+		 UserSettings.Valipilt(driver).click();
+		 }
 		  
 		  Thread.sleep(5000);
 		  
@@ -108,7 +117,15 @@ public class ChangeProfilePic2Linux extends Browser {
 					 StringSelection stringSelection2 = new StringSelection (myString2);
 					 Clipboard clpbrd2 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 					 clpbrd.setContents (stringSelection2, null);
-					  UserSettings.Valipilt(driver).click();
+					 if (brauser == "firefox") {
+
+						  WebElement Fileinput = driver.findElement(By.name("account_image"));
+							 Fileinput.click();
+					 }else {
+						 					 
+					 
+					 UserSettings.Valipilt(driver).click();
+					 }
 					  
 					  
 					  Thread.sleep(5000);
@@ -180,8 +197,16 @@ public class ChangeProfilePic2Linux extends Browser {
 						 StringSelection stringSelection3 = new StringSelection (myString3);
 						 Clipboard clpbrd3 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 						 clpbrd.setContents (stringSelection3, null);
-						  UserSettings.Valipilt(driver).click();
-						  
+						
+						 if (brauser == "firefox") {
+
+							  WebElement Fileinput = driver.findElement(By.name("account_image"));
+								 Fileinput.click();
+						 }else {
+							 					 
+						 
+						 UserSettings.Valipilt(driver).click();
+						 }
 						  
 						  Thread.sleep(5000);
 						  

@@ -41,7 +41,7 @@ public class ChangeProfilePicLinux extends Browser{
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
 	
-		if (brauser == "firefox " && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
+		if (brauser == "firefox" && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
 	  
 	  UserSettings.Valipilt(driver).click();
 		 

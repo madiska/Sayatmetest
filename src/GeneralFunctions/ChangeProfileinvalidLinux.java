@@ -9,6 +9,7 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
@@ -44,8 +45,15 @@ public class ChangeProfileinvalidLinux extends Browser {
 	
 		
 	  
-	  UserSettings.Valipilt(driver).click();
+		 if (brauser == "firefox") {
+
+			  WebElement Fileinput = driver.findElement(By.name("account_image"));
+				 Fileinput.click();
+		 }else {
+			 					 
 		 
+		 UserSettings.Valipilt(driver).click();
+		 }
 	
 	  
 	  //Siin tuleb linuxi file upload aken lahti. Selleks, et faili uploadida on vaja teha aktiivseks linuxi yleslaadimis aknal location bar 
