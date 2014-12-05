@@ -9,6 +9,7 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -43,7 +44,15 @@ public class ChangeProfilePicLinux extends Browser{
 	
 		if (brauser == "firefox" && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
 	  
-	  UserSettings.Valipilt(driver).click();
+			 if (brauser == "firefox") {
+				 Thread.sleep(3000);
+				  WebElement Fileinput = driver.findElement(By.name("account_image"));
+					 Fileinput.click();
+			 }else {
+				 					 
+			 
+			 UserSettings.Valipilt(driver).click();
+			 }
 		 
 	
 	  
@@ -118,7 +127,15 @@ public class ChangeProfilePicLinux extends Browser{
 				LoggedIn.Seaded(driver).click();
 				wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 
-				UserSettings.Valipilt(driver).click();
+				 if (brauser == "firefox") {
+					 Thread.sleep(3000);
+					  WebElement Fileinput = driver.findElement(By.name("account_image"));
+						 Fileinput.click();
+				 }else {
+					 					 
+				 
+				 UserSettings.Valipilt(driver).click();
+				 }
 				Thread.sleep(5000);
 				
 				
@@ -177,7 +194,7 @@ public class ChangeProfilePicLinux extends Browser{
 		  			wait.until(ExpectedConditions.visibilityOf(UserSettings.DataAdded(driver)));
 		  			 long finish2 = System.currentTimeMillis();
 					 long totalTime2 = finish2 - start2; 
-					 Esimenetulemus = Long.toString(totalTime);
+					 Esimenetulemus = Long.toString(totalTime2);
 					 System.out.println("Total Time for page load - "+totalTime2); 
 				
 				  
@@ -195,7 +212,15 @@ public class ChangeProfilePicLinux extends Browser{
 							LoggedIn.Seaded(driver).click();
 							wait.until(ExpectedConditions.elementToBeClickable(UserSettings.Seaded(driver)));
 				    
-							UserSettings.Valipilt(driver).click();
+							 if (brauser == "firefox") {
+								 Thread.sleep(3000);
+								  WebElement Fileinput = driver.findElement(By.name("account_image"));
+									 Fileinput.click();
+							 }else {
+								 					 
+							 
+							 UserSettings.Valipilt(driver).click();
+							 }
 							Thread.sleep(5000);
 							
 							 String myString3 = Constant.Pilt4;
