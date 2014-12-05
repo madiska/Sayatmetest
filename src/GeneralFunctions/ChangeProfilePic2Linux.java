@@ -29,8 +29,8 @@ public class ChangeProfilePic2Linux extends Browser {
 	  Homepage.LoginButton(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  driver.get(baseUrl+"testime13");
-		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 table#user-tabs.feed-published-navs.no-outline.feed-settings-navs.feed-navs tbody tr td.settings-tab.settings-tab-surveys a.survey-tab")));
-
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));				
+		
 	  LoggedIn.DropdownMenu(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Seaded(driver)));
 	  LoggedIn.Seaded(driver).click();
