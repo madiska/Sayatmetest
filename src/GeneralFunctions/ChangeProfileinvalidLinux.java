@@ -47,7 +47,7 @@ public class ChangeProfileinvalidLinux extends Browser {
 	  
 		 if (brauser == "firefox") {
 
-			  WebElement Fileinput = driver.findElement(By.name("account_image"));
+			  WebElement Fileinput = driver.findElement(By.cssSelector("html body.modal-open div#settings.modal.fade.in div.modal-dialog div.modal-content.dialog-user-settings div.modal-body.picture-upload div.tab-content div#tab-information.tab-pane.active form div.fileupload.fileupload-new div.form-group span.btn.btn-file.btn-default"));
 				 Fileinput.click();
 		 }else {
 			 					 
