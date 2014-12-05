@@ -29,7 +29,7 @@ public class ChangeProfilePic2Linux extends Browser {
 	  Homepage.LoginButton(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  driver.get(baseUrl+"testime13");
-		
+		wait.until(ExpectedConditions.elementToBeSelected(By.cssSelector("html body div.container div.col-sm-8 table#user-tabs.feed-published-navs.no-outline.feed-settings-navs.feed-navs tbody tr td.settings-tab.settings-tab-surveys a.survey-tab")));
 
 	  LoggedIn.DropdownMenu(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Seaded(driver)));
@@ -41,7 +41,7 @@ public class ChangeProfilePic2Linux extends Browser {
 		 Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 		 clpbrd.setContents (stringSelection, null);
 		 if (brauser == "firefox") {
-
+			 Thread.sleep(3000);
 			  WebElement Fileinput = driver.findElement(By.name("account_image"));
 				 Fileinput.click();
 		 }else {
@@ -103,7 +103,7 @@ public class ChangeProfilePic2Linux extends Browser {
 		  			 UserSettings.SettingsCloseInformation(driver).click();
 					 Thread.sleep(3000);
 					driver.get(baseUrl+"testime13");
-				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+					wait.until(ExpectedConditions.elementToBeSelected(By.cssSelector("html body div.container div.col-sm-8 table#user-tabs.feed-published-navs.no-outline.feed-settings-navs.feed-navs tbody tr td.settings-tab.settings-tab-surveys a.survey-tab")));
 				
 				
 				  LoggedIn.DropdownMenu(driver).click();
@@ -118,7 +118,7 @@ public class ChangeProfilePic2Linux extends Browser {
 					 Clipboard clpbrd2 = Toolkit.getDefaultToolkit ().getSystemClipboard ();
 					 clpbrd.setContents (stringSelection2, null);
 					 if (brauser == "firefox") {
-
+						 Thread.sleep(3000);
 						  WebElement Fileinput = driver.findElement(By.name("account_image"));
 							 Fileinput.click();
 					 }else {
@@ -182,8 +182,7 @@ public class ChangeProfilePic2Linux extends Browser {
 			  			 UserSettings.SettingsCloseInformation(driver).click();
 						 Thread.sleep(3000);
 						driver.get(baseUrl+"testime13");
-					wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-					
+						wait.until(ExpectedConditions.elementToBeSelected(By.cssSelector("html body div.container div.col-sm-8 table#user-tabs.feed-published-navs.no-outline.feed-settings-navs.feed-navs tbody tr td.settings-tab.settings-tab-surveys a.survey-tab")));
 					
 				
 					
@@ -199,7 +198,7 @@ public class ChangeProfilePic2Linux extends Browser {
 						 clpbrd.setContents (stringSelection3, null);
 						
 						 if (brauser == "firefox") {
-
+							 Thread.sleep(3000);
 							  WebElement Fileinput = driver.findElement(By.name("account_image"));
 								 Fileinput.click();
 						 }else {
@@ -262,8 +261,7 @@ public class ChangeProfilePic2Linux extends Browser {
 				  			 UserSettings.SettingsCloseInformation(driver).click();
 							 Thread.sleep(3000);
 							driver.get(baseUrl+"testime13");
-						wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-					
+							wait.until(ExpectedConditions.elementToBeSelected(By.cssSelector("html body div.container div.col-sm-8 table#user-tabs.feed-published-navs.no-outline.feed-settings-navs.feed-navs tbody tr td.settings-tab.settings-tab-surveys a.survey-tab")));
 	  
 						LoggedIn.DropdownMenu(driver).click();
 						LoggedIn.Logout(driver).click();
