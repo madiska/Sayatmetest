@@ -395,7 +395,7 @@ public class LoggedIn {
 		
 		public static WebElement KysimusValiPiltsalvesta(WebDriver driver){
 			 
-			 element = driver.findElement(By.id("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-exists div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-footer a.btn.btn-primary.btn-block.picture-upload-button"));
+			 element = driver.findElement(By.cssSelector("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-exists div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-footer a.btn.btn-primary.btn-block.picture-upload-button"));
 			 
 			 return element;
 		 }

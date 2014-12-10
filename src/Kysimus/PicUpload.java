@@ -23,6 +23,7 @@ public class PicUpload extends Browser{
   @Test(dataProvider ="Upload")
   public void Questionpicture(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus, String Kysimuspilt, String KysimusPilt1,String KysimusPilt2, String KysimusPilt3) throws Exception {
 	  
+	  driver.get(baseUrl);
 	  Homepage.Login(driver).click();	
 	  Homepage.LoginUrl(driver).sendKeys("testime13");
 	  Homepage.LoginPW(driver).sendKeys("testime11");
@@ -30,7 +31,7 @@ public class PicUpload extends Browser{
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  
 	  LoggedIn.KysimusLisaPilt(driver).click();
-	  
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
 	 
 	  
 		Integer numbriks = Integer.valueOf(Case);
@@ -124,9 +125,11 @@ public class PicUpload extends Browser{
 				LoggedIn.Saadud(driver).click();
 				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
 				LoggedIn.KysimusLisaPilt(driver).click();
+				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
 
 
-				if (brauser == "firefox" && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
+
+					
 			  
 					 if (brauser == "firefox") {
 						 Thread.sleep(3000);
@@ -213,8 +216,7 @@ public class PicUpload extends Browser{
 					LoggedIn.Saadud(driver).click();
 					wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
 					LoggedIn.KysimusLisaPilt(driver).click();
-					
-					if (brauser == "firefox" && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
+					wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
 						  
 						 if (brauser == "firefox") {
 							 Thread.sleep(3000);
@@ -288,31 +290,32 @@ public class PicUpload extends Browser{
 									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
 									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,7);
 					
-									 
-							 LoggedIn.KysimusValiPiltsalvesta(driver).click();
-							 Thread.sleep(3000);
-							 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-							LoggedIn.Kysimusbutton(driver).click();
-							wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
-							driver.get(baseUrl+"testime13");
-							wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
-							LoggedIn.Saadud(driver).click();
-							wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
 						
 											 
 										 }
 		else {}
 							  			 
-				
+					 
 			
-				LoggedIn.DropdownMenu(driver).click();
-				LoggedIn.Logout(driver).click();
-				wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
-	  
-				}
-		}
- }
+				
+				 LoggedIn.KysimusValiPiltsalvesta(driver).click();
+				 Thread.sleep(3000);
+				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+				LoggedIn.Kysimusbutton(driver).click();
+				wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
+				driver.get(baseUrl+"testime13");
+				wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
+				LoggedIn.Saadud(driver).click();
+				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
+			
+		
+			LoggedIn.DropdownMenu(driver).click();
+			LoggedIn.Logout(driver).click();
+			wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
+  
+  }
+ 
  @DataProvider
  
  
