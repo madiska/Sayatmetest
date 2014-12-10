@@ -41,7 +41,7 @@ public class PicUpload extends Browser{
 		if (brauser == "firefox" && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
 	  
 			  LoggedIn.KysimusLisaPilt(driver).click();
-			  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
+			  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPilt(driver)));
 			 
 			
 			 if (brauser == "firefox") {
@@ -127,9 +127,9 @@ public class PicUpload extends Browser{
 				LoggedIn.Saadud(driver).click();
 				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
 				LoggedIn.KysimusLisaPilt(driver).click();
-				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
-
-
+				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPilt(driver)));
+				 
+					
 
 					
 			  
@@ -218,8 +218,9 @@ public class PicUpload extends Browser{
 					LoggedIn.Saadud(driver).click();
 					wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
 					LoggedIn.KysimusLisaPilt(driver).click();
-					wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
-						  
+					 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPilt(driver)));
+					 
+							  
 						 if (brauser == "firefox") {
 							 Thread.sleep(3000);
 							 LoggedIn.KysimusValiPilt(driver).click();
