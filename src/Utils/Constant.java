@@ -14,6 +14,7 @@ public class Constant {
 	public static final String Pilt6 = System.getProperty("user.dir")+"//src//testdata//2,2mb.bmp";
 	public static final String Pilt7 = System.getProperty("user.dir")+"//src//testdata//4,8mb.bmp";
 	public static final String Pilt8 = System.getProperty("user.dir")+"//src//testdata//5,2mb.bmp";
+	public static final String textdoc = System.getProperty("user.dir")+"//src//testdata//text.txt";
 	
 	
 	public static final String IEDriver = "C:\\Users\\Madis\\Downloads\\IEDriverServer32.exe";

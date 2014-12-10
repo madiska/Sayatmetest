@@ -294,7 +294,7 @@ public class PicUpload extends Browser{
 				  			
 							 
 									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,7);
+									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,8);
 					
 						
 									 LoggedIn.KysimusValiPiltsalvesta(driver).click();
