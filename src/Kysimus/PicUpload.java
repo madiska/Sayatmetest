@@ -30,9 +30,7 @@ public class PicUpload extends Browser{
 	  Homepage.LoginButton(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  
-	  LoggedIn.KysimusLisaPilt(driver).click();
-	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
-	 
+	
 	  
 		Integer numbriks = Integer.valueOf(Case);
 		 String myString = Constant.Pilt2;
@@ -42,6 +40,10 @@ public class PicUpload extends Browser{
 	
 		if (brauser == "firefox" && numbriks == 1 || brauser == "chrome" && numbriks == 2 || brauser == "IE" && numbriks == 3) {
 	  
+			  LoggedIn.KysimusLisaPilt(driver).click();
+			  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusValiPiltsalvesta(driver)));
+			 
+			
 			 if (brauser == "firefox") {
 				 Thread.sleep(3000);
 				 LoggedIn.KysimusValiPilt(driver).click();
@@ -291,7 +293,16 @@ public class PicUpload extends Browser{
 									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,7);
 					
 						
-											 
+									 LoggedIn.KysimusValiPiltsalvesta(driver).click();
+									 Thread.sleep(3000);
+									 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+									LoggedIn.Kysimusbutton(driver).click();
+									wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
+									driver.get(baseUrl+"testime13");
+									wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
+									LoggedIn.Saadud(driver).click();
+									wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
+								
 										 }
 		else {}
 							  			 
@@ -299,15 +310,6 @@ public class PicUpload extends Browser{
 			
 	  
 				
-				 LoggedIn.KysimusValiPiltsalvesta(driver).click();
-				 Thread.sleep(3000);
-				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-				LoggedIn.Kysimusbutton(driver).click();
-				wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
-				driver.get(baseUrl+"testime13");
-				wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
-				LoggedIn.Saadud(driver).click();
-				wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusLisaPilt(driver)));
 			
 		
 			LoggedIn.DropdownMenu(driver).click();
