@@ -1,6 +1,8 @@
 package sayatme.Registration;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
@@ -43,13 +45,14 @@ public class FeedbackRegInval extends Browser {
    
   Profile.ProfileFeedBackRegButton(driver).click();
   Assert.assertTrue(ErrorMessages.FeedbackUrlonveotud(driver).isDisplayed());
-  Thread.sleep(2000);
+  
+  driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     try {
       AssertJUnit.assertFalse(isElementPresent(By.linkText(Nimi)));
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }
-
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     driver.get(baseUrl+Url);
 Profile.TagasisideTextBox(driver).sendKeys(tagasiside);

@@ -5,23 +5,23 @@
   <test name="chrome kask6intundubkorras(failed)">
     <parameter name="browser" value="chromekorras"/>
     <classes>
-      <class name="Friends.FriendsFeedback">
+      <class name="sayatme.Registration.ProfileRegInv">
         <methods>
-          <include name="TestFriendsFeedback"/>
+          <include name="testProfileRegInv"/>
         </methods>
-      </class> <!-- Friends.FriendsFeedback -->
-      <class name="Friends.FollowFriends">
+      </class> <!-- sayatme.Registration.ProfileRegInv -->
+      <class name="sayatme.Registration.FeedbackRegInval">
         <methods>
+          <include name="testFeedbackRegInval"/>
+        </methods>
+      </class> <!-- sayatme.Registration.FeedbackRegInval -->
+      <class name="sayatme.Registration.Frontpagereg">
+        <methods>
+          <include name="testFrontpagereg" invocation-numbers="1"/>
           <include name="beforeTest"/>
           <include name="closeBrowser"/>
-          <include name="SopradeJalgimine" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Friends.FollowFriends -->
-      <class name="Friends.UnfollowFriends">
-        <methods>
-          <include name="StopFollowing"/>
-        </methods>
-      </class> <!-- Friends.UnfollowFriends -->
+      </class> <!-- sayatme.Registration.Frontpagereg -->
     </classes>
   </test> <!-- chrome kask6intundubkorras(failed) -->
 </suite> <!-- Failed suite [Suite] -->

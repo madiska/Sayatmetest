@@ -1,12 +1,15 @@
 package sayatme.Registration;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
 
 
 
+import org.testng.AssertJUnit;
 import org.openqa.selenium.*;
 import org.testng.annotations.DataProvider;
 
@@ -41,8 +44,12 @@ Homepage.RegPassword(driver).sendKeys(Parool);
 Homepage.RegButton(driver).click();
 Thread.sleep(2000);
 Assert.assertTrue(ErrorMessages.Urlonveotud(driver).isDisplayed());
+driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
 
 Assert.assertFalse(isElementPresent(By.linkText(Nimi)));
+
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     
     
     
@@ -62,7 +69,12 @@ driver.get(baseUrl);
    
    Assert.assertTrue(ErrorMessages.PWmismatch(driver).isDisplayed());
 
+   driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+   
+
    Assert.assertFalse(isElementPresent(By.linkText(Nimi)));
+
+   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
    
    driver.get(baseUrl);
   
@@ -80,7 +92,12 @@ driver.get(baseUrl);
  
   Assert.assertTrue(ErrorMessages.PWlyhike(driver).isDisplayed());
  
+  driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+  
+
   Assert.assertFalse(isElementPresent(By.linkText(Nimi)));
+
+  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     
     
     
@@ -99,9 +116,13 @@ Thread.sleep(2000);
 
 Assert.assertTrue(ErrorMessages.Urleisobi(driver).isDisplayed());
 
+
+driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+ 
+
 Assert.assertFalse(isElementPresent(By.linkText(Nimi)));
 
-
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
 

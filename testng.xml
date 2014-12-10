@@ -6,12 +6,7 @@
  	<parameter name="browser" value="chromekorras" />
  
 		<classes>
-
-
-<class name = "GeneralFunctions.ChangeProfileinvalidLinux" />
-<class name = "GeneralFunctions.ChangeProfilePicLinux" />
-<class name = "GeneralFunctions.ChangeProfilePic2Linux" />
-
+<class name = "Kysimus.PicUpload" />
 
 	 
 
@@ -50,10 +45,7 @@
  
 		<classes>
 
-
-<class name = "GeneralFunctions.ChangeProfileinvalidLinux" />
-<class name = "GeneralFunctions.ChangeProfilePicLinux" />
-<class name = "GeneralFunctions.ChangeProfilePic2Linux" />
+<class name = "Kysimus.PicUpload" />
 
 
 		 </classes>

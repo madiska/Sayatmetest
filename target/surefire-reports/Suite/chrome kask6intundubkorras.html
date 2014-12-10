@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chrome kask6intundubkorras</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/7</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 26 15:31:56 EET 2014</td>
+<td>Started on:</td><td>Tue Dec 09 17:50:08 EET 2014</td>
 </tr>
-<tr><td>Total time:</td><td>713 seconds (713647 ms)</td>
+<tr><td>Total time:</td><td>53 seconds (53775 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,210 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.71)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.12 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7428_2403}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 23624ad0cdca91da7db399ed68fa4aed
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at Utils.Browser.closeBrowser(Browser.java:189)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace951221468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951221468'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.71)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.12 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7428_2403}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 23624ad0cdca91da7db399ed68fa4aed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at Utils.Browser.closeBrowser(Browser.java:189)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.beforeTest()'><b>beforeTest</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.Frontpagereg</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
+<tr>
+<td title='sayatme.Registration.ProfileRegInv.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.ProfileRegInv</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
+<tr>
+<td title='sayatme.Registration.FeedbackRegInval.closeBrowser()'><b>closeBrowser</b><br>Test class: sayatme.Registration.FeedbackRegInval</td>
+<td></td>
+<td>0</td>
+<td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at sayatme.Registration.Frontpagereg.testFrontpagereg(Frontpagereg.java:50)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1706099897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1706099897'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at sayatme.Registration.Frontpagereg.testFrontpagereg(Frontpagereg.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>9</td>
+<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,49 +279,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
+<td></td>
+<td>33</td>
+<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
 <td title='sayatme.Registration.FeedbackRegInval.testFeedbackRegInval()'><b>testFeedbackRegInval</b><br>Test class: sayatme.Registration.FeedbackRegInval<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
 <td></td>
-<td>54</td>
+<td>0</td>
 <td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
 <tr>
 <td title='sayatme.Registration.FeedbackRegInval.testFeedbackRegInval()'><b>testFeedbackRegInval</b><br>Test class: sayatme.Registration.FeedbackRegInval<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
 <td></td>
-<td>54</td>
+<td>0</td>
 <td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
 <tr>
 <td title='sayatme.Registration.FeedbackRegInval.testFeedbackRegInval()'><b>testFeedbackRegInval</b><br>Test class: sayatme.Registration.FeedbackRegInval<br>Parameters: Peerfoooooo, testime14, korralik3, korralik4, liiga, Peerfoooooo, Mktest!, See sul kolmas test, No ei leia midagi</td>
 <td></td>
-<td>54</td>
+<td>0</td>
 <td>sayatme.Registration.FeedbackRegInval@3d8c7aca</td></tr>
-<tr>
-<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
-<td></td>
-<td>146</td>
-<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
-<tr>
-<td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
-<td></td>
-<td>146</td>
-<td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
 <tr>
 <td title='sayatme.Registration.Frontpagereg.testFrontpagereg()'><b>testFrontpagereg</b><br>Test class: sayatme.Registration.Frontpagereg<br>Parameters: Peerfoooooo, testime14, korralik3, korralik4, liiga, Peerfoooooo, Mktest!, See sul kolmas test, No ei leia midagi</td>
 <td></td>
-<td>145</td>
+<td>0</td>
 <td>sayatme.Registration.Frontpagereg@1a407d53</td></tr>
 <tr>
 <td title='sayatme.Registration.ProfileRegInv.testProfileRegInv()'><b>testProfileRegInv</b><br>Test class: sayatme.Registration.ProfileRegInv<br>Parameters: Manualtest, testime13, korralik1, korralik2, eiso, manualtest, selentest@, See on testi konto jah?, Ei tohi leida midagi</td>
 <td></td>
-<td>21</td>
+<td>0</td>
 <td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
 <tr>
 <td title='sayatme.Registration.ProfileRegInv.testProfileRegInv()'><b>testProfileRegInv</b><br>Test class: sayatme.Registration.ProfileRegInv<br>Parameters: Automaaaat, madiskangro, korralik2, korralik3, vaike, Automaaaat, madiskangro$, See sul teine konto, Ei tohi yldse leida</td>
 <td></td>
-<td>22</td>
+<td>0</td>
 <td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
 <tr>
 <td title='sayatme.Registration.ProfileRegInv.testProfileRegInv()'><b>testProfileRegInv</b><br>Test class: sayatme.Registration.ProfileRegInv<br>Parameters: Peerfoooooo, testime14, korralik3, korralik4, liiga, Peerfoooooo, Mktest!, See sul kolmas test, No ei leia midagi</td>
 <td></td>
-<td>21</td>
+<td>0</td>
 <td>sayatme.Registration.ProfileRegInv@2acf57e3</td></tr>
 </table><p>
 </body>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="222.745" tests="27" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="44.619" tests="24" errors="0" skipped="21" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Madis\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1957855761525761246.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Madis\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6061333593633578817.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1257"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Madis\AppData\Roaming\npm;C:\Program Files (x86)\WinAnt\bin;C:\Users\Madis\Documents\apache-maven-3.2.3\bin;.;;C:\Users\Madis\Documents\eclipse;;.;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Users\Madis\C:\Users\Madis\adt-bundle-windows-x86_64-20140702\sdk\build-tools;C:\Users\Madis\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;C:\Users\Madis\adt-bundle-windows-x86_64-20140702\sdk\tools;C:\Users\Madis\Documents\apache-maven-3.2.3\bin;.;;C:\Users\Madis\Documents\eclipse;;.;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,31 +62,186 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="146.398"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="146.393"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="145.057"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="144.667"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="143.951"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="144.297"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="165.32"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="163.005"/>
-  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="162.967"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.561"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="22.129"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.715"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.242"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.024"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="21.264"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="31.872"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="30.432"/>
-  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="30.39"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.786"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.361"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.423"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="55.211"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="55.167"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="54.212"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="67.824"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="74.063"/>
-  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="66.848"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="33.509"/>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="9.918">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at sayatme.Registration.Frontpagereg.testFrontpagereg(Frontpagereg.java:50)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver (v2.8.241075) on port 32102
+]]></system-err>
+  </testcase>
+  <testcase name="testFrontpagereg" classname="sayatme.Registration.Frontpagereg" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.Frontpagereg" time="11.11">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=39.0.2171.71)&#10;  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.12 seconds&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;Madis-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7428_2403}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 23624ad0cdca91da7db399ed68fa4aed" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.71)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.12 seconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Madis-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\Madis\AppData\Local\Temp\scoped_dir7428_2403}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 23624ad0cdca91da7db399ed68fa4aed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:463)
+	at Utils.Browser.closeBrowser(Browser.java:189)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</failure>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.Frontpagereg" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.Frontpagereg" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+    <system-out><![CDATA[Manualtest
+testime13
+korralik1
+korralik2
+eiso
+manualtest
+selentest@
+See on testi konto jah?
+Ei tohi leida midagi
+Automaaaat
+madiskangro
+korralik2
+korralik3
+vaike
+Automaaaat
+madiskangro$
+See sul teine konto
+Ei tohi yldse leida
+Peerfoooooo
+testime14
+korralik3
+korralik4
+liiga
+Peerfoooooo
+Mktest!
+See sul kolmas test
+No ei leia midagi
+]]></system-out>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testProfileRegInv" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.ProfileRegInv" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+    <system-out><![CDATA[Manualtest
+testime13
+korralik1
+korralik2
+eiso
+manualtest
+selentest@
+See on testi konto jah?
+Ei tohi leida midagi
+Automaaaat
+madiskangro
+korralik2
+korralik3
+vaike
+Automaaaat
+madiskangro$
+See sul teine konto
+Ei tohi yldse leida
+Peerfoooooo
+testime14
+korralik3
+korralik4
+liiga
+Peerfoooooo
+Mktest!
+See sul kolmas test
+No ei leia midagi
+]]></system-out>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeTest" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFeedbackRegInval" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closeBrowser" classname="sayatme.Registration.FeedbackRegInval" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

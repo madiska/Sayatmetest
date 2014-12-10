@@ -379,12 +379,27 @@ public class LoggedIn {
 			 return element;
 		 }
 		
+		public static WebElement KysimusEemaldaPilt(WebDriver driver){
+			 
+			 element = driver.findElement(By.cssSelector("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-exists div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-body div.form-group a.btn.btn-default.fileupload-exists.btn-block"));
+			 
+			 return element;
+		 }
+		
 		public static WebElement KysimusValiPiltFF(WebDriver driver){
 			 
 			 element = driver.findElement(By.id("new_post_image"));
 			 
 			 return element;
 		 }
+		
+		public static WebElement KysimusValiPiltsalvesta(WebDriver driver){
+			 
+			 element = driver.findElement(By.id("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-exists div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-footer a.btn.btn-primary.btn-block.picture-upload-button"));
+			 
+			 return element;
+		 }
+		
 		
 		public static WebElement QuestionDropdown(WebDriver driver){
 			 
