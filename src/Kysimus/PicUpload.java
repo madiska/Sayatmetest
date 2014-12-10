@@ -46,7 +46,8 @@ public class PicUpload extends Browser{
 			
 			 if (brauser == "firefox") {
 				 Thread.sleep(3000);
-				 LoggedIn.KysimusValiPilt(driver).click();
+				 WebElement Fileinput = driver.findElement(By.id("new_post_image"));
+				 Fileinput.click();
 			 }else {
 				 					 
 			 
@@ -135,7 +136,8 @@ public class PicUpload extends Browser{
 			  
 					 if (brauser == "firefox") {
 						 Thread.sleep(3000);
-						 LoggedIn.KysimusValiPilt(driver).click();
+						 WebElement Fileinput = driver.findElement(By.id("new_post_image"));
+						 Fileinput.click();
 					 }else {
 						 					 
 					 
@@ -223,7 +225,8 @@ public class PicUpload extends Browser{
 							  
 						 if (brauser == "firefox") {
 							 Thread.sleep(3000);
-							 LoggedIn.KysimusValiPilt(driver).click();
+							  WebElement Fileinput = driver.findElement(By.id("new_post_image"));
+								 Fileinput.click();
 						 }else {
 							 					 
 						 
