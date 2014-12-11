@@ -50,7 +50,7 @@ public class PicUpload extends Browser{
 				 Fileinput.click();
 			 }else {
 				 					 
-			 
+				 Thread.sleep(3000);
 				 LoggedIn.KysimusValiPilt(driver).click();
 			 }
 		 
@@ -120,10 +120,7 @@ public class PicUpload extends Browser{
 				 Esimenetulemus = Long.toString(totalTime);
 				 System.out.println("Total Time for page load - "+totalTime); 
 				 
-					WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-					 WriteToExcel.setCellData(Esimenetulemus, numbriks ,6);
-	
-					 
+	  		
 	  			
 				driver.get(baseUrl+"testime13");
 				wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
@@ -142,7 +139,7 @@ public class PicUpload extends Browser{
 						 Fileinput.click();
 					 }else {
 						 					 
-					 
+						 Thread.sleep(3000);
 						 LoggedIn.KysimusValiPilt(driver).click();
 					 }
 				 Thread.sleep(5000);
@@ -234,7 +231,7 @@ public class PicUpload extends Browser{
 								 Fileinput.click();
 						 }else {
 							 					 
-						 
+							 Thread.sleep(3000);
 							 LoggedIn.KysimusValiPilt(driver).click();
 						 }
 					 Thread.sleep(5000);

@@ -47,7 +47,7 @@ public class PicUploadInvalid extends Browser{
 			 Fileinput.click();
 		 }else {
 			 					 
-		 
+			 Thread.sleep(3000);
 			 LoggedIn.KysimusValiPilt(driver).click();
 		 }
 		  Thread.sleep(5000);
