@@ -7,6 +7,7 @@
  
 		<classes>
 <class name = "Kysimus.PicUpload" />
+<class name = "Kysimus.PicUploadInvalid" />
 
 	 
 
@@ -46,6 +47,7 @@
 		<classes>
 
 <class name = "Kysimus.PicUpload" />
+<class name = "Kysimus.PicUploadInvalid" />
 
 
 		 </classes>

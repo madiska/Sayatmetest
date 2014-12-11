@@ -159,6 +159,16 @@ public class ErrorMessages {
 		 
 		 
 		 
+		 public static WebElement Kysimuspiltliigasuur(WebDriver driver){
+			 
+			    element = driver.findElement(By.cssSelector("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-new div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-body p.alert.alert-danger.file-size-alert.center"));
+			 
+			    return element;
+			 
+			    }
+		 
+		 
+		 
 		 
 		 
 		 

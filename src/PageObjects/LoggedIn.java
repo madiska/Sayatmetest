@@ -400,6 +400,13 @@ public class LoggedIn {
 			 return element;
 		 }
 		
+		public static WebElement KysimusValiPiltsalvestawithoutchanges(WebDriver driver){
+			 
+			 element = driver.findElement(By.cssSelector("html body.modal-open div.container div.col-sm-8 div.question-update.picture-upload form div.full-width div.fileupload.fileupload-new div#picture_modal.modal.fade.in div.modal-dialog div.modal-content div.modal-footer a.btn.btn-primary.btn-block.picture-upload-button"));
+			 
+			 return element;
+		 }
+		
 		
 		public static WebElement QuestionDropdown(WebDriver driver){
 			 
