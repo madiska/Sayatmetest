@@ -103,26 +103,28 @@ public class PicUpload extends Browser{
 		  
 		  
 	  }	
-	  long start = System.currentTimeMillis();
 	  			wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusEemaldaPilt(driver)));
-	  			 long finish = System.currentTimeMillis();
+	  
+	  			
+				 
+				
+				 LoggedIn.KysimusValiPiltsalvesta(driver).click();
+				 Thread.sleep(3000);
+				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+				  long start = System.currentTimeMillis();
+					
+				 LoggedIn.Kysimusbutton(driver).click();
+				wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
+				 long finish = System.currentTimeMillis();
 				 long totalTime = finish - start; 
 				 Esimenetulemus = Long.toString(totalTime);
 				 System.out.println("Total Time for page load - "+totalTime); 
 				 
-	  		
+					WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+					 WriteToExcel.setCellData(Esimenetulemus, numbriks ,6);
+	
+					 
 	  			
-	  			
-				 
-						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,6);
-		
-						 
-				 LoggedIn.KysimusValiPiltsalvesta(driver).click();
-				 Thread.sleep(3000);
-				 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-				LoggedIn.Kysimusbutton(driver).click();
-				wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
 				driver.get(baseUrl+"testime13");
 				wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
 				LoggedIn.Saadud(driver).click();
@@ -195,26 +197,29 @@ public class PicUpload extends Browser{
 					  
 				  }		
 				  			
-				  long start2 = System.currentTimeMillis();
-		  			wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusEemaldaPilt(driver)));
-		  			 long finish2 = System.currentTimeMillis();
-					 long totalTime2 = finish2 - start2; 
-					 Esimenetulemus = Long.toString(totalTime2);
-					 System.out.println("Total Time for page load - "+totalTime2); 
-					 
-		  		
+					wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusEemaldaPilt(driver)));
+		  	
 		  			
 		  			
 					 
-							WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-							 WriteToExcel.setCellData(Esimenetulemus, numbriks ,7);
-			
+						
 							 
 					 LoggedIn.KysimusValiPiltsalvesta(driver).click();
 					 Thread.sleep(3000);
+			
 					 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
-					LoggedIn.Kysimusbutton(driver).click();
+					  long start2 = System.currentTimeMillis();
+				  		
+					 LoggedIn.Kysimusbutton(driver).click();
 					wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
+					 long finish2 = System.currentTimeMillis();
+					 long totalTime2 = finish2 - start2; 
+					 Esimenetulemus = Long.toString(totalTime2);
+					 System.out.println("Total Time for page load - "+totalTime2); 
+						WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+						 WriteToExcel.setCellData(Esimenetulemus, numbriks ,7);
+		
+		  		
 					driver.get(baseUrl+"testime13");
 					wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
 					LoggedIn.Saadud(driver).click();
@@ -282,26 +287,31 @@ public class PicUpload extends Browser{
 							  
 						  }	
 				  			
-						  long start3 = System.currentTimeMillis();
-				  			wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusEemaldaPilt(driver)));
-				  			 long finish3 = System.currentTimeMillis();
-							 long totalTime3 = finish3 - start3; 
-							 Esimenetulemus = Long.toString(totalTime3);
-							 System.out.println("Total Time for page load - "+totalTime3); 
-							 
+						
 				  		
+						  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.KysimusEemaldaPilt(driver)));
 				  			
 				  			
-							 
-									WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
-									 WriteToExcel.setCellData(Esimenetulemus, numbriks ,8);
-					
+				  			
 						
 									 LoggedIn.KysimusValiPiltsalvesta(driver).click();
 									 Thread.sleep(3000);
 									 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+									  long start3 = System.currentTimeMillis();
+								
 									LoggedIn.Kysimusbutton(driver).click();
 									wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
+									 long finish3 = System.currentTimeMillis();
+									 long totalTime3 = finish3 - start3; 
+									 Esimenetulemus = Long.toString(totalTime3);
+									 System.out.println("Total Time for page load - "+totalTime3); 
+									 
+
+									 
+										WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+										 WriteToExcel.setCellData(Esimenetulemus, numbriks ,8);
+						
+									 
 									driver.get(baseUrl+"testime13");
 									wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("html body div.container div.col-sm-8 div.give-feedback form textarea.form-control.textarea-autogrow")));			
 									LoggedIn.Saadud(driver).click();
