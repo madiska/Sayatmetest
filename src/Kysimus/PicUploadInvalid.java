@@ -97,8 +97,7 @@ public class PicUploadInvalid extends Browser{
 			  
 		  }	
 		  
-		  Assert.assertTrue(ErrorMessages.Kysimuspiltliigasuur(driver).isDisplayed());
-		  
+		 wait.until(ExpectedConditions.visibilityOf(ErrorMessages.Kysimuspiltliigasuur(driver)));
 		  LoggedIn.KysimusValiPiltsalvestawithoutchanges(driver).click();
 		  
 		  Thread.sleep(3000);
