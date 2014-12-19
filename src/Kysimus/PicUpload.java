@@ -119,7 +119,8 @@ public class PicUpload extends Browser{
 				 long totalTime = finish - start; 
 				 Esimenetulemus = Long.toString(totalTime);
 				 System.out.println("Total Time for page load - "+totalTime); 
-				 
+				 WriteToExcel.setExcelFile(Constant.ExceliAsukoht,"Sheet9");
+				 WriteToExcel.setCellData(Esimenetulemus, numbriks ,6);
 	  		
 	  			
 				driver.get(baseUrl+"testime13");

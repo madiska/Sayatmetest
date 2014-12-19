@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import PageObjects.ErrorMessages;
 import PageObjects.Homepage;
 import Utils.Constant;
 import Utils.ExcelUtils;
@@ -19,6 +20,17 @@ public class Search extends Browser {
 	  Homepage.Search(driver).sendKeys(Url1);
 	  Homepage.SearchButton(driver).click();
 	  Assert.assertTrue(isElementPresent(By.linkText(Url1)));
+	  
+	  
+	  Homepage.Search(driver).clear();
+	  Homepage.Search(driver).sendKeys("Wa");
+	  Homepage.SearchButton(driver).click();
+	  
+	  Assert.assertTrue(ErrorMessages.SearchMinLength(driver).isDisplayed());
+	  
+	  
+	  
+	  
 	  
 	  
 

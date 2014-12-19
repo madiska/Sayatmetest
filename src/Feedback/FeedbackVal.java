@@ -79,6 +79,7 @@ Assert.assertTrue(driver.getPageSource().contains(Feedback3));
 
 LoggedIn.DropdownMenu(driver).click();
 LoggedIn.Logout(driver).click();
+wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 
 
 

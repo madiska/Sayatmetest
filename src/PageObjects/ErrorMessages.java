@@ -167,6 +167,14 @@ public class ErrorMessages {
 			 
 			    }
 		 
+		 public static WebElement SearchMinLength(WebDriver driver){
+			 
+			    element = driver.findElement(By.cssSelector("body > div.container > div > div.col-sm-8.search-results > div.alert.alert-danger"));
+			 
+			    return element;
+			 
+			    }
+		 
 		 
 		 
 		 

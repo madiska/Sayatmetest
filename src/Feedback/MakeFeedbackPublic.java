@@ -33,7 +33,7 @@ public class MakeFeedbackPublic extends Browser {
 	  LoggedIn.Logout(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
-	  driver.get("http://kask6iktundubkorras.sayat.me/"+Url2);
+	  driver.get(baseUrl+Url2);
 
 	  Assert.assertTrue(driver.getPageSource().contains(Feedback3));
   }
