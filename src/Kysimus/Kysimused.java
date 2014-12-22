@@ -117,9 +117,9 @@ for (int i = 0; i <iListSize; i++) {
 	Thread.sleep(2000);
 	LoggedIn.Kysimusbutton(driver).click();
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
-	LoggedIn.Saadetud(driver).click();
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("html body div.navbar.navbar-inverse.share-url-navbar div.container div.hidden-xs div.share-navbar-icons.right")));
-String parenthandle =	driver.getWindowHandle();
+	Thread.sleep(5000);
+	
+	String parenthandle =	driver.getWindowHandle();
 
 
 LoggedIn.JagaUrlFacebook(driver).click();
