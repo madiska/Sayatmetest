@@ -92,6 +92,7 @@ for (int i = 0; i <iListSize; i++) {
 		if (brauser == "firefox"){
 			 Robot robot = new Robot();
 			  robot.keyPress(KeyEvent.VK_ENTER);
+			  robot.delay(500);
 			  robot.keyRelease(KeyEvent.VK_ENTER);
 			
 			
@@ -118,6 +119,7 @@ for (int i = 0; i <iListSize; i++) {
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
 String parenthandle =	driver.getWindowHandle();
 
+driver.navigate().refresh();
 LoggedIn.JagaUrlFacebook(driver).click();
 
 
