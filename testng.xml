@@ -8,8 +8,6 @@
 		<classes>
 
 	 <class name = "Kysimus.Kysimused" />
-	  <class name = "Kysimus.PicUpload" />
-	  <class name = "Kysimus.PicUploadInvalid" />
 
 
  		</classes>
@@ -48,9 +46,6 @@
 		<classes>
 
 	 <class name = "Kysimus.Kysimused" />
-	  <class name = "Kysimus.PicUpload" />
-	  <class name = "Kysimus.PicUploadInvalid" />
-
 
 		 </classes>
  
