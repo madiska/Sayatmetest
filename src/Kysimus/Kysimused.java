@@ -124,8 +124,8 @@ LoggedIn.JagaUrlFacebook(driver).click();
 		//	for (String winHandle : driver.getWindowHandles()) {
 		//		System.out.print(driver.getWindowHandles().size());
 
-wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("FB_UI_Dialog")));
-					driver.switchTo().frame(driver.findElement(By.className("FB_UI_Dialog")));
+wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.className("FB_UI_Dialog")));
+				
 			//	}
 					if(i==0){
 						Thread.sleep(1000);
