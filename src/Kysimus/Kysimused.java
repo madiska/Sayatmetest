@@ -117,6 +117,7 @@ for (int i = 0; i <iListSize; i++) {
 	Thread.sleep(2000);
 	LoggedIn.Kysimusbutton(driver).click();
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
+	driver.navigate().refresh();
 	Thread.sleep(5000);
 	
 	String parenthandle =	driver.getWindowHandle();
