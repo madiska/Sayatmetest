@@ -57,7 +57,7 @@ public class PicUpload extends Browser{
 	
 	  
 	  //Siin tuleb linuxi file upload aken lahti. Selleks, et faili uploadida on vaja teha aktiivseks linuxi yleslaadimis aknal location bar 
-	  Thread.sleep(5000);
+	  Thread.sleep(6000);
 	  
 	  Robot r = new Robot();
 	  if (brauser == "firefox") {

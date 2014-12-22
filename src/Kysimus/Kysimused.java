@@ -41,6 +41,7 @@ public class Kysimused extends Browser {
 	  SocialMedia.FacebookLoginEmail(driver).sendKeys("lqxelkw_chaisen_1415285502@tfbnw.net");
 	  SocialMedia.FacebookLoginPW(driver).sendKeys("madis");
 	  SocialMedia.FacebookLoginButtonFromWebsite(driver).click();
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("pagelet_composer")));
 	
 	
 	
