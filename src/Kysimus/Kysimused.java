@@ -123,7 +123,8 @@ LoggedIn.JagaUrlFacebook(driver).click();
 
 		//	for (String winHandle : driver.getWindowHandles()) {
 		//		System.out.print(driver.getWindowHandles().size());
-			//		driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
+
+wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("FB_UI_Dialog")));
 					driver.switchTo().frame(driver.findElement(By.className("FB_UI_Dialog")));
 			//	}
 					if(i==0){
