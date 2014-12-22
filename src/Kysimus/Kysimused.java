@@ -116,8 +116,7 @@ for (int i = 0; i <iListSize; i++) {
 	LoggedIn.Kysimusbutton(driver).click();
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
 String parenthandle =	driver.getWindowHandle();
-driver.get(baseUrl);
-Thread.sleep(2000);
+
 LoggedIn.JagaUrlFacebook(driver).click();
 
 
