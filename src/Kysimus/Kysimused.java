@@ -19,6 +19,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
 import PageObjects.LoggedIn;
+import PageObjects.Profile;
 import PageObjects.SocialMedia;
 import Utils.*;
 
@@ -117,8 +118,10 @@ for (int i = 0; i <iListSize; i++) {
 	Thread.sleep(2000);
 	LoggedIn.Kysimusbutton(driver).click();
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.SuccessKyssauuendus(driver)));
-	driver.navigate().refresh();
-	Thread.sleep(5000);
+	driver.get(baseUrl+"testime13");
+	wait.until(ExpectedConditions.visibilityOf(Profile.TagasisideTextBox(driver)));
+	LoggedIn.Saadud(driver).click();
+	wait.until(ExpectedConditions.visibilityOf(LoggedIn.KysimusBox(driver)));
 	
 	String parenthandle =	driver.getWindowHandle();
 
