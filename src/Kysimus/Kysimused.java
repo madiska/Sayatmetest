@@ -125,9 +125,22 @@ for (int i = 0; i <iListSize; i++) {
 	
 	String parenthandle =	driver.getWindowHandle();
 
-
+for (int m = 0; m < 10; m++) 
+{
 LoggedIn.JagaUrlFacebook(driver).click();
 
+	if (driver.findElements(By.className("FB_UI_Dialog")).size() == 1) {
+		
+		break;
+	}
+	
+	else {
+		
+		driver.navigate().refresh();
+		
+	}
+
+}
 
 		//	for (String winHandle : driver.getWindowHandles()) {
 		//		System.out.print(driver.getWindowHandles().size());
