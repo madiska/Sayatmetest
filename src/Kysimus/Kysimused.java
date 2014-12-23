@@ -183,18 +183,18 @@ LoggedIn.JagaUrlTwitter(driver).click();
 		//}
 
 			if(i==0){
-	
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("status")));
 				Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
-	
+
 	
 					}
 			else{
 					if (Olemasolev != null) {
-					Thread.sleep(1000);
+						wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("status")));
 					Assert.assertTrue(driver.getPageSource().contains(Olemasolev));
 				}
 					else {
-						Thread.sleep(1000);
+						wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("status")));
 						Assert.assertTrue(driver.getPageSource().contains(OlemasolevMuudetud));
 				}
 	
@@ -225,7 +225,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 					SocialMedia.TumblrLoginEmail(driver).sendKeys("selentest@hotmail.com");
 					 SocialMedia.TumblrLoginPW(driver).sendKeys("testime11");
 					 SocialMedia.TumblrLoginButton(driver).click();
-					 Thread.sleep(3000);
+					
 					 
 					 wait.until(ExpectedConditions.elementToBeClickable(By.id("link_post_one")));
 					Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
