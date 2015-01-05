@@ -149,7 +149,7 @@ wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.className("FB_U
 				
 			//	}
 					if(i==0){
-						Thread.sleep(1000);
+						wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("feedform_user_message")));
 						Assert.assertTrue(driver.getPageSource().contains(UusKysimus));
 		
 		
@@ -157,11 +157,11 @@ wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.className("FB_U
 					else{
 						
 						if (Olemasolev != null) {
-							Thread.sleep(1000);
+							wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("feedform_user_message")));
 						Assert.assertTrue(driver.getPageSource().contains(Olemasolev));
 						}
 						else {
-							Thread.sleep(1000);
+							wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("feedform_user_message")));
 							Assert.assertTrue(driver.getPageSource().contains(OlemasolevMuudetud));
 						}
 		
