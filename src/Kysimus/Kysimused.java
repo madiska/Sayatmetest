@@ -144,8 +144,7 @@ LoggedIn.JagaUrlFacebook(driver).click();
 
 }
 
-		//	for (String winHandle : driver.getWindowHandles()) {
-		//		System.out.print(driver.getWindowHandles().size());
+	
 
 wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.className("FB_UI_Dialog")));
 				
@@ -172,17 +171,14 @@ wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.className("FB_U
 					SocialMedia.FacebookLoginCancel(driver).click();
 					
 					driver.switchTo().defaultContent();
-				//	driver.switchTo().defaultContent();
-			//		driver.switchTo().window(parenthandle);
+		
 					
 Thread.sleep(1000);		
 driver.get(baseUrl);
 LoggedIn.JagaUrlTwitter(driver).click();
 
 
-	//for (String winHandle : driver.getWindowHandles()) {
-		//	driver.switchTo().window(winHandle); // sVahetame fookust uuele avanenud aknale
-		//}
+	
 
 			if(i==0){
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("status")));
@@ -222,7 +218,7 @@ for (int o = 0; o < 20; o++) {
 
 for (String winHandle2 : driver.getWindowHandles()) {
 	
-    driver.switchTo().window(winHandle2); // Vahetame Fookust uuele avanud aknale
+    driver.switchTo().window(winHandle2); 
 }
 
 				if(i==0){
@@ -285,20 +281,7 @@ for (String winHandle2 : driver.getWindowHandles()) {
 	
 
 	  
-	 // 	if(kyssa.length() <= 34) {
-	  		
-	  	//	Assert.assertTrue(driver.getPageSource().contains(kyssa));
-	  		
-	  	//}
-	  //	else {
-	  		
-	  	//	String Uus = kyssa.substring(0, 30)+"...";
-	  	//	Assert.assertTrue(driver.getPageSource().contains(Uus));
-	  		
-	  		
-	  		
-	 // 	}
-	  
+	
 	  
 	  
 	  
