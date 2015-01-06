@@ -60,7 +60,7 @@ List<WebElement> oSize = oSelection.getOptions();
  
 int iListSize = oSize.size();
 
-System.out.print(iListSize);
+System.out.println(iListSize);
 
 for (int i = 0; i <iListSize; i++) {
 	String UusKysimus = null;
@@ -81,7 +81,7 @@ for (int i = 0; i <iListSize; i++) {
 				UusKysimus = Uus;
 				LoggedIn.KysimusBox(driver).click();
 				LoggedIn.KysimusBox(driver).sendKeys(kyssa);
-				System.out.print(UusKysimus);
+				System.out.println(UusKysimus);
 			}
 			}
 	else{
@@ -107,11 +107,11 @@ for (int i = 0; i <iListSize; i++) {
 			if(Kyssa.length() > 34) {
 			String Uus = Kyssa.substring(0, 31)+"...";
 			OlemasolevMuudetud = Uus;
-			System.out.print(Uus);
+			System.out.println(Uus);
 			
 		}
 			else {
-				System.out.print(Kyssa);
+				System.out.println(Kyssa);
 	
 				Olemasolev = Kyssa;
 		}
@@ -214,7 +214,7 @@ for (int o = 0; o < 20; o++) {
 	if(driver.getWindowHandles().size()==2)
 		break;
 	else {
-		System.out.print("Aken pole veel lahti");
+		System.out.println("Aken pole veel lahti");
 	}
 	
 } 
