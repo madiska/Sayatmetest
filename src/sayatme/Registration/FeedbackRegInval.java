@@ -13,6 +13,7 @@ import org.testng.Assert;
 
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import PageObjects.*;
 import Utils.Constant;
@@ -40,8 +41,8 @@ public class FeedbackRegInval extends Browser {
    Profile.ProfileFeedbackRegPW(driver).sendKeys(Parool);
    Profile.ProfileFeedbackRegConfirmPW(driver).sendKeys(Parool);
    Profile.ProfileFeedbackRegUrl(driver).sendKeys(Url);
-  Thread.sleep(2000);
-  	Assert.assertTrue(ErrorMessages.Urleiolesaadaval(driver).isDisplayed());
+   wait.until(ExpectedConditions.visibilityOf(ErrorMessages.Urleiolesaadaval(driver)));	
+   
    
   Profile.ProfileFeedBackRegButton(driver).click();
   Assert.assertTrue(ErrorMessages.FeedbackUrlonveotud(driver).isDisplayed());
@@ -61,10 +62,10 @@ Profile.ProfileFeedbackRegNimi(driver).sendKeys(Nimi);
 Profile.ProfileFeedbackRegPW(driver).sendKeys(Parool);
 Profile.ProfileFeedbackRegConfirmPW(driver).sendKeys(Passmismatch);
 Profile.ProfileFeedbackRegUrl(driver).sendKeys(Urlkorras);
-Thread.sleep(2000);
+
 Profile.ProfileFeedBackRegButton(driver).click();
-Thread.sleep(2000);
-Assert.assertTrue(ErrorMessages.FeedbackPWmismatch(driver).isDisplayed());
+wait.until(ExpectedConditions.visibilityOf(ErrorMessages.FeedbackPWmismatch(driver)));	
+
 
 
 
@@ -78,10 +79,10 @@ Profile.ProfileFeedbackRegNimi(driver).sendKeys(Nimi);
 Profile.ProfileFeedbackRegPW(driver).sendKeys(passlyhike);
 Profile.ProfileFeedbackRegConfirmPW(driver).sendKeys(passlyhike);
 Profile.ProfileFeedbackRegUrl(driver).sendKeys(Urlkorras);
-Thread.sleep(2000);
+
 Profile.ProfileFeedBackRegButton(driver).click();
-Thread.sleep(2000);
-Assert.assertTrue(ErrorMessages.FeedbackPWPikkus(driver).isDisplayed());
+wait.until(ExpectedConditions.visibilityOf(ErrorMessages.FeedbackPWPikkus(driver)));	
+
 
 
 
@@ -95,10 +96,10 @@ Profile.ProfileFeedbackRegNimi(driver).sendKeys(Nimi);
 Profile.ProfileFeedbackRegPW(driver).sendKeys(Parool);
 Profile.ProfileFeedbackRegConfirmPW(driver).sendKeys(Parool);
 Profile.ProfileFeedbackRegUrl(driver).sendKeys(ebasobilikurl);
-Thread.sleep(2000);
+
 Profile.ProfileFeedBackRegButton(driver).click();
-Thread.sleep(2000);
-Assert.assertTrue(ErrorMessages.FeedbackUrleisobiclick(driver).isDisplayed());
+wait.until(ExpectedConditions.visibilityOf(ErrorMessages.FeedbackUrleisobiclick(driver)));	
+
 
 
 

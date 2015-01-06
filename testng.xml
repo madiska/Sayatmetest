@@ -7,8 +7,7 @@
  
 		<classes>
 
-	 <class name = "GeneralFunctions.ChangeProfilePicLinux" />
-	 <class name = "Kysimus.PicUpload" />
+		<class name = "Kysimus.Kysimused" />
 
 
  		</classes>
@@ -46,8 +45,7 @@
  
 		<classes>
 
-	 <class name = "GeneralFunctions.ChangeProfilePicLinux" />
-	 <class name = "Kysimus.PicUpload" />
+	
 		 </classes>
  
  </test>
