@@ -67,6 +67,24 @@ public class EmailLinking extends Browser  {
 	  Mailinator.MailinatorTextBox(driver).sendKeys(Email);
 	  Mailinator.MailinatorButton(driver).click();
 	  Thread.sleep(5000);
+	  
+	  for (int m = 0; m < 10; m++) 
+	  {
+	
+
+	  	if (driver.findElements(By.cssSelector("html#ng-app.ng-app.ng-scope body div.full-height div.app-content div.container div.content.inbox div.row-fluid div.span9 div#maildirpane div.row-fluid div.inbox-content div#InboxCtrl.mail-list.ng-scope ul#mailcontainer.unstyled li.row-fluid.message.ng-scope a")).size() == 1) {
+	  		
+	  		break;
+	  	}
+	  	
+	  	else {
+	  		
+	  		Thread.sleep(10000);
+	  		driver.navigate().refresh();
+	  		
+	  	}
+
+	  }
 	  Mailinator.MailinatorEmail(driver).click();
 	  Thread.sleep(2000);
 	  driver.switchTo().frame("rendermail");

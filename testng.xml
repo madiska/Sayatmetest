@@ -45,6 +45,7 @@
  
 		<classes>
 
+		<class name = "Kysimus.Kysimused" />
 	
 		 </classes>
  

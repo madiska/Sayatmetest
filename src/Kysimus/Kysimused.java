@@ -49,6 +49,7 @@ public class Kysimused extends Browser {
 	  
 
 	  driver.get(baseUrl);
+	  wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 	  
 	  
 
@@ -123,7 +124,7 @@ for (int i = 0; i <iListSize; i++) {
 	LoggedIn.Saadud(driver).click();
 	wait.until(ExpectedConditions.visibilityOf(LoggedIn.KysimusBox(driver)));
 	
-	String parenthandle =	driver.getWindowHandle();
+
 
 for (int m = 0; m < 10; m++) 
 {
@@ -203,6 +204,8 @@ LoggedIn.JagaUrlTwitter(driver).click();
 
 
 			driver.get(baseUrl);
+			wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
+			String parenthandle =	driver.getWindowHandle();
 Thread.sleep(1000);		
 LoggedIn.JagaUrlTumblr(driver).click();
 
