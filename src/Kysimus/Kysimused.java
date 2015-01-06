@@ -127,6 +127,7 @@ for (int i = 0; i <iListSize; i++) {
 
 for (int m = 0; m < 10; m++) 
 {
+Thread.sleep(2000);
 LoggedIn.JagaUrlFacebook(driver).click();
 
 	if (driver.findElements(By.className("FB_UI_Dialog")).size() == 1) {
