@@ -15,6 +15,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
@@ -44,7 +45,7 @@ public class feedbackinv extends Browser {
     driver.findElement(By.linkText(Url)).click();
 Profile.TagasisideButton(driver).click();
     for (int second = 0;; second++) {
-    	if (second >= 15) Assert.fail("timeout");
+    	if (second >= 10) Assert.fail("timeout");
     	try { if (isElementPresent(By.cssSelector("textarea.form-control.textarea-autogrow.form-error"))) break; } catch (Exception e) {}
     	Thread.sleep(1000);
     }
@@ -83,10 +84,11 @@ Homepage.Login(driver).click();
 Homepage.LoginUrl(driver).sendKeys(Url);
 Homepage.LoginPW(driver).sendKeys(Parool);
 Homepage.LoginButton(driver).click();
+wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 
-Homepage.Search(driver).sendKeys("madiskangro");
+Homepage.Search(driver).sendKeys(Url);
 Homepage.SearchButton(driver).click();
-driver.findElement(By.linkText("madiskangro")).click();
+driver.findElement(By.linkText(Url)).click();
 Profile.TagasisideButton(driver).click();
 for (int second = 0;; second++) {
 	if (second >= 5) Assert.fail("timeout");

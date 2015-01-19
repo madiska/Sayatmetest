@@ -72,7 +72,8 @@ public class FeedbackVal extends Browser{
 
 LoggedIn.Saadetud(driver).click();
 
-Assert.assertTrue(LoggedIn.SaadetudFeedItem(driver).isDisplayed());
+wait.until(ExpectedConditions.visibilityOf(LoggedIn.SaadetudFeedItem(driver)));
+
 
 Assert.assertTrue(driver.getPageSource().contains(Feedback3));
 

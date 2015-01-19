@@ -1,6 +1,8 @@
 package Login;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.openqa.selenium.*;
@@ -34,9 +36,11 @@ public class LoginInval extends Browser {
    Homepage.LoginPW(driver).sendKeys(ValePW);
    Homepage.LoginButton(driver).click();
   
+   
+   driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     AssertJUnit.assertFalse(isElementPresent(By.linkText(Nimi)));
     
-    
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     
     driver.get(baseUrl);
     Homepage.Login(driver).click();
@@ -45,9 +49,9 @@ public class LoginInval extends Browser {
 
      Homepage.LoginUrl(driver).sendKeys(Url);
      Homepage.LoginButton(driver).click();
-    
+     driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
       AssertJUnit.assertFalse(isElementPresent(By.linkText(Nimi)));
-
+      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
   
 

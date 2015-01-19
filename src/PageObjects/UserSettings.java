@@ -54,6 +54,15 @@ public class UserSettings {
 		    return element;
 		 
 		    }
+	 
+	 public static WebElement KontoNimi(WebDriver driver){
+		 
+		    element = driver.findElement(By.id("a_full_name"));
+		 
+		    return element;
+		 
+		    }
+
 
 	 
 	 

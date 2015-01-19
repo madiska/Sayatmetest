@@ -33,7 +33,7 @@ public class DeleteUser extends Browser {
 	 UserSettings.Seaded(driver).click();
 	 UserSettings.KustutaKonto(driver).click();
 	 UserSettings.KustutaKontoKinnita(driver).click();
-	  
+	  wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
 	  Homepage.Search(driver).sendKeys(Url);
 	 Homepage.SearchButton(driver).click();
 	 Assert.assertFalse(isElementPresent(By.linkText(Url)));

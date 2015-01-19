@@ -122,7 +122,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 	    Homepage.RegCPassword(driver).sendKeys(Parool);
 	    Homepage.RegUrl(driver).sendKeys(Url1);
 	    Homepage.RegButton(driver).click();
-	    Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 	    Assert.assertTrue(isElementPresent(By.linkText(Nimi1)));
 
 	LoggedIn.DropdownMenu(driver).click();
@@ -141,7 +141,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 	    Profile.ProfileFeedbackRegConfirmPW(driver).sendKeys(Parool);
 	    Profile.ProfileFeedbackRegUrl(driver).sendKeys(Url2);
 	   Profile.ProfileFeedBackRegButton(driver).click();
-	   Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 	   Assert.assertTrue(isElementPresent(By.linkText(Nimi2)));
 
 	   
@@ -158,7 +158,7 @@ public void testregistrationsuccess(String Url1, String Nimi1, String Url2, Stri
 	   Profile.ProfileRegConfirmPW(driver).sendKeys(Parool);
 	   Profile.ProfileRegUrl(driver).sendKeys(Url3);
 	  Profile.ProfileRegButton(driver).click();
-	   Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 	  Assert.assertTrue(isElementPresent(By.linkText(Nimi3)));
 
 	  

@@ -28,7 +28,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class Browser {
 
-protected  WebDriver driver;
+public  WebDriver driver;
 protected String baseUrl;
 protected String  brauser;
 protected WebDriverWait wait;

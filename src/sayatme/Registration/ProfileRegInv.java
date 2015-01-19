@@ -6,13 +6,14 @@ import org.testng.AssertJUnit;
 import java.util.regex.Pattern;
 
 import PageObjects.ErrorMessages;
+import PageObjects.Homepage;
 import PageObjects.Profile;
 import Utils.Browser;
 import Utils.Constant;
 import Utils.ExcelUtils;
 
-
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
@@ -43,10 +44,11 @@ Profile.ProfileRegUrl(driver).sendKeys(Url);
 Thread.sleep(3000);
 
 Profile.ProfileRegButton(driver).click();
-Assert.assertTrue(ErrorMessages.Urlonveotud(driver).isDisplayed());
 
-    
-  
+
+    wait.until(ExpectedConditions.visibilityOf(ErrorMessages.Urlonveotud(driver)));
+  driver.get(baseUrl);
+  wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
 
   
 
@@ -63,8 +65,11 @@ Profile.ProfileRegButton(driver).click();
 Thread.sleep(2000);
 Assert.assertTrue(ErrorMessages.PWmismatchProfile(driver).isDisplayed());
 
+wait.until(ExpectedConditions.visibilityOf(ErrorMessages.PWmismatchProfile(driver)));
 
 
+driver.get(baseUrl);
+wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
 
 
 
@@ -81,8 +86,12 @@ Profile.ProfileRegUrl(driver).sendKeys(Urlkorras);
 Thread.sleep(2000);
 Profile.ProfileRegButton(driver).click();
 Thread.sleep(2000);
-Assert.assertTrue(ErrorMessages.PWlyhikeProfile(driver).isDisplayed());
 
+wait.until(ExpectedConditions.visibilityOf(ErrorMessages.PWlyhikeProfile(driver)));
+
+
+driver.get(baseUrl);
+wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
 
 driver.get(baseUrl+Url);
 
@@ -96,7 +105,7 @@ Profile.ProfileRegUrl(driver).sendKeys(ebasobilikurl);
 Thread.sleep(2000);
 Profile.ProfileRegButton(driver).click();
 Thread.sleep(2000);
-Assert.assertTrue(ErrorMessages.UrleisobiProfile(driver).isDisplayed());
+wait.until(ExpectedConditions.visibilityOf(ErrorMessages.UrleisobiProfile(driver)));
 }
 
 

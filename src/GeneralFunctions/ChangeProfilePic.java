@@ -24,7 +24,7 @@ public class ChangeProfilePic extends Browser{
 	
 	
   @Test(dataProvider ="Upload")
-  public void ProfilePictureChange(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus) throws Exception {
+  public void ProfilePictureChange(String Case, String BrauserOs, String Esimenetulemus, String TeineTulemus, String KolmasTulemus, String Kysimuspilt, String KysimusPilt1,String KysimusPilt2, String KysimusPilt3) throws Exception {
 	  
 	  
 	  

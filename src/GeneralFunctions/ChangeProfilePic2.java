@@ -6,6 +6,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,6 +15,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
 import PageObjects.LoggedIn;
+import PageObjects.Profile;
 import PageObjects.UserSettings;
 import Utils.Constant;
 import Utils.Browser;
@@ -37,7 +39,7 @@ public class ChangeProfilePic2 extends Browser{
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  driver.get(baseUrl+"testime13");
 		
-
+wait.until(ExpectedConditions.visibilityOf(Profile.TagasisideTextBox(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Seaded(driver)));
 	  LoggedIn.Seaded(driver).click();

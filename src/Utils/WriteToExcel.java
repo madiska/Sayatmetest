@@ -24,6 +24,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
                 private static XSSFCell Cell;
  
                 private static XSSFRow Row;
+
+				private static String path1;
  
             //This method is to set the File path and to open the Excel file, Pass Excel Path and Sheetname as Arguments to this method
  
@@ -31,8 +33,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  
                    try {
  
-                       // Open the Excel file
- 
+                       path1 = Path;
                     FileInputStream ExcelFile = new FileInputStream(Path);
  
                     // Access the required test data sheet
@@ -77,7 +78,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  
         
  
-                          FileOutputStream fileOut = new FileOutputStream(Constant.ExceliAsukoht);
+                          FileOutputStream fileOut = new FileOutputStream(path1);
  
                           ExcelWBook.write(fileOut);
  

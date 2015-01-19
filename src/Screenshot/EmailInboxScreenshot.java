@@ -28,7 +28,7 @@ public class EmailInboxScreenshot extends Browser{
 	  driver.get("http://mailinator.com");
 	  Mailinator.MailinatorTextBox(driver).sendKeys(Email);
 	  Mailinator.MailinatorButton(driver).click();
-	  Thread.sleep(3000);
+	  Thread.sleep(5000);
 	  
 	  File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	// Now you can do whatever you need to do with it, for example copy somewhere

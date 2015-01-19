@@ -30,6 +30,7 @@ public class CommentPublicFeedback extends Browser{
 
 	  
 	  driver.get(baseUrl+Url2);
+	  wait.until(ExpectedConditions.visibilityOf(Profile.TagasisideTextBox(driver)));
 	  Profile.CommentFeedback(driver).click();
 
 	  Profile.CommentFeedbackTextBox(driver).sendKeys(publiccomment);

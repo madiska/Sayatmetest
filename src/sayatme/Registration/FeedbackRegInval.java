@@ -45,8 +45,8 @@ public class FeedbackRegInval extends Browser {
    
    
   Profile.ProfileFeedBackRegButton(driver).click();
-  Assert.assertTrue(ErrorMessages.FeedbackUrlonveotud(driver).isDisplayed());
-  
+
+  wait.until(ExpectedConditions.visibilityOf(ErrorMessages.FeedbackUrlonveotud(driver)));
   driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     try {
       AssertJUnit.assertFalse(isElementPresent(By.linkText(Nimi)));

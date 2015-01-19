@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
 import PageObjects.LoggedIn;
+import PageObjects.Profile;
 import Utils.*;
 
 
@@ -34,7 +35,7 @@ public class MakeFeedbackPublic extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(Homepage.Login(driver)));
 	  
 	  driver.get(baseUrl+Url2);
-
+	  wait.until(ExpectedConditions.visibilityOf(Profile.TagasisideTextBox(driver)));
 	  Assert.assertTrue(driver.getPageSource().contains(Feedback3));
   }
   
