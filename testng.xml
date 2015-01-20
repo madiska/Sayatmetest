@@ -9,8 +9,7 @@
 
 
 <class name = "sayatme.Registration.Frontpagereg" />
-<class name = "sayatme.Registration.ProfileRegInv" /> 
-<class name = "sayatme.Registration.FeedbackRegInval" />
+
 
 
 
@@ -48,9 +47,7 @@
  	<parameter name="browser" value="firefoxkorras" />
  
 		<classes>
-<class name = "sayatme.Registration.Frontpagereg" />
-<class name = "sayatme.Registration.ProfileRegInv" /> 
-<class name = "sayatme.Registration.FeedbackRegInval" />
+
 
 		 </classes>
  
