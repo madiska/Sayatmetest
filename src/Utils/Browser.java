@@ -1,6 +1,5 @@
 
 package Utils;
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 
@@ -22,13 +21,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.BeforeMethod;
 
 public class Browser {
 
-public  WebDriver driver;
+protected  WebDriver driver;
 protected String baseUrl;
 protected String  brauser;
 protected WebDriverWait wait;

@@ -42,7 +42,7 @@ public class FollowFriends extends Browser {
 	   Homepage.Search(driver).clear();
 	  Homepage.Search(driver).sendKeys(Url3);
 	  Homepage.SearchButton(driver).click();
-	  
+	  Thread.sleep(1000);
 	  SearchResult.Jalgi(driver).click();
 	  wait.until(ExpectedConditions.elementToBeClickable(SearchResult.LopetaJalgimine(driver)));
 	  LoggedIn.Friends(driver).click();

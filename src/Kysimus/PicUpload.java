@@ -1,6 +1,5 @@
 package Kysimus;
 
-import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
@@ -16,7 +15,6 @@ import org.testng.annotations.Test;
 
 import PageObjects.Homepage;
 import PageObjects.LoggedIn;
-import PageObjects.UserSettings;
 import Utils.*;
 
 public class PicUpload extends Browser{

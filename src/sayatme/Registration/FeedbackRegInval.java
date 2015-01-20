@@ -6,12 +6,6 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
-import org.testng.Assert;
-
-
-
-
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 

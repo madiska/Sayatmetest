@@ -26,6 +26,7 @@ public class DeleteUser extends Browser {
 	 Homepage.LoginUrl(driver).sendKeys(Url);
 	 Homepage.LoginPW(driver).sendKeys(Parool);
 	  Homepage.LoginButton(driver).click();
+	  wait.until(ExpectedConditions.visibilityOf(LoggedIn.Friends(driver)));
 	 wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.DropdownMenu(driver)));
 	  LoggedIn.DropdownMenu(driver).click();
 	  LoggedIn.Seaded(driver).click();

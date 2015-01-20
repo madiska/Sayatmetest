@@ -1,6 +1,0 @@
-selentest@hotmail.com / harjutamine 
-selentest@hotmail.com / testime11
-
-
-Feedback1 = Send feedback when ur not logged in
-Feedback2 = Send Feedback when ur logged in and the 

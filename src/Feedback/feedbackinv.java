@@ -69,7 +69,7 @@ for (int second = 0;; second++) {
 	try { if (isElementPresent(By.cssSelector("div.alert.alert-info.wrap-words"))) break; } catch (Exception e) {}
 	Thread.sleep(1000);
 }
-
+wait.until(ExpectedConditions.visibilityOf(Profile.ProfileFeedbackRegNimi(driver)));
 Profile.TagasisideButton(driver).click();
 for (int second = 0;; second++) {
 	if (second >= 5) Assert.fail("timeout");

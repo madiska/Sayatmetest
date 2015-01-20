@@ -9,7 +9,6 @@ import org.testng.Assert;
 
 
 
-import org.testng.AssertJUnit;
 import org.openqa.selenium.*;
 import org.testng.annotations.DataProvider;
 

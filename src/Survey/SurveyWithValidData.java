@@ -1,8 +1,11 @@
 package Survey;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -30,7 +33,16 @@ public class SurveyWithValidData extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  LoggedIn.TagasiKysitlus(driver).click();
 	  LoggedIn.KysitlusHalda(driver).click();
-	  LoggedIn.UusKysitlusWhenExisting(driver).click();
+	  driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+	  if (driver.findElements(By.cssSelector("html body div.container div.row div.col-md-8 div.row.survey-page-title div.col-xs-7 button.btn.btn-primary.pull-right")).size() == 1) {
+		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 LoggedIn.UusKysitlusWhenExisting(driver).click();
+		 }
+	 else {
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 }
+	  
+	 
 	  wait.until(ExpectedConditions.elementToBeClickable(Kysitlus.KysitlusPealkiri(driver)));
 	  Kysitlus.KysitlusPealkiri(driver).sendKeys(Pealkiri);
 	  Kysitlus.KysitlusSalvesta(driver).click();
@@ -58,7 +70,7 @@ public class SurveyWithValidData extends Browser {
 	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
 	  Kysitlus.KysitlusLisaUusKysimus(driver).click();
 
-	  
+	  Thread.sleep(1000);
 	  Kysitlus.KysitlusKysimusPealkiri(driver).sendKeys(Kysimus3);
 	  Kysitlus.KysitlusMituVarianti(driver).click();
 	  Kysitlus.KysitlusMituVariantiEsimeneBox(driver).sendKeys(Kysimus3Valik1);
@@ -75,10 +87,12 @@ public class SurveyWithValidData extends Browser {
 	 
 	 Alert alert = driver.switchTo().alert();
 	 alert.accept();
-	 Thread.sleep(3000);
-	 Assert.assertTrue(Kysitlus.Avaldatud(driver).isDisplayed());
-	 LoggedIn.DropdownMenu(driver).click();
-	 LoggedIn.Logout(driver).click();
+	  Thread.sleep(3000);
+	  wait.until(ExpectedConditions.elementToBeClickable(LoggedIn.Friends(driver)));
+	  LoggedIn.DropdownMenu(driver).click();
+	
+	  LoggedIn.Logout(driver).click();
+	  wait.until(ExpectedConditions.visibilityOf(Homepage.Login(driver)));
   }
 	  
 	 
