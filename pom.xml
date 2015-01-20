@@ -11,7 +11,7 @@
         <directory>src</directory>
         <excludes>
           <exclude>**/*.java</exclude>
-         <exclude>**/*.exe</exclude>
+      
               <exclude>**/*.png</exclude>
             <exclude>**/*.bmp</exclude>
              <exclude>**/*.xlsx</exclude>
