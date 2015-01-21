@@ -32,7 +32,7 @@
 <class name = "Survey.AnswerSurvey" />
 <class name = "Screenshot.EmailInboxScreenshot" />
 
-<class name = "GeneralFunctions.ChangeProfileInvalidLinux" />
+<class name = "GeneralFunctions.ChangeProfileinvalidLinux" />
 <class name = "GeneralFunctions.ChangeProfilePicLinux" />
 <class name = "GeneralFunctions.ChangeProfilePic2Linux" />
 <class name = "GeneralFunctions.ChangePw" />
@@ -100,7 +100,7 @@
 <class name = "Survey.AnswerSurvey" />
 <class name = "Screenshot.EmailInboxScreenshot" />
 
-<class name = "GeneralFunctions.ChangeProfileInvalidLinux" />
+<class name = "GeneralFunctions.ChangeProfileinvalidLinux" />
 <class name = "GeneralFunctions.ChangeProfilePicLinux" />
 <class name = "GeneralFunctions.ChangeProfilePic2Linux" />
 <class name = "GeneralFunctions.ChangePw" />
